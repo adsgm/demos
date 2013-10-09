@@ -1,0 +1,38 @@
+@font-face {
+	font-family: 'Homestead-Inline';
+	src: url('fonts/Homestead-Inline.eot?#iefix') format('embedded-opentype'), 
+	     url('fonts/Homestead-Inline.woff') format('woff'), 
+	     url('fonts/Homestead-Inline.ttf')  format('truetype'),
+	     url('fonts/Homestead-Inline.svg#Homestead-Inline') format('svg');
+}
+h1, h2, h3, h4, p { margin:0 0 10px; padding:0; line-height:120%;	font-style: normal;	font-weight: normal;	font-variant: normal; }
+.ss, footer *{ font-family:"Source Sans Pro", sans-serif; }
+nav a{ font-family: "Signika", sans-serif;}
+body, a, textarea {
+	color: #303030;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	font-family: Helvetica, sans-serif;
+}
+h1, h1 a { font-size: 20px; }
+h2, h2 a, nav a { font-size: 14px; }
+h3, h3 a, footer *{ font-size: 13px; }	
+h4 { font-size: 11px; }
+h5 { font-size: 9px; }
+p {	font-size: 12px; }
+
+/* Size */
+.fs20{ font-size: 20px; }
+.fs40{ font-size: 40px; }
+
+header *{ line-height: 100%; }
+
+/* Color */
+.grey6{ color:#666; }
+nav a{ color: #FFF; }
+footer a{ color: #AF0000; }
+footer a:hover{ color: #C00; }
+
+/* Style */
+header em{ font-weight: 100; font-style: normal; }
