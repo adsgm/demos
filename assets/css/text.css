@@ -6,33 +6,41 @@
 	     url('fonts/Homestead-Inline.svg#Homestead-Inline') format('svg');
 }
 h1, h2, h3, h4, p { margin:0 0 10px; padding:0; line-height:120%;	font-style: normal;	font-weight: normal;	font-variant: normal; }
-.ss, footer *{ font-family:"Source Sans Pro", sans-serif; }
-nav a{ font-family: "Signika", sans-serif;}
+.sans{ font-family:sans-serif; }
+nav a, .btn{ font-family: "Signika", sans-serif;}
 body, a, textarea {
 	color: #303030;
 	font-size: 12px;
 	font-style: normal;
 	font-weight: normal;
-	font-family: Helvetica, sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
 }
-h1, h1 a { font-size: 20px; }
-h2, h2 a, nav a { font-size: 14px; }
-h3, h3 a, footer *{ font-size: 13px; }	
-h4 { font-size: 11px; }
-h5 { font-size: 9px; }
-p {	font-size: 12px; }
+h1, h1 a, .fs20 { font-size: 20px; }
+h2, h2 a, .fs17{ font-size: 17px; }
+h3, h3 a, nav a, .btn{ font-size: 14px; }	
+h4, h4 a, footer * { font-size: 13px; }
+h5, h5 a { font-size: 9px; }
+p, p a { font-size: 12px; }
 
 /* Size */
-.fs20{ font-size: 20px; }
+#stage h2{ font-size: 24px; }
+.fs26{ font-size: 26px; }
+.fs33{ font-size: 33px; }
 .fs40{ font-size: 40px; }
+.fs50{ font-size: 50px; }
 
 header *{ line-height: 100%; }
+#stage h1{ line-height: 95%; }
+.btn{ line-height: 50px; }
 
 /* Color */
 .grey6{ color:#666; }
-nav a{ color: #FFF; }
+.grey8{ color:#878787; }
+nav a, .btn.red{ color: #FFF; }
 footer a{ color: #AF0000; }
 footer a:hover{ color: #C00; }
+.red{ color: #CA2106; }
 
 /* Style */
-header em{ font-weight: 100; font-style: normal; }
+em{ font-weight: 100; font-style: normal; }
+.btn{ letter-spacing: 0.05em; }
