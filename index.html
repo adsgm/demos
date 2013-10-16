@@ -23,6 +23,7 @@
     <meta name="keywords" content="" />
     <title>Banorte - Demos Interactivos</title>
     <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/tabs.css" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Signika:600' rel='stylesheet' type='text/css'>
     <!--[if IE]>
@@ -31,6 +32,7 @@
     <![endif]-->
     <!--[if lt IE 7]><link rel="stylesheet" href="../../assets/css/ie.css"><![endif]-->
     <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="assets/js/stuHover.js" type="text/javascript"></script>
   </head>
   <body>
 
@@ -48,15 +50,40 @@
 
     </header>
 
-    <nav><ul class="clearfix">
+    <nav><ul class="clearfix" id="nav-menu">
       <li><a href="#">CONSULTAS</a></li>
       <li><a href="#">TRANSFERENCIAS</a></li>
-      <li><a href="#">PAGOS</a></li>
+      <li class="top"><a href="#" id="products" class="top_link"><span class="down">PAGOS</span></a>
+		<ul class="sub">
+			<li><a href="#nogo3">Paga tus servicios de gas, teléfono,celular u otros</a></li>
+			<li class="mid"><a href="#" class="fly">Realiza pagos<br/> a tus targetas de crédito</a>
+					<ul>
+						<li><a href="#">Banorte propias</a></li>
+						<li><a href="#" class="fly">Banorte terceros</a></li>
+						<li><a href="#">Inter NAtional Bank</a></li>
+						<li><a href="#" class="fly">Otros bancos</a>
+							<ul>
+								<li><a href="#">Banco Número 1</a></li>
+								<li><a href="#">Banco Número 2</a>
+                       			<li><a href="#">Banco Número 3</a></li>
+                                <li><a href="#">Banco Número 4</a></li>
+							</ul>
+						</li>
+						
+						<li><a href="#" >American Express</a></li>
+					</ul>
+			</li>
+			<li><a href="#" >Cómo pagar tu crédito <br/>automotriz Banorte</a></li>
+     	    <li><a href="#" >Cómo pagar tu <br/> crédito hipotecario</a></li>
+      		<li><a href="#" >Aquí puedes <br/> pagar tus impuestos</a></li>
+     		<li><a href="#">Si tienes crédito <br/> infonavit, págalo aqui</a></li>
+		</ul>
+	</li>
       <li><a href="#">INVERSIONES</a></li>
       <li><a href="#">CRÉDITOS</a></li>
       <li><a href="#">SERVICIOS</a></li>
       <li><a href="#">PREFERENCIAS</a></li>
-      <li><a href="#" class="buscar"><span></span></a></li>
+      <li><a href="busqueda.html" class="buscar various fancybox.iframe"><span></span></a></li>
     </ul></nav>
 
     <section id="stage">
@@ -100,6 +127,23 @@
     </footer>
 
     <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+    <script type="text/javascript">
+		$(document).ready(function() {
+	$(".various").fancybox({
+		maxWidth	: 980,
+		maxHeight	: 700,
+		fitToView	: false,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});</script>
 
   </body>
 </html>

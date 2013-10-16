@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/tabs.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+<body>
+	<div class="busqueda">
+    	<div>
+        	<p class="font22"><strong>¿Qué necesitas buscar?</strong></p>
+            <input type="text" />
+        </div>
+        <!--Contenedor de bloques-->
+        <div>
+        <!--Linea de bloques-->
+        	<div>
+            <!--Bloque-->
+            <div class="bloque">
+            	<div id="tabs" class="tabs-bottom">
+                      <ul>
+                        <li><a href="#tabs-1"></a></li>
+                        <li><a href="#tabs-2">Proin dolor</a></li>
+                        <li><a href="#tabs-3">Aenean lacinia</a></li>
+                      </ul>
+                      <div class="tabs-spacer"></div>
+                      <div id="tabs-1">
+                        <h1>CATÁLOGOS</h1>
+                      </div>
+                      <div id="tabs-2">
+                        <p>tab2</p>
+                      </div>
+                      <div id="tabs-3">
+                        <p>tab3</p>
+                      </div>
+					</div>
+           
+            </div>
+              <!-- Fin del Bloque-->
+         </div>
+             <!-- Fin de la Linea de bloques-->
+        </div>
+        <!--fin del Contenedor de bloques-->
+    </div>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+ 
+    // fix the classes
+    $( ".tabs-bottom .ui-tabs-nav, .tabs-bottom .ui-tabs-nav > *" )
+      .removeClass( "ui-corner-all ui-corner-top" )
+      .addClass( "ui-corner-bottom" );
+ 
+    // move the nav to the bottom
+    $( ".tabs-bottom .ui-tabs-nav" ).appendTo( ".tabs-bottom" );
+  });
+  </script>
+</body>
+</html>
