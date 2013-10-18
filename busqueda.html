@@ -1,7 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
- 
 <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
 <link href="assets/css/tabs.css" rel="stylesheet" type="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -50,39 +49,6 @@
 					</div>
             </div>
               <!-- Fin del Bloque-->
-              <!--Bloque 1-->
-            <div class="bloque">
-            	<div id="tabs1" class="tabs-bottom">
-                      <ul>
-                        <li><a href="#tabs-4"><span><img src="assets/img/btns/btn-firt.png" /></span></a></li>
-                        <li><a href="#tabs-5"><span><img src="assets/img/btns/btn-questions.png" /></span></a></li>
-                        <li class="last"><a href="#tabs-6" ><img src="assets/img/bg/arrow-red.png" /><span>VER CÓMO</span></a></li>
-                      </ul>
-                      <div class="tabs-spacer"></div>
-                      <!--Inicio de tabs-->
-                      <div id="tabs-4" class="tabs-back">
-                            <p>CATÁLOGOS</p>
-                            <hr class="line-header-tabs" />
-                            <h2>Mis cuentas terceros</h2>
-                            <hr  class="line-tabs-2"/>
-                            <h3>En esta sección podrás agregar usuarios de acuerdo a tus necesidades, dar permisos, asignar servicios y cuentas.</h3>
-                      </div>
-                      <div id="tabs-5" class="tabs-back-2">
-                            <p><img src="assets/img/bg/tabs-c.png" />  ¿Cómo utilizar las claves de banca personal?</p>
-                            <hr class="line-quetions-tabs"/>
-                            <p><img src="assets/img/bg/tabs-c.png" />  ¿Qué pasos seguir para sincronizar tu token?</p>
-                            <hr class="line-quetions-tabs"/>
-                            <p><img src="assets/img/bg/tabs-c.png" />  ¿Cómo realizar una transferencia en el mismo día?</p>
-                            <hr class="line-quetions-tabs"/>
-                            <p><img src="assets/img/bg/tabs-c.png" />  ¿Cómo agregar a un nuevo beneficiario?</p>
-                      </div>
-                      <div id="tabs-6">
-                        <p>tab3</p>
-                      </div>
-                      <!--fin de tabs-->
-					</div>
-            </div>
-              <!-- Fin del Bloque-->
          </div>
              <!-- Fin de la Linea de bloques-->
         </div>
@@ -90,19 +56,18 @@
     </div>
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
- <script>
+  <script>
   $(function() {
     $( "#tabs" ).tabs();
  
     // fix the classes
-    $( ".tabs-bottom .ui-tabs-nav, .tabs-bottom .ui-tabs-nav " )
+    $( ".tabs-bottom .ui-tabs-nav, .tabs-bottom .ui-tabs-nav > *" )
       .removeClass( "ui-corner-all ui-corner-top" )
       .addClass( "ui-corner-bottom" );
  
     // move the nav to the bottom
     $( ".tabs-bottom .ui-tabs-nav" ).appendTo( ".tabs-bottom" );
   });
- 
   </script>
 </body>
 </html>
