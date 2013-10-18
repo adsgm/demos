@@ -114,6 +114,7 @@ table{ border-spacing:0;  border-collapse:collapse; }
 	height:2000px;
 	text-align:left !important;
 	background-color:#323232;
+	margin:0 auto;
 }
 .busqueda strong{
 	font-family: "Source Sans Pro", sans-serif;
@@ -129,7 +130,45 @@ table{ border-spacing:0;  border-collapse:collapse; }
 	font:62px bold "Source Sans Pro", sans-serif;
 	margin:30px 0; 
 }
-.font22{ font-size:22px;}bus
+.font22{ font-size:22px;}
+.font16{ font-size:16px;}
+
+.line-no-encontrado{
+	background: url(../img/btns/line-busqueda-no-encontrada.png) no-repeat left;
+	height:15px;
+	width:100%;
+	border:0px solid #fff;
+}
+.botton{
+	width:194px;
+	height:53px;
+	border:2px solid #FFF;
+	border-radius:4px;
+	margin:15px 10px;
+	float:left;
+	-moz-border-radius:4px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 4px;
+	/* para Opera */
+	border-radius: 4px;
+	
+}
+.botton p{
+	padding:15px;
+	text-align:center;
+}
+.botton p a{
+	font:16px normal "Source Sans Pro", sans-serif;
+	color:#FFF;
+	text-decoration:none;
+}
+.align-block{
+	width:900px;
+}
+.second-line{
+	margin-left:100px;
+}
+
 
 /*			- JQuery Plugins -			*/
 
