@@ -7,12 +7,10 @@
 	width:290px;
 	height:260px;
 	padding:15px;
+	float:left;
+	margin-top:30px;
 }
-.bloque1{
-	width:290px;
-	height:260px;
-	padding:15px;
-}
+
 
 /* Layout helpers
 ----------------------------------*/
@@ -838,7 +836,7 @@ button.ui-button::-moz-focus-inner {
 }
 
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
-	background-image:url(../img/bg/tab-active.png);	
+	/*background-image:url(../img/bg/tab-active.png);*/
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active a,
 .ui-tabs .ui-tabs-nav li.ui-state-disabled a,
@@ -856,16 +854,17 @@ button.ui-button::-moz-focus-inner {
 	background-color:#EEE;
 }
 .ui-tooltip {
-	padding: 8px;
+	padding: 5px;
 	position: absolute;
 	z-index: 9999;
 	max-width: 300px;
 	-webkit-box-shadow: 0 0 5px #aaa;
-	box-shadow: 0 0 5px #aaa;
+	box-shadow: 0 0 5px #aaa;	
 }
 body .ui-tooltip {
 	border-width: 2px;
 }
+
 
 /* Component containers
 ----------------------------------*/

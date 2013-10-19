@@ -101,7 +101,6 @@ table{ border-spacing:0;  border-collapse:collapse; }
 /*			- Site Layout -			*/
 #stage{ height: 460px; padding-top: 85px; position: relative; background: url(../img/bg/bg-stage.jpg) center bottom no-repeat; }
 #stage img{ position: absolute; left: 50%; top: 45px; z-index: 0; margin-left: -624px; }
-
 .div{ background: url(../img/bg/div.gif) 0 center no-repeat; height: 3px; border: none; }
 
 
@@ -112,7 +111,7 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .btn em{ background: url(../img/bg/div.png) 0 center no-repeat; padding: 0 10px; }
 .btn.red{ background: #CD0700; } .btn.red:hover{ background: #B20000; }
 .busqueda{
-	height:2000px;
+	height:1200px;
 	text-align:left !important;
 	background-color:#323232;
 	margin:0 auto;
@@ -143,7 +142,7 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .botton{
 	width:194px;
 	height:53px;
-	border:2px solid #FFF;
+	border:2px solid #C4C4C4;
 	border-radius:4px;
 	margin:15px 10px;
 	float:left;
@@ -169,6 +168,10 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .second-line{
 	margin-left:100px;
 }
+.width-line-tabs{
+	width:1024px;
+}
+
 
 
 /*			- JQuery Plugins -			*/
@@ -194,12 +197,12 @@ table{ border-spacing:0;  border-collapse:collapse; }
 #nav-menu li:hover ul.sub li
 {display:block; height:49px; position:relative; float:left;width:250px; font-weight:normal; background: url(../img/bg/bg-menu-one.png);}
 #nav-menu li:hover ul.sub li a
-{display:block;font-size:14px; position:absolute; height:38px; width:200px; line-height:15px; color:#000; text-decoration:none; padding-top:11px;}
+{display:block;font-size:14px; position:absolute; height:38px; width:200px; font-weight: 600; line-height:15px; color:#000; text-decoration:none; padding-top:11px;}
 #nav-menu li ul.sub li a.fly{
 	background: url(../img/bg/bg-menu.png);
 	font-family: "Source Sans Pro", sans-serif;
 	font-size:14px !important;
-	font-weight:bold;
+	font-weight:600;
 }
 #nav-menu li:hover ul.sub li a:hover 
 {background: url(../img/bg/bg-menu-act-one.png); color:#B60000;}
