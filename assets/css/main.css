@@ -35,7 +35,7 @@ table{ border-spacing:0;  border-collapse:collapse; }
 /*			- Paddings/Margins/Widths/Borders -			*/
 
 .m0, header p { margin:0; } .m0auto { margin:0 auto; } 
-
+.pt50{ margin-top:-100px;}
 .m1r  { margin-right:1px;  }	.m5r { margin-right:5px;  }	.m10r { margin-right:10px; }	.m15r { margin-right:15px; }
 .m20r { margin-right:20px; }	.m25r{ margin-right:25px; }	.m30r { margin-right:30px; }	.m40r { margin-right:40px; }
 
@@ -235,10 +235,6 @@ table{ border-spacing:0;  border-collapse:collapse; }
 	padding:6px 13px;
 }
 .content-pasos h3{ font-size:20px;}
-.content-pasos p, td{ font:14px normal "Source Sans Pro", sans-serif; height:23px;}
-.content-pasos td:first-child{ text-align:right;}
-.information{ width:45%;margin:0 auto;}
-.information strong{ font-weight:bold;}
 .content-guia{
 	width:980px;
 	margin:0 auto;
