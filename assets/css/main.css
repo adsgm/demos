@@ -23,9 +23,7 @@ nav a:hover{ background: #B20000; }
 #prefooter > img{ position: absolute; top: -28px; left: 50%; margin-left: -57px; }
 footer{ background: url(../img/bg/bg-footer.png) center 0 no-repeat; padding: 22px 0 40px; text-align: center; }
 footer a{ margin: 0 10px; }
-
 /*			- Resets -			*/
-
 a{text-decoration:none;}	
 button{	background:none; background-repeat:no-repeat;	border:none; cursor:pointer; margin:0;	padding:0; text-align:left; }
 form{	margin:0;	padding:0; }
@@ -34,7 +32,6 @@ ul{	margin:0;	padding:0; list-style:none; }
 table{ border-spacing:0;  border-collapse:collapse; }
 .block {	display: block;	}
 .relative, section{ position:relative; }
-
 /*			- Paddings/Margins/Widths/Borders -			*/
 
 .m0, header p { margin:0; } .m0auto { margin:0 auto; } 
@@ -86,30 +83,27 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .width90	{width:90% !important;}
 .width95	{width:95% !important;}
 .width100	{width:100% !important;}
-
 .floatL, #logo, nav li {	float: left; }
 .floatR {	float: right; }
-
 .roundbor{  -webkit-border-radius: 20px; border-radius: 20px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; }
-
 .clear { clear:both; }
 :-moz-any-link:focus { outline: none; }
 .clearfix:after {	content: "."; 	display: block; 	height: 0; 	clear: both; 	visibility: hidden; }
 .clearfix {display: inline-block;}
 .clearfix {display: block;}
-
 /*			- Site Layout -			*/
 #stage{ height: 460px; padding-top: 85px; position: relative; background: url(../img/bg/bg-stage.jpg) center bottom no-repeat; }
 #stage img{ position: absolute; left: 50%; top: 45px; z-index: 0; margin-left: -624px; }
 .div{ background: url(../img/bg/div.gif) 0 center no-repeat; height: 3px; border: none; }
-
-
 /*	- Buttons -	*/
 .buscar span{ background: url(../img/icons/lupa.png) center center no-repeat; width: 24px; height: 24px; display: inline-block; padding-top: 13px; padding-bottom: 13px; }
-
+.finalizar span{ background: url(../img/btns/arrows.png) center center no-repeat; width:19px; height:19px; display: inline-block; padding-top: 13px; padding-bottom: 13px; }
 .btn{ display: inline-block; }
 .btn em{ background: url(../img/bg/div.png) 0 center no-repeat; padding: 0 10px; }
 .btn.red{ background: #CD0700; } .btn.red:hover{ background: #B20000; }
+.btn-finalizar{ display: inline-block; }
+.btn-finalizar em{ padding: 12px 15px; color:#FFF; 	font:16px bold "Signika", sans-serif;  }
+.btn-finalizar.red{ background: #CD0700; } .btn-finalizar.red:hover{ background: #B20000; }
 .busqueda{
 	height:1200px;
 	text-align:left !important;
@@ -132,7 +126,6 @@ table{ border-spacing:0;  border-collapse:collapse; }
 }
 .font22{ font-size:22px;}
 .font16{ font-size:16px;}
-
 .line-no-encontrado{
 	background: url(../img/btns/line-busqueda-no-encontrada.png) no-repeat left;
 	height:15px;
@@ -150,8 +143,7 @@ table{ border-spacing:0;  border-collapse:collapse; }
 	/*para Safari y Chrome*/
 	-webkit-border-radius: 4px;
 	/* para Opera */
-	border-radius: 4px;
-	
+	border-radius: 4px;	
 }
 .botton p{
 	padding:15px;
@@ -171,18 +163,10 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .width-line-tabs{
 	width:1024px;
 }
-
-
-
 /*			- JQuery Plugins -			*/
-
-
 /*			- Media Queries -			*/
-
-@media (max-width: 1200px) {  
-	
+@media (max-width: 1200px) {  	
 }
-
 /*menu*/
 #nav-menu li:hover {position:relative; z-index:200;}
 /* keep the 'next' level invisible by placing it off screen. */
@@ -205,23 +189,63 @@ table{ border-spacing:0;  border-collapse:collapse; }
 	font-weight:600;
 }
 #nav-menu li:hover ul.sub li a:hover 
-{background: url(../img/bg/bg-menu-act-one.png); color:#B60000;}
+{background: url(../img/bg/bg-menu-act-one.png); color:#FFF;}
 #nav-menu li:hover ul.sub li a.fly:hover
-{background:url(../img/bg/bg-menu-act.png); color:#B60000;}
-#nav-menu li:hover ul li:hover > a.fly {background:url(../img/bg/bg-menu-act.png); color:#B60000;} 
+{background:url(../img/bg/bg-menu-act.png); color:#FFF;}
+#nav-menu li:hover ul li:hover > a.fly {background:url(../img/bg/bg-menu-act.png); color:#FFF;} 
 #nav-menu li:hover ul li:hover ul,
 #nav-menu li:hover ul li:hover ul li:hover ul,
 #nav-menu li:hover ul li:hover ul li:hover ul li:hover ul,
 #nav-menu li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul
 {left:250px; top:0; background: url(../img/bg/bg-menu.png); color:#B60000; white-space:nowrap; width:251px; z-index:400; height:49px;}
 .sub span{ background-image:url(../img/bg/play.png); width: 49px; height: 48px; position:absolute; margin:0 201px; border-bottom:1px solid #8d867c;}
-
-
 /* CABRAL */
-.header{height: 141px;}
-.header h1 {font-size: 26px; color: #B00000;}
+.header{height: 141px; font-family:"Source Sans Pro", sans-serif;}
+.header p {font-size: 15px; color: #A5A5A5;  margin-left:-90px;}
+.header h1 {font-size: 26px; color: #B00000; padding:13px 0; margin-left:-90px;}
 .sombra{width: 100%; height: 30px; background: url(../../assets/img/bg/sombra.png); background-repeat: no-repeat; background-position: center;}
 .block-pasos{width: 670px; height: 40px; margin: 10px auto;}
-.pasos li{ width: 70px; height: 35px; background: url(../img/icons/pasos.png); background-repeat: no-repeat; float: left;}
+.pasos li{ width: 70px; height: 35px; font-size:20px;background: url(../img/icons/pasos.png); background-repeat: no-repeat; float: left;}
 .pasos li:last-child{width: 35px;}
-.content-pasos{width: 980px; margin: 0 auto;}
+.pasos  span{ padding:7px 12px; position:absolute; color:#878787;}
+.pasos li:last-child span{ padding:7px 7px;}
+.active  span{ background: url(../img/icons/pasos.png) 0 96%; color:#B50400; font-weight:bold;}
+.content-pasos{width: 980px; margin: 25px auto;}
+.content-categoria{margin:0 auto; text-align:center; color:#D2533F;font-size:18px;}
+.content-categoria h3{font-size: 18px; }
+.content-categoria a{ font-size:13px; font-weight:bold;color:#C71000; margin:0 15px;}
+.boton-rojo{
+	background:url(../img/btns/cdro-rojo.png) no-repeat left;
+	padding:6px 20px;
+}
+.boton-rojo-big{
+	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
+	padding:6px 20px;
+}
+.boton-rojo-big-tarjeta-destino{
+	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
+	padding:6px 33px;
+}
+.boton-rojo-big-tarjeta-pass{
+	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
+	padding:6px 45px;
+}
+.boton-rojo-b{
+	background:url(../img/btns/cuado-mas-grande-rojo.png) no-repeat;
+	padding:6px 13px;
+}
+.content-pasos h3{ font-size:20px;}
+.content-pasos p, td{ font:14px normal "Source Sans Pro", sans-serif; height:23px;}
+.content-pasos td:first-child{ text-align:right;}
+.information{ width:45%;margin:0 auto;}
+.information strong{ font-weight:bold;}
+.content-guia{
+	width:980px;
+	margin:0 auto;
+}
+.preferencias{
+	width:980px;
+	margin:0 auto;
+	text-align:left !important;
+}
+.content-guia h2{text-align: center; font:32px normal "Source Sans Pro", sans-serif; color:#878787}
