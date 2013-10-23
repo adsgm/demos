@@ -5,7 +5,7 @@ body {
 	padding:0;
 	background: #F7F7F7;
 }
-html,body{ min-width:978px; }
+.wrap{ width: 980px; margin: 0 auto;}
 .main, article, header, nav ul {
 	text-align:left;
 	display: block;
@@ -93,7 +93,7 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .clearfix {display: block;}
 
 /*	- Site Layout -	*/
-.content{ width: 980px; margin: 0 auto;}
+.content{ width: 940px; margin: 0 auto;}
 
 #stage{ height: 460px; padding-top: 85px; position: relative; background: url(../img/bg/bg-stage.jpg) center bottom no-repeat; }
 #stage img{ position: absolute; left: 50%; top: 45px; z-index: 0; margin-left: -624px; }
@@ -261,7 +261,7 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .home-slider .center{ position:relative;}
 
 /*	- iosSlider -	*/
-.iosSlider {position: relative; left: 0; overflow: hidden; width: 1280px; height: 507px;}
+.iosSlider {position: relative; left: 0; overflow: hidden; width: 920px; height: 507px;}
 .iosSlider .slider .slide {
 	float: left;
 	width: 100%;
