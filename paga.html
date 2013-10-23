@@ -49,23 +49,24 @@
       <div class="sombra"></div>
       <div class="block-pasos">
         <ul class="pasos"> 
-          <li><span>1</span></li>
-          <li><span>2</span></li>
-          <li><span>3</span></li>
-          <li><span>4</span></li>
-          <li><span>5</span></li>
-          <li><span>6</span></li>
-          <li><span>7</span></li>
-          <li><span>8</span></li>
-          <li><span>9</span></li>
-          <li><span>10</span></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+          <li><a href="#">8</a></li>
+          <li><a href="#">9</a></li>
+          <li><a href="#">10</a></li>
         </ul>
       </div>
       <div class="content-categoria">
        <h3>Selecciona la catégoria <a href="#" class="boton-rojo">PAGOS</a></h3>
      </div>
      <div class="home-slider">
-      <a class="st-prev" id="prev"></a><a class="st-next" id="next"></a>
+      <a class="st-prev unselectable" id="prev"></a>
+      <a class="st-next" id="next"></a>
       <div id="Slider" class="iosSlider">
         <div class="slider">
           <div class="slide relative">
@@ -82,6 +83,21 @@
           </div>
           <div class="slide relative">
             <a href="#"><img src="assets/img/photos/paso5.jpg" alt=""/></a>
+          </div>
+          <div class="slide relative">
+            <a href="#"><img src="assets/img/photos/paso6.jpg" alt=""/></a>
+          </div>
+          <div class="slide relative">
+            <a href="#"><img src="assets/img/photos/paso7.jpg" alt=""/></a>
+          </div>
+          <div class="slide relative">
+            <a href="#"><img src="assets/img/photos/paso8.jpg" alt=""/></a>
+          </div>
+          <div class="slide relative">
+            <a href="#"><img src="assets/img/photos/paso9.jpg" alt=""/></a>
+          </div>
+          <div class="slide relative">
+            <a href="#"><img src="assets/img/photos/paso10.jpg" alt=""/></a>
           </div>
         </div>
       </div>
@@ -203,11 +219,15 @@ $(document).ready(function() {
     infiniteSlider: true,
     autoSlideTimer: 4000,
     snapToChildren: true,
-    navSlideSelector: $('.btnscontroles a'),
+    navSlideSelector: $('.pasos a'),
     onSlideChange: function(args){
       var index = args.currentSlideNumber;
-      $('.btnscontroles .on').removeClass('on');
-      $('.btnscontroles a:eq(' + index +')').addClass('on');
+      if( index > 0 ) 
+        $('#prev').removeClass('unselectable');
+      else 
+        $('#prev').addClass('unselectable');
+      $('.pasos .on').removeClass('on');
+      $('.pasos li:eq(' + index +')').addClass('on');
     },
     navPrevSelector: $('#prev'),
     navNextSelector: $('#next')
