@@ -252,13 +252,7 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .preferencias p span {
 		background:url(../img/btns/arrow-preferencias.png) center center no-repeat; width: 30px; height: 30px; display: inline-block; position:absolute; 
 }
-<<<<<<< HEAD
-
 .content-guia h2{text-align: center; font-size:32px; color:#878787}
-=======
-.content-guia h2{text-align: center; font:32px normal "Source Sans Pro", sans-serif; color:#878787}
->>>>>>> 6f387f1529d0cbb7ae3c1b123489f95b5ee95e65
-
 /* ==========================================================================
    Slider
    ========================================================================== */
@@ -292,9 +286,3 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .unselectable{visibility: hidden;}
 .zoom {width: 150px; height: 40px;}
 .zoom img, .zoom h3{float: left;}
-
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 6f387f1529d0cbb7ae3c1b123489f95b5ee95e65
