@@ -1,6 +1,7 @@
 /*			- Main site elements -			*/
 body {
 	text-align:center;
+	font-family: "Source Sans Pro", sans-serif;
 	margin:0;
 	padding:0;
 	background: #F7F7F7;
@@ -107,7 +108,7 @@ table{ border-spacing:0;  border-collapse:collapse; }
 	margin:0 auto;
 }
 .busqueda strong{
-	font-family: "Source Sans Pro", sans-serif;
+	
 	color:#FFF;
 	font-weight:bold;
 }
@@ -117,7 +118,7 @@ table{ border-spacing:0;  border-collapse:collapse; }
 	color:#FFF;
 	border:none;
 	background-color:#323232;
-	font:62px bold "Source Sans Pro", sans-serif;
+	font-size:62px;
 	margin:30px 0; 
 }
 .font22{ font-size:22px;}
@@ -146,7 +147,7 @@ table{ border-spacing:0;  border-collapse:collapse; }
 	text-align:center;
 }
 .botton p a{
-	font:16px normal "Source Sans Pro", sans-serif;
+	font-size:16px;
 	color:#FFF;
 	text-decoration:none;
 }
@@ -180,7 +181,6 @@ table{ border-spacing:0;  border-collapse:collapse; }
 {display:block;font-size:14px; position:absolute; height:38px; width:200px; font-weight: 600; line-height:15px; color:#000; text-decoration:none; padding-top:11px;}
 #nav-menu li ul.sub li a.fly{
 	background: url(../img/bg/bg-menu.png);
-	font-family: "Source Sans Pro", sans-serif;
 	font-size:14px !important;
 	font-weight:600;
 }
@@ -196,7 +196,7 @@ table{ border-spacing:0;  border-collapse:collapse; }
 {left:250px; top:0; background: url(../img/bg/bg-menu.png); color:#B60000; white-space:nowrap; width:251px; z-index:400; height:49px;}
 .sub span{ background-image:url(../img/bg/play.png); width: 49px; height: 48px; position:absolute; margin:0 201px; border-bottom:1px solid #8d867c;}
 /* CABRAL */
-.header{height: 141px; font-family:"Source Sans Pro", sans-serif;}
+.header{height: 141px;}
 .header p {font-size: 15px; color: #A5A5A5;  margin-left:-90px;}
 .header h1 {font-size: 26px; color: #B00000; padding:13px 0; margin-left:-90px;}
 .sombra{width: 100%; height: 30px; background: url(../../assets/img/bg/sombra.png); background-repeat: no-repeat; background-position: center;}
@@ -241,10 +241,10 @@ table{ border-spacing:0;  border-collapse:collapse; }
 	text-align:left !important;
 }
 .preferencias p {
-	font:22px normal "Source Sans Pro", sans-serif;
+	font-size:22px;
 	color:#878787;
 }
 .preferencias p span {
 		background:url(../img/btns/arrow-preferencias.png) center center no-repeat; width: 30px; height: 30px; display: inline-block; position:absolute; 
 }
-.content-guia h2{text-align: center; font:32px normal "Source Sans Pro", sans-serif; color:#878787}
+.content-guia h2{text-align: center; font-size:32px; color:#878787}
