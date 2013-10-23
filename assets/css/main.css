@@ -13,7 +13,7 @@ html,body{ min-width:978px; }
 	width: 978px;
 }
 li{ list-style: none;}
-header, #logo{ height: 93px; background: url(../img/bg/trans-header.jpg) right center no-repeat; }
+header, #logo{ background: url(../img/bg/trans-header.jpg) right center no-repeat; }
 #logo{ padding: 25px 20px 0 8px; height: 68px; display: inline-block; }
 nav{ background: url(../img/bg/bg-nav.gif); height: 50px; }
 nav li{ background: url(../img/bg/nav-l.png) 0 center no-repeat; }
@@ -90,7 +90,10 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .clearfix:after {	content: "."; 	display: block; 	height: 0; 	clear: both; 	visibility: hidden; }
 .clearfix {display: inline-block;}
 .clearfix {display: block;}
-/*			- Site Layout -			*/
+
+/*	- Site Layout -	*/
+.content{ width: 980px; margin: 0 auto;}
+
 #stage{ height: 460px; padding-top: 85px; position: relative; background: url(../img/bg/bg-stage.jpg) center bottom no-repeat; }
 #stage img{ position: absolute; left: 50%; top: 45px; z-index: 0; margin-left: -624px; }
 .div{ background: url(../img/bg/div.gif) 0 center no-repeat; height: 3px; border: none; }
@@ -195,17 +198,18 @@ table{ border-spacing:0;  border-collapse:collapse; }
 #nav-menu li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul
 {left:250px; top:0; background: url(../img/bg/bg-menu.png); color:#B60000; white-space:nowrap; width:251px; z-index:400; height:49px;}
 .sub span{ background-image:url(../img/bg/play.png); width: 49px; height: 48px; position:absolute; margin:0 201px; border-bottom:1px solid #8d867c;}
+
 /* CABRAL */
 .header{height: 141px; font-family:"Source Sans Pro", sans-serif;}
 .header p {font-size: 15px; color: #A5A5A5;  margin-left:-90px;}
 .header h1 {font-size: 26px; color: #B00000; padding:13px 0; margin-left:-90px;}
 .sombra{width: 100%; height: 30px; background: url(../../assets/img/bg/sombra.png); background-repeat: no-repeat; background-position: center;}
 .block-pasos{width: 670px; height: 40px; margin: 10px auto;}
-.pasos li{ width: 70px; height: 35px; font-size:20px;background: url(../img/icons/pasos.png); background-repeat: no-repeat; float: left;}
+.pasos li{ width: 70px; height: 35px; font-size:20px;background: url(../img/icons/pasos.png); background-repeat: no-repeat; float: left; position: relative;}
 .pasos li:last-child{width: 35px;}
-.pasos  span{ padding:7px 12px; position:absolute; color:#878787;}
-.pasos li:last-child span{ padding:7px 7px;}
-.active  span{ background: url(../img/icons/pasos.png) 0 96%; color:#B50400; font-weight:bold;}
+.pasos  span{ position:absolute; color:#878787; top: 4px; left: 13px;}
+.pasos li:last-child span{ left: 7px;}
+.on { background-position: 0 -35px !important; color:#B50400 !important; font-weight:bold;}
 .content-pasos{width: 980px; margin: 25px auto;}
 .content-categoria{margin:0 auto; text-align:center; color:#D2533F;font-size:18px;}
 .content-categoria h3{font-size: 18px; }
@@ -248,3 +252,38 @@ table{ border-spacing:0;  border-collapse:collapse; }
 		background:url(../img/btns/arrow-preferencias.png) center center no-repeat; width: 30px; height: 30px; display: inline-block; position:absolute; 
 }
 .content-guia h2{text-align: center; font:32px normal "Source Sans Pro", sans-serif; color:#878787}
+
+/* ==========================================================================
+   Slider
+   ========================================================================== */
+
+.home-slider{ position:relative; width:920px; height:415px; margin:0 auto; overflow:hidden;}
+.home-slider .center{ position:relative;}
+
+/*	- iosSlider -	*/
+.iosSlider {position: relative; left: 0; overflow: hidden; width: 1280px; height: 507px;}
+.iosSlider .slider .slide {
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+.iosSlider .slider .slide input[type="button"], input[type="button"]{
+	width:192px;
+	height:42px;
+	background-image:url(../images/btns/btns-slider.png);
+	background-repeat:no-repeat;
+	background-color:transparent;
+	border:none;
+	float:left;
+	font-size:14px;
+	color:#FFF;
+}
+.sliderText{position:absolute; top:250px; left:40px;}
+.st-prev, .st-next{ width:70px; height:70px; background:url(../images/btns/btns-slider.png); display:block; position:absolute; top: 250px; z-index:90;}
+.st-prev:hover, .st-next:hover{ opacity:0.9; }
+.st-prev{ left:130px;}
+.st-next{ right:130px; background-position:-70px 0; }
+.zoom {width: 150px; height: 40px;}
+.zoom img, .zoom h3{float: left;}
+
+
