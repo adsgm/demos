@@ -773,6 +773,10 @@ button.ui-button::-moz-focus-inner {
 	font-weight:bold;
 	height:80px;
 }
+.tabs-back-2 p:before{
+	content:url(../img/bg/tabs-c.png);
+	
+}
 .tabs-back p{
 	font-size:16px;
 	color:#4D4D4D;
