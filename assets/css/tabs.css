@@ -4,8 +4,8 @@
 * To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Verdana%2CArial%2Csans-serif&fwDefault=normal&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=cccccc&bgTextureHeader=highlight_soft&bgImgOpacityHeader=75&borderColorHeader=aaaaaa&fcHeader=222222&iconColorHeader=222222&bgColorContent=ffffff&bgTextureContent=flat&bgImgOpacityContent=75&borderColorContent=aaaaaa&fcContent=222222&iconColorContent=222222&bgColorDefault=e6e6e6&bgTextureDefault=glass&bgImgOpacityDefault=75&borderColorDefault=d3d3d3&fcDefault=555555&iconColorDefault=888888&bgColorHover=dadada&bgTextureHover=glass&bgImgOpacityHover=75&borderColorHover=999999&fcHover=212121&iconColorHover=454545&bgColorActive=ffffff&bgTextureActive=glass&bgImgOpacityActive=65&borderColorActive=aaaaaa&fcActive=212121&iconColorActive=454545&bgColorHighlight=fbf9ee&bgTextureHighlight=glass&bgImgOpacityHighlight=55&borderColorHighlight=fcefa1&fcHighlight=363636&iconColorHighlight=2e83ff&bgColorError=fef1ec&bgTextureError=glass&bgImgOpacityError=95&borderColorError=cd0a0a&fcError=cd0a0a&iconColorError=cd0a0a&bgColorOverlay=aaaaaa&bgTextureOverlay=flat&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=aaaaaa&bgTextureShadow=flat&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px
 * Copyright 2013 jQuery Foundation and other contributors Licensed MIT */
 .bloque{
-	width:290px;
-	height:260px;
+	width:290px !important;
+	height:260px !important;
 	padding:15px;
 	float:left;
 	margin-top:30px;
@@ -783,10 +783,9 @@ button.ui-button::-moz-focus-inner {
 	color:#878787;
 }
 .tabs-back-2 p{
-	padding:-1px;
 	font:15px normal "Source Sans Pro", sans-serif;
 	color:#A0A0A0;
-	height:28px;
+	height:28px !important;
 }
 .tabs-back-2 span{
 	font-size:36px;
@@ -814,29 +813,28 @@ button.ui-button::-moz-focus-inner {
 }
 .last{
 	width:116px !important;
-	height:52px !important;
+	height:50px !important;
 	background-image:url(../img/bg/bg-ver.png) !important;
 	color:#FFF;
 	font-weight:bold;
+	float:left;
 
 }
 .last a span{
 	width:60px;
-	height:20px;
 	color:#FFF !important;
 	font-weight:bold;
-	margin:10px 35px;;
+	padding:15px 40px;
 	position:absolute;
 	font:12px  "Source Sans Pro", sans-serif;
 	font-weight:bold;
 }
 .last img{
 	position: absolute;
-	padding-top:6px;
+	padding:11px 8px;
 }
 
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
-	/*background-image:url(../img/bg/tab-active.png);*/
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active a,
 .ui-tabs .ui-tabs-nav li.ui-state-disabled a,
@@ -849,8 +847,9 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-tabs .ui-tabs-panel {
 	display: block;
+	height:220px;
 	border-width: 0;
-	padding: 1em 1.4em;
+	padding: .5em 1.4em;
 	background-color:#EEE;
 }
 .ui-tooltip {
