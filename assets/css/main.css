@@ -212,7 +212,7 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .pasos .on { background-position: 0 -35px !important; color: #C71000;}
 .pasos .on a { color: #C71000;}
 .content-pasos{width: 980px; margin: 25px auto;}
-.content-categoria{margin:0 auto; text-align:center; color:#D2533F;font-size:18px;}
+.content-categoria{margin:5px auto; text-align:center; color:#D2533F;font-size:18px;}
 .content-categoria h3{font-size: 18px; }
 .content-categoria a{ font-size:13px; font-weight:bold;color:#C71000; margin:0 15px;}
 .boton-rojo{
@@ -233,7 +233,7 @@ table{ border-spacing:0;  border-collapse:collapse; }
 }
 .boton-rojo-b{
 	background:url(../img/btns/cuado-mas-grande-rojo.png) no-repeat;
-	padding:6px 13px;
+	padding:6px 14px;
 }
 .content-pasos h3{ font-size:20px;}
 .content-guia{
@@ -256,7 +256,7 @@ table{ border-spacing:0;  border-collapse:collapse; }
 /* ==========================================================================
    Slider
    ========================================================================== */
-.home-slider{ position:relative; width:920px; height:415px; margin:0 auto; overflow:hidden;}
+.home-slider{ position:relative; width:920px; height:435px; margin:0 auto; overflow:hidden;}
 .home-slider .center{ position:relative;}
 
 /*	- iosSlider -	*/
