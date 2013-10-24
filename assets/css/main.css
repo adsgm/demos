@@ -93,7 +93,7 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .clearfix {display: block;}
 
 /*	- Site Layout -	*/
-.content{ width: 940px; margin: 0 auto;}
+.content{ width: 980px; margin: 0 auto;}
 
 #stage{ height: 460px; padding-top: 85px; position: relative; background: url(../img/bg/bg-stage.jpg) center bottom no-repeat; }
 #stage img{ position: absolute; left: 50%; top: 45px; z-index: 0; margin-left: -624px; }
@@ -161,7 +161,7 @@ table{ border-spacing:0;  border-collapse:collapse; }
 	margin-left:100px;
 }
 .width-line-tabs{
-	width:1024px;
+	width:100%;
 }
 /*			- JQuery Plugins -			*/
 /*			- Media Queries -			*/
@@ -200,9 +200,9 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .sub span{ background-image:url(../img/bg/play.png); width: 49px; height: 48px; position:absolute; margin:0 201px; border-bottom:1px solid #8d867c;}
 
 /* CABRAL */
-.header{height: 141px;}
-.header p {font-size: 15px; color: #A5A5A5;  margin-left:-90px;}
-.header h1 {font-size: 26px; color: #B00000; padding:13px 0; margin-left:-90px;}
+.header{height: 90px; padding: 10px;}
+.header p {font-size: 15px; color: #A5A5A5;}
+.header h1 {font-size: 26px; color: #B00000; padding:13px 0; margin: 0;}
 .sombra{width: 100%; height: 30px; background: url(../../assets/img/bg/sombra.png); background-repeat: no-repeat; background-position: center;}
 .block-pasos{width: 670px; height: 40px; margin: 10px auto;}
 .pasos li { width: 70px; height: 35px; font-size:20px; background: url(../img/icons/pasos.png); background-repeat: no-repeat; float: left; position: relative;}
@@ -283,5 +283,5 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .st-prev{ left:0px;}
 .st-next{ right:0px; background-position:-70px 0; }
 .unselectable{visibility: hidden;}
-.zoom {width: 150px; height: 40px;}
-.zoom img, .zoom h3{float: left;}
+.zoom {height: 25px; margin: 10px 0 0 30px; width: 150px;}
+.zoom img, .zoom h3{float: left; font-size: 20px; font-weight: 400; margin:  0;}
