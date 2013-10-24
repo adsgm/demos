@@ -229,11 +229,11 @@ table{ border-spacing:0;  border-collapse:collapse; }
 }
 .boton-rojo-big-tarjeta-pass{
 	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-	padding:6px 45px;
+	padding:6px 46px;
 }
 .boton-rojo-b{
 	background:url(../img/btns/cuado-mas-grande-rojo.png) no-repeat;
-	padding:6px 14px;
+	padding:6px 15px;
 }
 .content-pasos h3{ font-size:20px;}
 .content-guia{
