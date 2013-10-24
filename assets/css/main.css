@@ -209,12 +209,12 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .pasos li:last-child{width: 36px;}
 .pasos  a{ position:absolute; color:#878787; top: 6px; left: 13px; font-size: 17px; font-weight: 600;}
 .pasos li:last-child a{ left: 7px;}
-.pasos .on { background-position: 0 -35px !important; color: #C71000;}
-.pasos .on a { color: #C71000;}
+.pasos .on { background-position: 0 -35px !important; color: #B00000;}
+.pasos .on a { color: #B00000;}
 .content-pasos{width: 980px; margin: 25px auto;}
-.content-categoria{margin:5px auto; text-align:center; color:#C71000;font-size:18px;}
+.content-categoria{margin:5px auto; text-align:center; color:#B00000;font-size:18px;}
 .content-categoria h3{font-size: 18px; }
-.content-categoria a{ font-size:13px; font-weight:bold;color:#C71000; margin:0 15px;}
+.content-categoria a{ font-size:13px; font-weight:bold;color:#B00000; margin:0 15px;}
 .boton-rojo{
 	background:url(../img/btns/cdro-rojo.png) no-repeat left;
 	padding:6px 20px;
