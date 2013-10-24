@@ -772,6 +772,7 @@ button.ui-button::-moz-focus-inner {
 	color:#B20000;
 	font-weight:bold;
 	height:80px;
+	text-align:left !important;
 }
 .tabs-back-2 p:before{
 	content:url(../img/bg/tabs-c.png);
