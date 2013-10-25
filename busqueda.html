@@ -10,7 +10,7 @@
 	<div class="busqueda">
     	<div>
         	<p class="font22"><strong>¿Qué necesitas buscar?</strong></p>
-            <input type="text" />
+            <input type="text"  id="inp"/>
         </div>
         <!--Contenedor de bloques-->
         <div class="width-line-tabs">
@@ -311,7 +311,7 @@
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script>
-  $(function() {
+   $(function() {
     $( "#tabs" ).tabs();
     // move the nav to the bottom
     $( ".tabs-bottom .ui-tabs-nav" ).appendTo( ".tabs-bottom" );
@@ -356,11 +356,16 @@
     // move the nav to the bottom
     $( ".tabs-bottom8 .ui-tabs-nav" ).appendTo( ".tabs-bottom8" );
   });
-  </script>
-<script>
+
   $(function() {
     $( document ).tooltip();
   });
+  // esta rutina se ejecuta cuando jquery esta listo para trabajar
+$(function() 
+{
+    // configuramos el control para realizar la busqueda de cedulas
+    $("#inp").focus();
+});
   </script>
  </body>
 </html>
