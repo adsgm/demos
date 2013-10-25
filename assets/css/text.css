@@ -1,10 +1,3 @@
-@font-face {
-	font-family: 'Homestead-Inline';
-	src: url('fonts/Homestead-Inline.eot?#iefix') format('embedded-opentype'), 
-	     url('fonts/Homestead-Inline.woff') format('woff'), 
-	     url('fonts/Homestead-Inline.ttf')  format('truetype'),
-	     url('fonts/Homestead-Inline.svg#Homestead-Inline') format('svg');
-}
 h1, h2, h3, h4, p { margin:0 0 10px; padding:0; line-height:120%;	font-style: normal;	font-weight: normal;	font-variant: normal; }
 .sans{ font-family:sans-serif; }
 nav a, .btn{ font-family: "Signika", sans-serif;}
