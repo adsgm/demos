@@ -122,7 +122,7 @@
 					<li><a href="#">Pago de Servicios</a></li>
                     <li><a href="#" class="fly">Tarjetas de Crédito</a>
                     	<ul>
-                        	<li><a href="paga.html" class="buscar various fancybox.iframe">Banorte Propias</a></li>
+                        	<li><a href="paga.html" class=" various fancybox.iframe">Banorte Propias</a></li>
                             <li><a href="#">Banorte Terceros</a></li>
                             <li><a href="#">Inter National Bank</a></li>
                             <li><a href="#">Otros Bancos</a></li>
@@ -285,12 +285,12 @@
             </li>
         </ul>
       </li>
-      <li><a href="busqueda.html" class="buscar various fancybox.iframe"><span></span></a></li>
+      <li><a href="#" id="search" class="buscar"><span></span></a></li>
     </ul></nav>
 <section id="stage">
   <img src="assets/img/photos/stage-guias.jpg" height="500" width="550" alt="Bienvenido a las guías interactivas">
   <article>
-    <div class="width55 floatR">
+    <div class="width55 floatR"> 
       <h1 class="fs50 sans m20b"><span class="fs33 grey8">Bienvenido a las</span> <br>Guías Interactivas<br>de Banorte por Internet</h1>
       <h2 class="red">Aquí encontrarás material de apoyo para <br>conocer cómo operar tu banca electrónica.</h2>
       <p class="fs17 grey6">Para consultar el  material revisa las secciones del <br>menú principal o da clic en el botón Buscar guías.</p>
@@ -321,23 +321,95 @@
 <footer>
   <p>2013. Grupo Financiero Banorte. Derechos reservados. <a href="#"><strong>Términos legales</strong></a> | <a href="#"><strong>Aviso de Privacidad</strong></a></p>
 </footer>
-    <script type="text/javascript" src="assets/js/jquery.js"></script>
+<div id="horizontal-wrap">
+		<!-- v Search -->
+    <div id="search-overlay"><div class="cont"> 
+			<a id="close"></a>
+    	<div class="clearfix ">
+        <div class="floatL width60 " id="s-intro"><h2 class="margin10t font36">¿Qué necesitas buscar?</h2></div>
+          <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script>
+   $(function() {
+    $( "#tabs" ).tabs();
+    // move the nav to the bottom
+    $( ".tabs-bottom .ui-tabs-nav" ).appendTo( ".tabs-bottom" );
+  });
+   $(function() {
+    $( "#tabs1" ).tabs();
+    // move the nav to the bottom
+    $( ".tabs-bottom1 .ui-tabs-nav" ).appendTo( ".tabs-bottom1" );
+  });
+   $(function() {
+    $( "#tabs2" ).tabs();
+    // move the nav to the bottom
+    $( ".tabs-bottom2 .ui-tabs-nav" ).appendTo( ".tabs-bottom2" );
+  });
+  $(function() {
+    $( "#tabs3" ).tabs();
+    // move the nav to the bottom
+    $( ".tabs-bottom3 .ui-tabs-nav" ).appendTo( ".tabs-bottom3" );
+  });
+   $(function() {
+    $( "#tabs4" ).tabs();
+    // move the nav to the bottom
+    $( ".tabs-bottom4 .ui-tabs-nav" ).appendTo( ".tabs-bottom4" );
+  });
+   $(function() {
+    $( "#tabs5" ).tabs();
+    // move the nav to the bottom
+    $( ".tabs-bottom5 .ui-tabs-nav" ).appendTo( ".tabs-bottom5" );
+  });
+   $(function() {
+    $( "#tabs6" ).tabs();
+    // move the nav to the bottom
+    $( ".tabs-bottom6 .ui-tabs-nav" ).appendTo( ".tabs-bottom6" );
+  });
+   $(function() {
+    $( "#tabs7" ).tabs();
+    // move the nav to the bottom
+    $( ".tabs-bottom7 .ui-tabs-nav" ).appendTo( ".tabs-bottom7" );
+  });
+   $(function() {
+    $( "#tabs8" ).tabs();
+    // move the nav to the bottom
+    $( ".tabs-bottom8 .ui-tabs-nav" ).appendTo( ".tabs-bottom8" );
+  });
+
+  $(function() {
+    $( document ).tooltip();
+  });
+  // esta rutina se ejecuta cuando jquery esta listo para trabajar
+$(function() 
+{
+    // configuramos el control para realizar la busqueda de cedulas
+    $("#inp").focus();
+});
+  </script>
+
+      </div>
+			<div><input id="autocomplete" type="text" /></div>
+			<div id="results"><div class="cont clearfix"></div></div>
+    </div></div></div> 
+     <script type="text/javascript" src="assets/js/jquery.js"></script>
     <!-- Add fancyBox main JS and CSS files -->
-	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
-	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+    <script type="text/javascript" src="assets/js/functions.js"></script>
+    <script type="text/javascript" src="assets/js/engine.js"></script>
+    <script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
     <script type="text/javascript">
-		$(document).ready(function() {
-	$(".various").fancybox({
-		maxWidth	: 1024,
-		maxHeight	: 1280,
-		fitToView	: false,
-		width		: '1024px',
-		height		: '100%',
-		autoSize	: false,
-		closeClick	: false,
-		openEffect	: 'none',
-		closeEffect	: 'none'
-	});
-});</script>
+    $(document).ready(function() {
+     $(".various").fancybox({
+      maxWidth	: 980,
+      maxHeight	: 1280, 
+      fitToView	: false,
+      width		: '60%',
+      height	: '100%',
+      autoSize	: false,
+      closeClick	: false,
+      openEffect	: 'none',
+      closeEffect	: 'none'
+    });
+   });</script>
 </body>
 </html>
