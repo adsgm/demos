@@ -125,7 +125,7 @@ body {
 .floatR {	float: right; }
 
 header, #logo{ background: url(../img/bg/trans-header.jpg) right center no-repeat; }
-#logo{ padding: 25px 20px 0 8px; height: 68px; display: inline-block; }
+#logo{ height: 68px; display: inline-block; }
 
 .section{ height:60px; line-height:60px; padding:0 20px; display:inline-block; }
 .section.small{ height:45px; line-height:45px; }
@@ -232,44 +232,56 @@ nav a:hover{ background: #B20000; }
 #nav-menu li:hover ul ul,
 #nav-menu li:hover ul li:hover ul ul,
 #nav-menu li:hover ul li:hover ul li:hover ul ul,
-#nav-menu li:hover ul li:hover ul li:hover ul li:hover ul ul
-{position:absolute; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none;}
-#nav-menu li:hover ul.sub
-{left:0;top:50px; background: #fff;  width:200px; height:49px; z-index:300;}
+#nav-menu li:hover ul li:hover ul li:hover ul li:hover ul ul{
+	position:absolute; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none;
+}
+#nav-menu li:hover ul.sub{left:0; top:50px; background: #fff;  width:227px; height:41px; z-index:300;}
 #nav-menu li:hover ul.sub li{
 	display:block; 
-	height:49px; 
+	height:41px; 
 	position:relative; 
-	float:left;width:250px; 
-	background: url(../img/bg/bg-menu-one.png);
+	float:left;
+	width:227px; 
+	background: url(../img/bg/menuli.jpg);
 }
 #nav-menu li:hover ul.sub li a{
 	font-family: 'Signika', arial, sans-serif;
 	display:block;
 	font-size:14px; 
-	height:35px; 
-	width:200px; 
-	font-weight: 200; 
+	height:29px; 
+	width:227px; 
+	font-weight: 600; 
 	line-height:15px; 
 	color:#000;  
-	padding-top:15px;
+	padding-top:12px;
 }
 #nav-menu li ul.sub li a.fly{
-	background: url(../img/bg/bg-menu.png);
+	background: url(../img/bg/menuli.jpg);
 	font-size:14px !important;
 	font-weight:600;
 }
-#nav-menu li:hover ul.sub li a:hover 
-{background: url(../img/bg/bg-menu-act-one.png); color:#FFF;}
-#nav-menu li:hover ul.sub li a.fly:hover
-{background:url(../img/bg/bg-menu-act.png); color:#FFF;}
-#nav-menu li:hover ul li:hover > a.fly {background:url(../img/bg/bg-menu-act.png); color:#FFF;} 
+#nav-menu li:hover ul.sub li a:hover {background: url(../img/bg/menulih.jpg); color:#C50600; width: 227px;}
+#nav-menu li:hover ul.sub li a.fly:hover{background:url(../img/bg/bg-menu-act.png); color:#C50600;}
+#nav-menu li:hover ul li:hover > a.fly {background:url(../img/bg/menulih.jpg); color:#FFF;} 
 #nav-menu li:hover ul li:hover ul,
 #nav-menu li:hover ul li:hover ul li:hover ul,
 #nav-menu li:hover ul li:hover ul li:hover ul li:hover ul,
-#nav-menu li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul
-{left:250px; top:0; background: url(../img/bg/bg-menu.png); color:#B60000; white-space:nowrap; width:251px; z-index:400; height:49px;}
-.sub span{ background-image:url(../img/bg/play.png); width: 49px; height: 48px; position:absolute; margin:0 201px; border-bottom:1px solid #8d867c;}
+#nav-menu li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul{
+	left:250px; 
+	top:0; 
+	background: url(../img/bg/bg-menu.png); 
+	color:#B60000; 
+	white-space: nowrap; 
+	width:227px; 
+	z-index:400; 
+	height:41px;
+}
+.play{background: url(../img/icons/play.jpg); background-repeat: no-repeat; width: 35px; height: 35px; float: right;}
+.sub span{ 
+	background-image:url(../img/bg/play.png); 
+	width: 49px; height: 41px; position:absolute; 
+	margin:0 201px; border-bottom:1px solid #8d867c;
+}
 
 /* ==========================================================================
    CABRAL
