@@ -1,4 +1,4 @@
-/*! jQuery UI - v1.10.3 - 2013-05-03
+ /*! jQuery UI - v1.10.3 - 2013-05-03
 * http://jqueryui.com
 * Includes: jquery.ui.core.css, jquery.ui.accordion.css, jquery.ui.autocomplete.css, jquery.ui.button.css, jquery.ui.datepicker.css, jquery.ui.dialog.css, jquery.ui.menu.css, jquery.ui.progressbar.css, jquery.ui.resizable.css, jquery.ui.selectable.css, jquery.ui.slider.css, jquery.ui.spinner.css, jquery.ui.tabs.css, jquery.ui.tooltip.css
 * To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Verdana%2CArial%2Csans-serif&fwDefault=normal&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=cccccc&bgTextureHeader=highlight_soft&bgImgOpacityHeader=75&borderColorHeader=aaaaaa&fcHeader=222222&iconColorHeader=222222&bgColorContent=ffffff&bgTextureContent=flat&bgImgOpacityContent=75&borderColorContent=aaaaaa&fcContent=222222&iconColorContent=222222&bgColorDefault=e6e6e6&bgTextureDefault=glass&bgImgOpacityDefault=75&borderColorDefault=d3d3d3&fcDefault=555555&iconColorDefault=888888&bgColorHover=dadada&bgTextureHover=glass&bgImgOpacityHover=75&borderColorHover=999999&fcHover=212121&iconColorHover=454545&bgColorActive=ffffff&bgTextureActive=glass&bgImgOpacityActive=65&borderColorActive=aaaaaa&fcActive=212121&iconColorActive=454545&bgColorHighlight=fbf9ee&bgTextureHighlight=glass&bgImgOpacityHighlight=55&borderColorHighlight=fcefa1&fcHighlight=363636&iconColorHighlight=2e83ff&bgColorError=fef1ec&bgTextureError=glass&bgImgOpacityError=95&borderColorError=cd0a0a&fcError=cd0a0a&iconColorError=cd0a0a&bgColorOverlay=aaaaaa&bgTextureOverlay=flat&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=aaaaaa&bgTextureShadow=flat&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px
@@ -776,7 +776,6 @@ button.ui-button::-moz-focus-inner {
 }
 .tabs-back-2 p:before{
 	content:url(../img/bg/tabs-c.png);
-	
 }
 .tabs-back p{
 	font-size:16px;
@@ -791,14 +790,13 @@ button.ui-button::-moz-focus-inner {
 .tabs-back-2 p{
 	font-size:15px;
 	color:#A0A0A0;
-	height:28px !important;
+	height:28px ;
 }
 .tabs-back-2 span{
 	font-size:36px;
 	color:#D71829;
 	font-weight:bold;
 }
-
 .ui-tabs .ui-tabs-nav li {
 	list-style: none;
 	position: relative;
@@ -806,25 +804,21 @@ button.ui-button::-moz-focus-inner {
 	top: 0;
 	width:87px;
 	border:none;
-	background-position:left;
 	background-image:url(../img/bg/b-tab.png);
-	height:50px !important;
-
+	height:50px;
 }
 .ui-tabs .ui-tabs-nav li a {
 	float: left;
-	height:50px;
+	height:35px;
 	padding: .5em 1em;
 	text-decoration: none;
 }
 .last{
-	width:116px !important;
-	height:50px !important;
+	width:116px;
+	height:50px;
 	background-image:url(../img/bg/bg-ver.png) !important;
 	color:#FFF;
-	font-weight:bold;
 	float:left;
-
 }
 .last a span{
 	width:60px;
@@ -833,7 +827,7 @@ button.ui-button::-moz-focus-inner {
 	padding:15px 40px;
 	position:absolute;
 	font-size:12px;
-	font-weight:bold;
+	font-weight:600;
 }
 .last img{
 	position: absolute;
@@ -841,6 +835,7 @@ button.ui-button::-moz-focus-inner {
 }
 
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	background:url(../img/bg/tab-active.png);
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active a,
 .ui-tabs .ui-tabs-nav li.ui-state-disabled a,
@@ -853,7 +848,7 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-tabs .ui-tabs-panel {
 	display: block;
-	height:220px;
+	height:240px;
 	border-width: 0;
 	padding: .5em 1.4em;
 	background-color:#EEE;
@@ -869,8 +864,6 @@ button.ui-button::-moz-focus-inner {
 body .ui-tooltip {
 	border-width: 2px;
 }
-
-
 /* Component containers
 ----------------------------------*/
 .ui-widget {
