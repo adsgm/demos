@@ -41,32 +41,35 @@ $(document).ready(function() {
 		$('#search-overlay').hide(300); $('#search').removeClass('on');
 	});
 	
-	var demo = [
-   { value: 'Transferencias', type: 'Concierto' },
-   { value: 'The Killers', type: 'Artista' },
-   { value: 'The Kill', type: 'Obra Musical' },
-   { value: 'Kill Bill 5', type: 'Premiere' }
-	];
+	$(document).on("ready", main);
 	
-	$('#autocomplete').autocomplete({
-		lookup: demo,
-		onSelect: function (suggestion) {
-			$.get('busqueda.html', function(data){ $('#results .cont').html(data); });			
-			$('#s-intro').html( );
+		function main(){
+			$("#tfBuscar").on("keyup", buscar);
 		}
-	});
-});
-function fnsearch(e){ 
-	if (e.keyCode == 27){ 
-		$('#search-overlay').hide(300); $('#search').removeClass('on');
-	} 
-	if (e.keyCode >= 65 && e.keyCode <= 90){
-		$('#search').addClass('on');
-		var w = $(document).width(); var h = $(document).height(); var h2 = $('#footer').height(); h = h - h2 - 25;
-		$('#search-overlay').width(w).height(h).show(300);
-		$('#autocomplete').focus();
-	}
-	$('#close').click(function(){ $('#search-overlay').hide(300); $('#search').removeClass('on'); });
-}
+		function buscar(){
+			var tarjetas = $(".tarjeta");
+			var texto = $("#tfBuscar").val();
+			texto = texto.toLowerCase();
+			tarjetas.show();
+			for(var i=0; i< tarjetas.size(); i++){
+				var contenido = tarjetas.eq(i).text();
+				contenido = contenido.toLowerCase();
+				var index = contenido.indexOf(texto);
+				if(index = -1){
+					tarjetas.eq(i).hide();
+				
+					
+				}
+				if(index = ""){
+				$("#results").html(" hola")
+				}
+			}
+		}
 
-  
+
+	
+	
+	
+
+});
+

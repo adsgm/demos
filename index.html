@@ -4,6 +4,37 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
+<style>
+.bloque{
+	font-family:"Source Sans Pro", sans-serif ;
+	width:290px !important;
+	height:260px !important;
+	float:left;
+	margin-top:30px;
+	border:1px solid #333;
+}
+.bloque ul{
+	width:100%;
+	margin:0 ;
+	}
+.bloque li{
+	width:90px;
+	height:53px;
+	float:left;
+	list-style:none;
+	border:1px solid #333;
+	}
+a{ text-decoration:none;}
+.panes{
+	width:100%;
+	height:202px;
+	border:1px solid #333;
+	}
+.r{
+	width:100%;
+	border:1px solid #333;
+}
+</style>
   <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" /> 
   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" /> 
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -398,8 +429,46 @@ $(function()
   </script>
 
       </div>
-			<div><input id="autocomplete" type="text" /></div>
-			<div id="results"><div class="cont clearfix"></div></div>
+			<div><input id="tfBuscar" type="text" /></div>
+			<div id="results">
+            	<div id="tarjetas">
+	
+<div class="tarjeta">
+	<div class="bloque">
+            	<div id="tabs" class="tabs-bottom">
+                      <ul>
+                        <li><a href="#tabs-1"><span><img src="assets/img/btns/btn-firt.png" /></span></a></li>
+                        <li><a href="#tabs-2"><span><img src="assets/img/btns/btn-questions.png" id="age" title="Preguntas Frecuentas"/></span></a></p></li>
+                        <div class="last"><a href="#" ><img src="assets/img/bg/arrow-red.png" /><span>VER CÓMO</span></a></div>
+                      </ul>
+                      <div class="tabs-spacer"></div>
+                      <!--Inicio de tabs-->
+                      <div id="tabs-1" class="tabs-back">
+                            <p>CATÁLOGOS</p>
+                            <hr class="line-header-tabs"/>
+                            <h2>Mis cuentas terceros</h2>
+                            <hr  class="line-tabs-2"/>
+                            <h3>En esta sección podrás agregar usuarios de acuerdo a tus necesidades, dar permisos, asignar servicios y cuentas.</h3>
+                      </div>
+                      <div id="tabs-2" class="tabs-back-2">
+                            <p> ¿Cómo utilizar las claves de banca personal?</p>
+                            <hr class="line-quetions-tabs"/>
+                            <p> ¿Qué pasos seguir para sincronizar tu token?</p>
+                            <hr class="line-quetions-tabs"/>
+                            <p> ¿Cómo realizar una transferencia en el mismo día?</p>
+                            <hr class="line-quetions-tabs"/>
+                            <p> ¿Cómo agregar a un nuevo beneficiario?</p>
+                      </div>
+                     
+                      <!--fin de tabs-->
+					</div>
+                    
+            </div>
+</div>
+<div class="tarjeta">
+	Matias
+</div>
+            <div class="cont clearfix"></div></div>
     </div></div></div> 
      <script type="text/javascript" src="assets/js/jquery.js"></script>
     <!-- Add fancyBox main JS and CSS files -->
@@ -420,6 +489,7 @@ $(function()
       openEffect	: 'none',
       closeEffect	: 'none'
     });
-   });</script>
+   });	
+   </script>
 </body>
 </html>
