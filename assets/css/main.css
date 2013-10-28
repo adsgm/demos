@@ -162,9 +162,13 @@ li{ list-style: none;}
 /*FOOTER*/
 footer{ background: url(../img/bg/bg-footer.png) center 0 no-repeat; padding: 22px 0 40px; text-align: center; }
 footer a{ margin: 0 10px; }
-#prefooter{ height: 108px; }
+#prefooter{ height: 108px; width: 980px; margin: 0 auto; }
 #prefooter > img{ position: absolute; top: -36px; left: 50%; margin-left: -57px; }
-
+.prefl{width: 45%; float: left; padding: 10px 0 0 0;}
+.prefc{width: 15%; float: left; margin: 0 20px; height: 108px; left: 50%;}
+.prefc img{ position: absolute; bottom: 0;}
+.prefr{ width: 17%; float: left;}
+.prefr p{ margin: 0;}
 .roundbor{  -webkit-border-radius: 20px; border-radius: 20px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; }
 .clear { clear:both; }
 :-moz-any-link:focus { outline: none; }
