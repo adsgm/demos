@@ -9,7 +9,7 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .relative, section{ position:relative; }
 
 /*			- Paddings/Margins/Widths/Borders -			*/
-
+.hide{ display:none}
 .m0, header p { margin:0; }
 .m0auto{ margin:0 auto; } 
 .m1r{ margin-right:1px;  }	

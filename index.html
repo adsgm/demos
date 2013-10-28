@@ -4,37 +4,6 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-<style>
-.bloque{
-	font-family:"Source Sans Pro", sans-serif ;
-	width:290px !important;
-	height:260px !important;
-	float:left;
-	margin-top:30px;
-	border:1px solid #333;
-}
-.bloque ul{
-	width:100%;
-	margin:0 ;
-	}
-.bloque li{
-	width:90px;
-	height:53px;
-	float:left;
-	list-style:none;
-	border:1px solid #333;
-	}
-a{ text-decoration:none;}
-.panes{
-	width:100%;
-	height:202px;
-	border:1px solid #333;
-	}
-.r{
-	width:100%;
-	border:1px solid #333;
-}
-</style>
   <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" /> 
   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" /> 
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -64,6 +33,51 @@ a{ text-decoration:none;}
     <!--[if lt IE 7]><link rel="stylesheet" href="../../assets/css/ie.css"><![endif]-->
     <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
     <script src="assets/js/stuHover.js" type="text/javascript"></script>
+    <script type="text/javascript">
+		$(document).on("ready", main);
+		function main(){
+			$("#tfBuscar").on("keyup", buscar);
+		}
+		function buscar(){
+			var tarjetas = $(".tarjeta");
+			var texto = $("#tfBuscar").val();
+			texto = texto.toLowerCase();
+			tarjetas.show();
+			for(var i=0; i< tarjetas.size(); i++){
+				var contenido = tarjetas.eq(i).text();
+				contenido = contenido.toLowerCase();
+				var index = contenido.indexOf(texto);
+				if(index == -1){
+					tarjetas.eq(i).hide();
+					$('#no-encontrado').addClass('hide');
+					
+				}if(index == -1){$('#no-encontrado').removeClass('hide')
+				$('#no-encontrado').html('<div class="busqueda">'+
+    	'<div>'+
+            '<p class="font16"><strong>Lo sentimos, no hay resultados para tu búsqueda. Favor de intentar de nuevo.</strong></p>'+
+        '</div>'+
+        '<div class="align-block">'+
+        	'<hr class="line-no-encontrado"/>'+
+            '<p class="font22"><strong>Haz clic para encontrar :</strong></p>'+
+            '<div class="botton"><p><a href="#">Consultas</a></p></div>'+
+            '<div class="botton"><p><a href="#">Transferencias</a></p></div>'+
+            '<div class="botton"><p><a href="#">Pagos</a></p></div>'+
+            '<div class="botton"><p><a href="#">Inverciones</a></p></div>  '+
+          '<div class="second-line"> '+
+        	'<div class="botton"><p><a href="#">Créditos</a></p></div>'+
+            '<div class="botton"><p><a href="#">Servicios</a></p></div>'+
+            '<div class="botton"><p><a href="#">Preferencias</a></p></div>'+
+          '<div>'+
+    '</div>');
+				}else{
+					$('#no-encontrado').addClass('hide');
+					}
+		}
+			}
+			
+
+	</script>
+
   </head>
   <body>
     <header>
@@ -370,104 +384,27 @@ a{ text-decoration:none;}
         <div class="floatL width60 " id="s-intro"><h2 class="margin10t font36">¿Qué necesitas buscar?</h2></div>
           <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-  <script>
-   $(function() {
-    $( "#tabs" ).tabs();
-    // move the nav to the bottom
-    $( ".tabs-bottom .ui-tabs-nav" ).appendTo( ".tabs-bottom" );
-  });
-   $(function() {
-    $( "#tabs1" ).tabs();
-    // move the nav to the bottom
-    $( ".tabs-bottom1 .ui-tabs-nav" ).appendTo( ".tabs-bottom1" );
-  });
-   $(function() {
-    $( "#tabs2" ).tabs();
-    // move the nav to the bottom
-    $( ".tabs-bottom2 .ui-tabs-nav" ).appendTo( ".tabs-bottom2" );
-  });
-  $(function() {
-    $( "#tabs3" ).tabs();
-    // move the nav to the bottom
-    $( ".tabs-bottom3 .ui-tabs-nav" ).appendTo( ".tabs-bottom3" );
-  });
-   $(function() {
-    $( "#tabs4" ).tabs();
-    // move the nav to the bottom
-    $( ".tabs-bottom4 .ui-tabs-nav" ).appendTo( ".tabs-bottom4" );
-  });
-   $(function() {
-    $( "#tabs5" ).tabs();
-    // move the nav to the bottom
-    $( ".tabs-bottom5 .ui-tabs-nav" ).appendTo( ".tabs-bottom5" );
-  });
-   $(function() {
-    $( "#tabs6" ).tabs();
-    // move the nav to the bottom
-    $( ".tabs-bottom6 .ui-tabs-nav" ).appendTo( ".tabs-bottom6" );
-  });
-   $(function() {
-    $( "#tabs7" ).tabs();
-    // move the nav to the bottom
-    $( ".tabs-bottom7 .ui-tabs-nav" ).appendTo( ".tabs-bottom7" );
-  });
-   $(function() {
-    $( "#tabs8" ).tabs();
-    // move the nav to the bottom
-    $( ".tabs-bottom8 .ui-tabs-nav" ).appendTo( ".tabs-bottom8" );
-  });
-
-  $(function() {
-    $( document ).tooltip();
-  });
-  // esta rutina se ejecuta cuando jquery esta listo para trabajar
-$(function() 
-{
-    // configuramos el control para realizar la busqueda de cedulas
-    $("#inp").focus();
-});
-  </script>
 
       </div>
 			<div><input id="tfBuscar" type="text" /></div>
 			<div id="results">
             	<div id="tarjetas">
-	
-<div class="tarjeta">
-	<div class="bloque">
-            	<div id="tabs" class="tabs-bottom">
-                      <ul>
-                        <li><a href="#tabs-1"><span><img src="assets/img/btns/btn-firt.png" /></span></a></li>
-                        <li><a href="#tabs-2"><span><img src="assets/img/btns/btn-questions.png" id="age" title="Preguntas Frecuentas"/></span></a></p></li>
-                        <div class="last"><a href="#" ><img src="assets/img/bg/arrow-red.png" /><span>VER CÓMO</span></a></div>
-                      </ul>
-                      <div class="tabs-spacer"></div>
-                      <!--Inicio de tabs-->
-                      <div id="tabs-1" class="tabs-back">
-                            <p>CATÁLOGOS</p>
-                            <hr class="line-header-tabs"/>
-                            <h2>Mis cuentas terceros</h2>
-                            <hr  class="line-tabs-2"/>
-                            <h3>En esta sección podrás agregar usuarios de acuerdo a tus necesidades, dar permisos, asignar servicios y cuentas.</h3>
-                      </div>
-                      <div id="tabs-2" class="tabs-back-2">
-                            <p> ¿Cómo utilizar las claves de banca personal?</p>
-                            <hr class="line-quetions-tabs"/>
-                            <p> ¿Qué pasos seguir para sincronizar tu token?</p>
-                            <hr class="line-quetions-tabs"/>
-                            <p> ¿Cómo realizar una transferencia en el mismo día?</p>
-                            <hr class="line-quetions-tabs"/>
-                            <p> ¿Cómo agregar a un nuevo beneficiario?</p>
-                      </div>
-                     
-                      <!--fin de tabs-->
-					</div>
-                    
-            </div>
-</div>
-<div class="tarjeta">
-	Matias
-</div>
+                    <div id="tarjetas">
+                        <div class="tarjeta">
+                        Pedro
+                    </div>
+                    <div class="tarjeta">
+                        Juan
+                    </div>
+                    <div class="tarjeta">
+                        Clara
+                    </div>
+                    <div class="tarjeta">
+                        Matias
+                    </div>
+                </div>
+				<div id="no-encontrado"></div>
+			</div>
             <div class="cont clearfix"></div></div>
     </div></div></div> 
      <script type="text/javascript" src="assets/js/jquery.js"></script>
