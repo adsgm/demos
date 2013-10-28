@@ -136,7 +136,7 @@ header, #logo{ background: url(../img/bg/trans-header.jpg) right center no-repea
 .section span{ margin:27px 0 0 25px; float:right; }
 .section.gray3 span{ background-position:-16px 0; }
 .cont{ padding:90px 0 0 60px; width:964px; }
-#search-overlay{ background:url(../img/bg/trans.png); width:100%; height:100%; position:absolute; top:0; left:0; z-index:80; display:none;}
+#search-overlay{ background:url(../img/bg/trans.png); width:100%; height:100%; position:absolute; top:0; left:0; z-index:80; display:none; z-index: 999;}
 
 #search-overlay{ color:#FFF; font-weight:500;}
 #search-overlay .cont2{ top:90px; left:60px; padding:0; width: 100%; }
