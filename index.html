@@ -32,7 +32,6 @@
     <![endif]-->
     <!--[if lt IE 7]><link rel="stylesheet" href="../../assets/css/ie.css"><![endif]-->
     <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="assets/js/stuHover.js" type="text/javascript"></script>
     <script type="text/javascript">
 		$(document).on("ready", main);
 		function main(){
@@ -93,18 +92,16 @@
     </div>
   </header>
   <!--Seccion de menu-->
-  <nav>
-    <ul class="clearfix" id="nav-menu">
+  <div class="mainmenu">
+    <ul class="nav">
       <!--primer niver-->
-      <li class="top">
-        <a href="#" class="top_link">
-          <span class="down">CONSULTAS</span>
-        </a>
+      <li>
+        <a href="#">CONSULTAS</a>
         
         <!--Segundo nivel-->
         <ul class="sub">
          <li><a href="#">Resumen de cuentas</a></li>
-         <li><a href="#" class="fly">Cuenta específica</a>
+         <li><a class="lvl2" href="#">Cuenta específica</a>
           <ul>
             <li><a href="#">Saldos</a></li>
             <li><a href="#">Movimientos</a></li>
@@ -116,7 +113,7 @@
         <li><a href="#">Operaciones Programadas</a></li>
         <li><a href="#">Impuesto depósito en Efectivo</a></li>
         <li><a href="#">Detalle de Membresía</a></li>
-        <li><a href="#" class="fly">Info Financiera</a>
+        <li><a class="lvl2" href="#">Info Financiera</a>
           <ul>
             <li><a href="#">Valores Cambiarios</a></li>
             <li><a href="#">Tasas de Referencia</a></li>
@@ -124,24 +121,26 @@
         </li>
       </ul>
     </li>
-    <li class="top"><a href="#" class="top_link"><span class="down">TRANSFERENCIAS</span></a>
-      <ul class="sub">
-       <li><a href="#" class="fly">Cuentas Banorte</a>
+
+    <li>
+      <a href="#">TRANSFERENCIAS</a>
+      <ul>
+       <li><a class="lvl2" href="#">Cuentas Banorte</a>
          <ul>
            <li><a href="#">Cuentas Propias</a></li>	
            <li><a href="#">Cuentas de Terceros</a></li>	
            <li><a href="#">Visa Travel Money</a></li>	
          </ul>
        </li>
-       <li><a href="#" class="fly">Otros Bancos Nacionales</a>
+       <li><a class="lvl2" href="#">Otros Bancos Nacionales</a>
         <ul>
-         <li><a href="#" class="fly">SPEI (mismo día)</a>
+         <li><a class="lvl2" href="#">SPEI (mismo día)</a>
            <ul>
              <li><a href="#">Realizar Transferencia</a></li>	
              <li><a href="#">Estatus Transferencia</a></li>	
            </ul>
          </li>
-         <li><a href="#" class="fly">TEF (Próximo día hábil)</a>
+         <li><a class="lvl2" href="#">TEF (Próximo día hábil)</a>
            <ul>
              <li><a href="#">Realizar Transferencia</a></li>	
              <li><a href="#">Cancelar Transferencia</a></li>	
@@ -149,10 +148,10 @@
          </li>	
        </ul>
      </li>
-     <li><a href="#" class="fly">Otros Bancos Internacionales</a>
+     <li><a class="lvl2" href="#">Otros Bancos Internacionales</a>
        <ul>
          <li><a href="#">Cuentas Inter National Bank</a></li>	
-         <li><a href="#" class="fly">Ordenes de pago</a>
+         <li><a class="lvl2" href="#">Ordenes de pago</a>
            <ul>
              <li><a href="#">Ordenes de Pago USD</a>
               <li><a href="#">Ordenes de Pago MN</a>
@@ -165,12 +164,13 @@
         <li><a href="#">Historial de Tranferencias</a></li>
       </ul>
     </li>
-    <li class="top">
-      <a href="#" id="products"><span class="down">PAGOS</span></a>
+
+    <li>
+      <a href="#">PAGOS</a>
       <!--Segundo nivel-->
-      <ul class="sub">
+      <ul>
        <li><a href="#">Pago de Servicios</a></li>
-       <li><a href="#" class="fly">Tarjetas de Crédito</a>
+       <li class="lvl2"><a href="#" class="fly">Tarjetas de Crédito</a>
          <ul>
            <li><a href="paga.html" class="buscar various fancybox.iframe">Banorte Propias</a></li>
            <li><a href="#">Banorte Terceros</a></li>
@@ -180,13 +180,13 @@
          </ul>
        </li>
        <li><a href="#">Impuestos</a></li>
-       <li><a href="#" class="fly">Impuestos Referenciados</a>
+       <li class="lvl2"><a href="#" class="fly">Impuestos Referenciados</a>
          <ul>
           <li><a href="#">Registrar Pagos</a></li>
           <li><a href="#">Cancelar Pagos</a></li>
         </ul>
       </li>
-      <li><a href="#" class="fly">Créditos Consumo Otros Bancos</a>
+      <li class="lvl2"><a href="#" class="fly">Créditos Consumo Otros Bancos</a>
        <ul>
         <li><a href="#">Hipotecario</a></li>
         <li><a href="#">Automotríz</a></li>
@@ -198,51 +198,52 @@
   </ul>
 </li>
 </li>
+
 <li><a href="#">INVERSIONES</a>
  <ul class="sub">
-  <li><a href="#" class="fly">Pagaré</a>
+  <li class="lvl2"><a href="#" class="fly">Pagaré</a>
    <ul>
      <li><a href="#">Depósitos</a></li>
      <li><a href="#">Retiros</a></li>
    </ul>
  </li>
  <li><a href="#">Mesa de Dinero</a></li>
- <li><a href="#" class="fly">Sociedades de Inversión</a>
+ <li class="lvl2"><a href="#" class="fly">Sociedades de Inversión</a>
    <ul>
     <li><a href="#">Compra de Acciones</a></li>
     <li><a href="#">Venta de Acciones</a></li>
     <li><a href="#">Agendar Venta de Acciones</a></li>
-    <li><a href="#" class="fly">Consultas</a>
+    <li class="lvl2"><a href="#" class="fly">Consultas</a>
       <ul>
        <li><a href="#">Precios y Rendimientos</a></li>
        <li><a href="#">Portafolio</a></li>
        <li><a href="#">Ventas Agendadas</a></li>
      </ul>
    </li>
-
  </ul>
 </li>
 <li><a href="#">Historial de Inversión</a></li>
 </ul>
 </li>
-<li><a href="#">CRÉDITOS</a>
+
+<li><a class="lvl2" href="#">CRÉDITOS</a>
  <ul class="sub">
    <li><a href="#">Disposiciones</a></li>
    <li><a href="#">Pagos</a></li>
    <li><a href="#">Historial de Créditos</a></li>
  </ul>
 </li>
-<li><a href="#">SERVICIOS</a>
+<li><a class="lvl2" href="#">SERVICIOS</a>
  <ul class="sub">
-   <li><a href="#" class="fly">Nómina</a>
+   <li class="lvl2"><a href="#" class="fly">Nómina</a>
      <ul>
-       <li><a href="#" class="fly">Empresa</a>
+       <li class="lvl2"><a href="#" class="fly">Empresa</a>
          <ul>
            <li><a href="#">Alta</a></li>
            <li><a href="#">Baja</a></li>
          </ul>
        </li>
-       <li><a href="#" class="fly">Empleado</a>
+       <li class="lvl2"><a href="#" class="fly">Empleado</a>
          <ul>
            <li><a href="#">Alta</a></li>
            <li><a href="#">Baja</a></li>
@@ -254,11 +255,11 @@
        <li><a href="#">Historial de Pago de Nómina</a></li>
      </ul>
    </li>
-   <li><a href="#" class="fly">Cheques</a>
+   <li class="lvl2"><a href="#" class="fly">Cheques</a>
      <ul>
       <li><a href="#">Cheques Extraviados</a></li>
       <li><a href="#">Cheques Devueltos</a></li>
-      <li><a href="#" class="fly">Cheque Protegido</a>
+      <li class="lvl2"><a href="#" class="fly">Cheque Protegido</a>
        <ul>
         <li><a href="#">Protección o Liberación</a></li>
         <li><a href="#">Cancelación a la Protección</a></li>
@@ -266,7 +267,7 @@
         <li><a href="#">Consulta Estatus de Cheques</a></li>
       </ul>
     </li>
-    <li><a href="#" class="fly">Enlace de Cuentas</a>
+    <li class="lvl2"><a href="#" class="fly">Enlace de Cuentas</a>
      <ul>
       <li><a href="#">Activación/Baja</a></li>
       <li><a href="#">Modificación a Parámetros</a></li>
@@ -280,7 +281,7 @@
   <li><a href="#">Activación de Chequeras</a></li>
 </ul>
 </li>
-<li><a href="#" class="fly">Tarjeta de Crédito e Internet </a>
+<li class="lvl2"><a href="#" class="fly">Tarjeta de Crédito e Internet </a>
  <ul>
    <li><a href="#">Activar/Desactivar</a></li>
    <li><a href="#">Aumento/Disminución de Límites</a></li>
@@ -291,30 +292,29 @@
  </ul>
 </li>
 <li><a href="#">Envío del Estado de Cuenta por E-mail</a></li>
-<li><a href="#" class="fly">Domiciliar Servicios</a>
+<li class="lvl2"><a href="#" class="fly">Domiciliar Servicios</a>
  <ul>
    <li><a href="#">Altas</a></li>
    <li><a href="#">Bajas</a></li>
  </ul>
 </li>
-<li><a href="#" class="fly">Factoraje Electrónico</a>
+<li class="lvl2"><a href="#" class="fly">Factoraje Electrónico</a>
  <ul>
    <li><a href="#">Cliente</a></li>
    <li><a href="#">Proveedor</a></li>
  </ul>
 </li>
-<li><a href="#" class="fly">Solicitud de Productos</a>
+<li class="lvl2"><a href="#" class="fly">Solicitud de Productos</a>
  <ul>
    <li><a href="#">Targeta de Internet</a></li>
  </ul>
 </li>
 <li><a href="#">Compra de Tiempo Aire para Celular</a></li>
-
 </ul>
 </li>
-<li><a href="#">PREFERENCIAS</a>
- <ul class="sub">
-   <li><a href="#" class="fly">Catálogos</a>
+<li><a class="lvl2" href="#">PREFERENCIAS</a>
+ <ul>
+   <li class="lvl2"><a href="#" class="fly">Catálogos</a>
      <ul>
       <li><a href="#">Mis Cuentas Banorte</a></li>
       <li><a href="#">Mis Cuentas Terceros</a></li>
@@ -327,7 +327,7 @@
   <li><a href="#">Cambio de Cotraseña</a></li>
   <li><a href="#">Parámetros de Operación</a></li>
   <li><a href="#">Notificaciones</a></li>
-  <li><a href="#" class="fly">Horarios y Tarifas</a>
+  <li class="lvl2"><a href="#" class="fly">Horarios y Tarifas</a>
    <ul>
      <li><a href="#">Horarios</a></li>
      <li><a href="#">Tarifas</a></li>
@@ -336,8 +336,9 @@
 </ul>
 </li>
 <li><a href="#" id="search" class="buscar"><span></span></a></li>
-</ul></nav>
-<section id="stage">
+</ul>
+</div>
+<div id="stage">
   <div class="img-stage">
     <img src="assets/img/photos/portada.png" alt="Bienvenido a las guías interactivas">
   </div>
@@ -355,9 +356,9 @@
         <a href="#">Buscar guias</a>
       </div>
     </div>
-</section>
+</div>
 
-<section id="prefooter">
+<div id="prefooter">
     <div class="prefl">
       <div class="width65 floatR p20t" align="center">
         <p class="fs26 grey6 m0"><strong>¿MÁS PREGUNTAS?</strong></p>
@@ -375,11 +376,11 @@
       </p>
       <p class="floatR">(226-6783)</p>
     </div>
-</section>
-<footer>
+</div>
+<div class="footer">
   <p>2013. Grupo Financiero Banorte. Derechos reservados. 
     <a href="#"><strong>Términos legales</strong></a> | <a href="#"><strong>Aviso de Privacidad</strong></a></p>
-</footer>
+</div>
 <div id="horizontal-wrap">
 		<!-- v Search --> 
     <div id="search-overlay">
