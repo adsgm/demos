@@ -172,7 +172,7 @@ footer a{ margin: 0 10px; }
 /*	- Site Layout -	*/
 .content{ width: 980px; margin: 0 auto;}
 
-#stage{ height: 346px; padding-top: 10px; position: relative; background: url(../img/bg/bg-stage.jpg) center bottom no-repeat; width: 980px; margin: 0 auto;}
+#stage{ height: 342px; padding-top: 10px; position: relative; background: url(../img/bg/bg-stage.jpg) center bottom no-repeat; width: 980px; margin: 0 auto;}
 
 /*	- Buttons -	*/
 .buscar span{ background: url(../img/icons/lupa.png) center center no-repeat; width: 24px; height: 24px; display: inline-block; padding-top: 13px; padding-bottom: 13px; }
@@ -294,7 +294,7 @@ nav a:hover{ background: #B20000; }
 .row{ width: 100%; clear: both;}
 
 /* STAGES*/
-.img-stage{width: 40%; float: left;}
+.img-stage{width: 40%; float: left; height: 342px;}
 .text-stage{width: 55%; float: right;}
 .text-stage h1, .text-stage h2, .text-stage h3{ line-height: 1; margin: 0 0 5px;}
 .text-stage h1{font-family: 'Source Sans Pro', arial, sans-serif; font-size: 38px; color: #2f2f2f; margin: 5px 0 20px;}
@@ -307,7 +307,7 @@ nav a:hover{ background: #B20000; }
 .header p {font-size: 15px; color: #A5A5A5;}
 .header h1 {font-size: 26px; color: #B00000; padding:13px 0; margin: 0;}
 .sombra{width: 100%; height: 28px; background: url(../../assets/img/bg/sombra.png); background-repeat: no-repeat; background-position: center;}
-.buscar-guias{width: 150px; height: 50px; background: url(../../assets/img/btns/buscar-guias.jpg); background-repeat: no-repeat; padding: 10px 0; display: block; float: left;}
+.buscar-guias{width: 150px; height: 30px; background: url(../../assets/img/btns/buscar-guias.jpg); background-repeat: no-repeat; padding: 10px 0; display: block; float: left;}
 .buscar-guias a, .buscar-guias img{float: left; padding: 0 0 0 10px;}
 .buscar-guias a{ font-size: 15px; text-transform: uppercase; color: #fff;}
 
