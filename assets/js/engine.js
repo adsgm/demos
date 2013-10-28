@@ -35,11 +35,7 @@ $(document).ready(function() {
 		$('#search-overlay').width(w).height(h);
 		$('#search-overlay').show(300);
 		$('#autocomplete').focus();
-<<<<<<< HEAD
 		$('#close2').click(function(){ $('#search-overlay').hide(300); $('#search').removeClass('on'); });
-=======
-		$('#search-overlay-close').click(function(){ $('#search-overlay').hide(300); $('#search').removeClass('on'); });
->>>>>>> 54c8453e85510c533146c49e26cddcf0833d9271
 	});
 	$('#search.on').live('click', function(){ 
 		$('#search-overlay').hide(300); $('#search').removeClass('on');
