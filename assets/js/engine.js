@@ -35,7 +35,7 @@ $(document).ready(function() {
 		$('#search-overlay').width(w).height(h);
 		$('#search-overlay').show(300);
 		$('#autocomplete').focus();
-		$('#close').click(function(){ $('#search-overlay').hide(300); $('#search').removeClass('on'); });
+		$('#search-overlay-close').click(function(){ $('#search-overlay').hide(300); $('#search').removeClass('on'); });
 	});
 	$('#search.on').live('click', function(){ 
 		$('#search-overlay').hide(300); $('#search').removeClass('on');
