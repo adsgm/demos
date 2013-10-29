@@ -99,6 +99,4 @@ $(document).ready(function() {
 						}
 				}
 			}	
- $('#questions').click(function () {
-$('#questions').addClass('active')
- $('#showgeneral , #showresult').slideToggle({direction: "up"}, 300);});
+			
