@@ -427,7 +427,7 @@ li{ list-style: none;}
 .zoom {height: 25px; margin: 10px 0 0 30px; width: 150px;}
 .zoom h3 a{font-size: 20px; font-weight: 400; margin:  0;}
 .zoom img, .zoom h3{float: left; font-size: 20px; font-weight: 400; margin:  0;}
-<!--Cuadros de busqueda-->
+
 .bloque{
 	font-family:"Source Sans Pro", sans-serif ;
 	width:290px;
@@ -438,7 +438,7 @@ li{ list-style: none;}
 	margin:15px;
 }
 .content-result{
-	width:290px;
+	width:100%;
 	height:210px;
 	border:1px solid #EEEEEE;
 	background-color:#EEEEEE;
@@ -450,7 +450,7 @@ li{ list-style: none;}
 	float:left;
 	width:85px;
 	height:50px;
-	background:url(../img/bg/back-botton-tab.png);
+	background:url(assets/img/bg/b-tab.png);
 	
 }
 .bottom > div a img{
@@ -461,7 +461,7 @@ li{ list-style: none;}
 	width:120px;
 	height:50px;
 	right:20px;
-	background:url(../img/bg/bg-ver.png);
+	background:url(assets/img/bg/bg-ver.png);
 }
 .bottom > div:last-child a p{
 	color:#FFF;
@@ -477,26 +477,27 @@ li{ list-style: none;}
 
 .hide{ display:none;}
 .general, .result{ width:100%; background-color:#EEEEEE; height:210px;}
-.general h1, h2 , p , .result h3{ padding:4px;}
+.general h1,h2,p , .general h3{ padding:4px;}
 .general h1{ font-size:16px !important; color:#4D4D4D; font-weight:700; margin-bottom:10px;}
 .general h2{ font-size:22px; color:#B00000; margin:0 0 25px 0; }
 .general p, .result h3{ font-size:14px; font-family:"Signika", sans-serif; color:#868686; font-weight:200;}
-.result h3:before{content:url("../img/bg/tabs-c.png") ;}
+.result h3:before{content:url("assets/img/bg/tabs-c.png") ;}
 .result h3{text-indent: -18px; padding:0 27px; height:25px;}
 .line-tabs-2{
-	background:url(../img/bg/line-2-tabs.png) no-repeat left;
+	background:url(assets/img/bg/line-2-tabs.png) no-repeat left;
 	height:2px;
 	width:100%;
 }
-.active{ background:url(../img/bg/back-botton-tab-act.png) !important;}
+.on{ background:url(assets/img/bg/back-botton-tab-act.png) !important;}
 .line-quetions-tabs{
-	background:url(../img/bg/line-question-tabs.png) no-repeat left;
+	background:url(assets/img/bg/line-question-tabs.png) no-repeat left;
 	height:1px;
 	width:100%;
 	vertical-align:central; 
 }
+.on{ background: url(assets/img/bg/tab-active.png) no-repeat; background-position:30% -30px;}
 .line-header-tabs{
-	background:url(../img/bg/line-header-tabs.png) no-repeat left;
+	background:url(assets/img/bg/line-header-tabs.png) no-repeat left;
 	height:2px;
 	width:100%;
 }
