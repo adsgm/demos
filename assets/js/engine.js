@@ -100,5 +100,5 @@ $(document).ready(function() {
 				}
 			}	
  $('#questions').click(function () {
-$('#questions').addClass('on')
+$('#questions').addClass('active')
  $('#showgeneral , #showresult').slideToggle({direction: "up"}, 300);});
