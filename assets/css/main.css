@@ -10,7 +10,7 @@ table{ border-spacing:0;  border-collapse:collapse; }
 
 /*			- Paddings/Margins/Widths/Borders -			*/
 .hide{ display:none;}
-.m0, header p { margin:0; }
+.m0, .mainheader p { margin:0; }
 .m0auto{ margin:0 auto; } 
 .m1r{ margin-right:1px;  }	
 .m5r{ margin-right:5px;  }	
@@ -115,7 +115,7 @@ body {
 	background: #F7F7F7;
 }
 .wrap{ width: 980px; margin: 0 auto;}
-.main, article, header, .nav ul {
+.main, article, .mainheader, .nav ul {
 	text-align:left;
 	display: block;
 	margin: 0 auto;
@@ -124,7 +124,7 @@ body {
 .floatL, #logo {	float: left; }
 .floatR {	float: right; }
 
-header, #logo{ background: url(../img/bg/trans-header.jpg) right center no-repeat; }
+.mainheader, #logo{ background: url(../img/bg/trans-header.jpg) right center no-repeat; }
 #logo{ height: 68px; display: inline-block; }
 
 .section{ height:60px; line-height:60px; padding:0 20px; display:inline-block; }

@@ -22,7 +22,7 @@ p, p a { font-size: 12px; }
 .fs40{ font-size: 40px; }
 .fs50{ font-size: 50px; }
 
-header *{ line-height: 100%; }
+.mainheader *{ line-height: 100%; }
 #stage h1{ line-height: 95%; }
 .btn{ line-height: 50px; }
 
