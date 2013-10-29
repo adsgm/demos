@@ -173,6 +173,7 @@ li{ list-style: none;}
 .content{ width: 980px; margin: 0 auto;}
 
 #stage{ height: 343px; padding-top: 10px; position: relative; background: url(../img/bg/bg-stage.jpg) center bottom no-repeat; width: 980px; margin: 0 auto;}
+.main-content{ width: 980px; margin: 0 auto; min-height: 200px;}
 
 /*	- Buttons -	*/
 .buscar span{ background: url(../img/icons/lupa.png) center center no-repeat; width: 24px; height: 24px; display: inline-block; padding-top: 13px; padding-bottom: 13px; }
@@ -427,7 +428,8 @@ li{ list-style: none;}
 .zoom {height: 25px; margin: 10px 0 0 30px; width: 150px;}
 .zoom h3 a{font-size: 20px; font-weight: 400; margin:  0;}
 .zoom img, .zoom h3{float: left; font-size: 20px; font-weight: 400; margin:  0;}
-<!--Cuadros de busqueda-->
+
+/* Cuadro de Busqueda */
 .bloque{
 	font-family:"Source Sans Pro", sans-serif ;
 	width:290px;
