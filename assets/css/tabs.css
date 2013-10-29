@@ -797,26 +797,28 @@ button.ui-button::-moz-focus-inner {
 	color:#D71829;
 	font-weight:bold;
 }
-.ui-tabs .ui-tabs-nav li {
+.ui-tabs .ui-tabs-nav li{
 	list-style: none;
 	position: relative;
 	float:left;
-	top: 0;
+	top: 19px;
 	width:87px;
 	border:none;
-	background-image:url(../img/bg/b-tab.png);
-	height:50px;
+	background:url(../img/bg/b-tab.png) no-repeat;
+	height:62px;
 }
 .ui-tabs .ui-tabs-nav li a {
 	float: left;
-	height:35px;
+	height:42px;
 	padding: .5em 1em;
 	text-decoration: none;
 }
 .last{
+	position:relative;
+	top:17px;
 	width:116px;
 	height:50px;
-	background-image:url(../img/bg/bg-ver.png) !important;
+	background:url(../img/bg/bg-ver.png) no-repeat;
 	color:#FFF;
 	float:left;
 }
@@ -834,8 +836,9 @@ button.ui-button::-moz-focus-inner {
 	padding:11px 8px;
 }
 
-.ui-tabs .ui-tabs-nav li.ui-tabs-active {
-	background:url(../img/bg/tab-active.png);
+.ui-tabs .ui-tabs-nav li.ui-tabs-active{
+	 width:85px !important; margin:-7px 0;
+	background: url(../img/bg/tab-active.png) no-repeat;
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active a,
 .ui-tabs .ui-tabs-nav li.ui-state-disabled a,
