@@ -38,7 +38,20 @@ $(document).ready(function() {
 		$('#close2').click(function(){ $('#search-overlay').hide(300); $('#search').removeClass('on'); });
 	});
 	$('#search.on').live('click', function(){ 
-		$('#search-overlay').hide(300); $('#search').removeClass('on');
+		$('#search-overlay').hide(300); $('#search1').removeClass('on');
+	});
+	// Search
+	$(document).bind('keydown', function(e){ fnsearch(e); });
+	$('#search1').live('click', function(){ 
+		$(this).addClass('on');
+		var w = $(document).width(); var h = $(document).height(); //var h2 = $('#footer').height(); h = h - h2 - 25;
+		$('#search-overlay').width(w).height(h);
+		$('#search-overlay').show(300);
+		$('#autocomplete').focus();
+		$('#close2').click(function(){ $('#search-overlay').hide(300); $('#search1').removeClass('on'); });
+	});
+	$('#search.on').live('click', function(){ 
+		$('#search-overlay').hide(300); $('#search1').removeClass('on');
 	});
 	
 	$(document).on("ready", main);
@@ -61,61 +74,7 @@ $(document).ready(function() {
 }
 
 });
- $(function() {
-    $( "#tabs" ).tabs();
-    // move the nav to the bottom
-    $( ".tabs-bottom .ui-tabs-nav" ).appendTo( ".tabs-bottom" );
-  });
-   $(function() {
-    $( "#tabs1" ).tabs();
-    // move the nav to the bottom
-    $( ".tabs-bottom1 .ui-tabs-nav" ).appendTo( ".tabs-bottom1" );
-  });
-   $(function() {
-    $( "#tabs2" ).tabs();
-    // move the nav to the bottom
-    $( ".tabs-bottom2 .ui-tabs-nav" ).appendTo( ".tabs-bottom2" );
-  });
-  $(function() {
-    $( "#tabs3" ).tabs();
-    // move the nav to the bottom
-    $( ".tabs-bottom3 .ui-tabs-nav" ).appendTo( ".tabs-bottom3" );
-  });
-   $(function() {
-    $( "#tabs4" ).tabs();
-    // move the nav to the bottom
-    $( ".tabs-bottom4 .ui-tabs-nav" ).appendTo( ".tabs-bottom4" );
-  });
-   $(function() {
-    $( "#tabs5" ).tabs();
-    // move the nav to the bottom
-    $( ".tabs-bottom5 .ui-tabs-nav" ).appendTo( ".tabs-bottom5" );
-  });
-   $(function() {
-    $( "#tabs6" ).tabs();
-    // move the nav to the bottom
-    $( ".tabs-bottom6 .ui-tabs-nav" ).appendTo( ".tabs-bottom6" );
-  });
-   $(function() {
-    $( "#tabs7" ).tabs();
-    // move the nav to the bottom
-    $( ".tabs-bottom7 .ui-tabs-nav" ).appendTo( ".tabs-bottom7" );
-  });
-   $(function() {
-    $( "#tabs8" ).tabs();
-    // move the nav to the bottom
-    $( ".tabs-bottom8 .ui-tabs-nav" ).appendTo( ".tabs-bottom8" );
-  });
-
-  $(function() {
-    $( document ).tooltip();
-  });
-  // esta rutina se ejecuta cuando jquery esta listo para trabajar
-$(function() 
-{
-    // configuramos el control para realizar la busqueda de cedulas
-  
-});
+ 
 
 		$(document).on("ready", main);
 		function main(){
@@ -140,3 +99,6 @@ $(function()
 						}
 				}
 			}	
+ $('#questions').click(function () {
+$('#questions').addClass('on')
+ $('#showgeneral , #showresult').slideToggle({direction: "up"}, 300);});
