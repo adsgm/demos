@@ -10,6 +10,7 @@
 	padding:15px;
 	float:left;
 	margin-top:30px;
+	margin-bottom:10px;
 }
 
 
@@ -801,21 +802,20 @@ button.ui-button::-moz-focus-inner {
 	list-style: none;
 	position: relative;
 	float:left;
-	top: 19px;
+	top: 0px;
 	width:87px;
 	border:none;
 	background:url(../img/bg/b-tab.png) no-repeat;
-	height:62px;
+	height:50px;
 }
 .ui-tabs .ui-tabs-nav li a {
 	float: left;
-	height:42px;
+	height:35px;
 	padding: .5em 1em;
 	text-decoration: none;
 }
 .last{
 	position:relative;
-	top:17px;
 	width:116px;
 	height:50px;
 	background:url(../img/bg/bg-ver.png) no-repeat;
@@ -837,7 +837,6 @@ button.ui-button::-moz-focus-inner {
 }
 
 .ui-tabs .ui-tabs-nav li.ui-tabs-active{
-	 width:85px !important; margin:-7px 0;
 	background: url(../img/bg/tab-active.png) no-repeat;
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active a,
