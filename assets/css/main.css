@@ -455,7 +455,7 @@ li{ list-style: none;}
 	float:left;
 	width:85px;
 	height:50px;
-	background:url(assets/img/bg/b-tab.png);
+	background:url(../img/bg/b-tab.png);
 	
 }
 .bottom > div a img{
@@ -466,7 +466,7 @@ li{ list-style: none;}
 	width:120px;
 	height:50px;
 	right:20px;
-	background:url(assets/img/bg/bg-ver.png);
+	background:url(../img/bg/bg-ver.png);
 }
 .bottom > div:last-child a p{
 	color:#FFF;
@@ -486,23 +486,23 @@ li{ list-style: none;}
 .general h1{ font-size:16px !important; color:#4D4D4D; font-weight:700; margin-bottom:10px;}
 .general h2{ font-size:22px; color:#B00000; margin:0 0 25px 0; }
 .general p, .result h3{ font-size:14px; font-family:"Signika", sans-serif; color:#868686; font-weight:200;}
-.result h3:before{content:url("assets/img/bg/tabs-c.png") ;}
+.result h3:before{content:url("../img/bg/tabs-c.png") ;}
 .result h3{text-indent: -18px; padding:0 27px; height:25px;}
 .line-tabs-2{
-	background:url(assets/img/bg/line-2-tabs.png) no-repeat left;
+	background:url(../img/bg/line-2-tabs.png) no-repeat left;
 	height:2px;
 	width:100%;
 }
-.on{ background:url(assets/img/bg/back-botton-tab-act.png) !important;}
+.on{ background:url(../img/bg/back-botton-tab-act.png) !important;}
 .line-quetions-tabs{
-	background:url(assets/img/bg/line-question-tabs.png) no-repeat left;
+	background:url(../img/bg/line-question-tabs.png) no-repeat left;
 	height:1px;
 	width:100%;
 	vertical-align:central; 
 }
-.on{ background: url(assets/img/bg/tab-active.png) no-repeat; background-position:30% -30px;}
+.on{ background: url(../img/bg/tab-active.png) no-repeat; background-position:30% -30px;}
 .line-header-tabs{
-	background:url(assets/img/bg/line-header-tabs.png) no-repeat left;
+	background:url(../img/bg/line-header-tabs.png) no-repeat left;
 	height:2px;
 	width:100%;
 }
