@@ -810,7 +810,7 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-tabs .ui-tabs-nav li a {
 	float: left;
-	height:35px;
+	height:38px;
 	padding: .5em 1em;
 	text-decoration: none;
 }
@@ -839,7 +839,7 @@ button.ui-button::-moz-focus-inner {
 
 .ui-tabs .ui-tabs-nav li.ui-tabs-active{
 	margin:-7px 0;
-	background:url(../img/bg/tab-active.png);
+	background:url(../img/bg/tab-active.png) no-repeat;
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active img{
 	margin:7px 0;
