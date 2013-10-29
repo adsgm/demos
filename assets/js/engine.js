@@ -114,7 +114,7 @@ $(document).ready(function() {
 $(function() 
 {
     // configuramos el control para realizar la busqueda de cedulas
-    $("#tfBuscar").focus();
+  
 });
 
 		$(document).on("ready", main);

@@ -802,11 +802,11 @@ button.ui-button::-moz-focus-inner {
 	list-style: none;
 	position: relative;
 	float:left;
-	top: 0px;
+	top: 7px;
 	width:87px;
 	border:none;
 	background:url(../img/bg/b-tab.png) no-repeat;
-	height:50px;
+	height:57px;
 }
 .ui-tabs .ui-tabs-nav li a {
 	float: left;
@@ -818,6 +818,7 @@ button.ui-button::-moz-focus-inner {
 	position:relative;
 	width:116px;
 	height:50px;
+	top:7px;
 	background:url(../img/bg/bg-ver.png) no-repeat;
 	color:#FFF;
 	float:left;
@@ -837,7 +838,12 @@ button.ui-button::-moz-focus-inner {
 }
 
 .ui-tabs .ui-tabs-nav li.ui-tabs-active{
-	background: url(../img/bg/tab-active.png) no-repeat;
+	margin:-7px 0;
+	background:url(../img/bg/tab-active.png);
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active img{
+	margin:7px 0;
+	
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active a,
 .ui-tabs .ui-tabs-nav li.ui-state-disabled a,
