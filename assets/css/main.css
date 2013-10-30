@@ -211,10 +211,9 @@ li{ list-style: none;}
 	line-height: 50px; 
 	display: block; 
 	background: url(../img/bg/nav-r.png) right center no-repeat; 
-	padding: 0 26px;
-	font-family: 'Signika', arial;
+	padding: 0 25px;
+	font-family: 'Signika-SemiBold', arial;
 	font-size: 14px;
-	font-weight: 400;
 	color: #fff;
 	height: 50px;
 }
@@ -263,7 +262,7 @@ li{ list-style: none;}
 	float: left;
 	left: -681px;
 }
-.botonesMenu{width: 980px; margin: 0 auto;}
+.botonesMenu{width: 980px; margin: 0 auto; clear: both;}
 /*Menu Interior Pasos*/
 .choice{position: absolute; top: 107px; width: 227px; left: 40%; text-align: center;}
 .choice h1{color: #fff; font-size: 20px;}
@@ -281,8 +280,7 @@ li{ list-style: none;}
 	height: 42px;
 	line-height: 40px;
 	padding: 0 30px 0 14px;
-	font-family: 'Signika', arial;
-	font-weight: 400;
+	font-family: 'Signika-SemiBold', arial;
 }
 .play{background: url(../img/icons/play.jpg); background-repeat: no-repeat; width: 35px; height: 35px; float: right;}
 .sub span{ 
@@ -299,9 +297,9 @@ li{ list-style: none;}
 .text-stage{width: 55%; float: right;}
 .text-stage h1, .text-stage h2, .text-stage h3{ line-height: 1; margin: 0 0 5px;}
 .text-stage h1{font-family: 'Source Sans Pro', arial, sans-serif; font-size: 38px; color: #2f2f2f; margin: 5px 0 20px;}
-.text-stage h2{font-family: 'Signika', arial; font-size: 18px !important; color: #CA2106; font-weight: 200; margin: 0 0 20px;}
+.text-stage h2{font-family: 'Signika-Light', arial; font-size: 18px !important; color: #CA2106; margin: 0 0 20px;}
 .text-stage h3{font-family: 'Source Sans Pro', arial, sans-serif; font-size: 24px; color: #878787; margin-top: 20px;}
-.text-stage p{font-size: 15px; color: #777; font-family: 'Signika', arial; font-weight: 200; margin: 0;}
+.text-stage p{font-size: 15px; color: #777; font-family: 'Signika-Light', arial; margin: 0;}
 .text-stage .sombra-ch{ margin: 5px 0 10px; border: none; float: left;}
 .header{height: 90px; padding: 10px;}
 .header p {font-size: 15px; color: #A5A5A5;}
@@ -448,7 +446,7 @@ li{ list-style: none;}
 .general p{ padding:10px; margin-top:10px;}
 .general h1{ font-size:16px !important; color:#4D4D4D; font-weight:700; margin-bottom:10px;}
 .general h2{ font-size:22px !important; color:#B00000; margin:5px 0 25px 0; }
-.general p , .result h3{ font-size:14px; font-family:"Signika", sans-serif; color:#868686; font-weight:200;}
+.general p , .result h3{ font-size:14px; font-family:"Signika-Light", sans-serif; color:#868686;}
 .result h3:before{content:url("../img/bg/tabs-c.png") ;}
 .result h3{text-indent: -18px; padding:4px 27px; height:20px;}
 .line-tabs-2{
