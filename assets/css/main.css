@@ -207,6 +207,7 @@ li{ list-style: none;}
 .mainmenu{ background: url(../img/bg/bg-nav.gif); height: 50px; z-index: 800; position: relative; width: 100%;}
 .nav {width: 980px; margin: 0 auto; z-index: 800;}
 .nav li{ background: url(../img/bg/nav-l.png) 0 center no-repeat; }
+.active-menu{ background:url(../img/bg/active-menu.png) !important; height:49px !important;}
 .nav li a{ 
 	line-height: 50px; 
 	display: block; 
@@ -273,6 +274,7 @@ li{ list-style: none;}
 	cursor: pointer;
 	text-align: left;
 }
+
 .btnmenu:hover{background: url(../img/bg/menulih.jpg);}
 .btnmenu a{
 	color: #000;
@@ -467,7 +469,7 @@ li{ list-style: none;}
 	width:100%;
 }
 .select-preferencias{ font-size:20px; font-family: "Source Sans Pro", sans-serif; font-weight:200; color:#939393; width:350px; }
-.select-preferencias div{ padding:35px 10px;height:22px;float:left; text-align:left;}
+.select-preferencias div{ padding:35px 5px;height:22px;float:left; text-align:left;}
 .arrow-preferencias{content:url("../img/btns/arrow-preferencias.png"); margin:3px 5px 0 0;}
 .content-select{ width:980px;}
 .size-select{ width:300px;  margin:33px  0  0 300px; position:absolute;}
