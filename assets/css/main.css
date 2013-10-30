@@ -429,10 +429,8 @@ li{ list-style: none;}
 .zoom h3 a{font-size: 20px; font-weight: 400; margin:  0;}
 .zoom img, .zoom h3{float: left; font-size: 20px; font-weight: 400; margin:  0;}
 
-<<<<<<< HEAD
+
 /* Cuadro de Busqueda */
-=======
->>>>>>> e93008ff806924b589fd6411660bfb23751ea5a4
 .bloque{
 	font-family:"Source Sans Pro", sans-serif ;
 	width:290px;
@@ -493,14 +491,13 @@ li{ list-style: none;}
 	height:2px;
 	width:100%;
 }
-.on{ background:url(../img/bg/back-botton-tab-act.png) !important;}
+.active{ background:url(../img/bg/back-botton-tab-act.png);}
 .line-quetions-tabs{
 	background:url(../img/bg/line-question-tabs.png) no-repeat left;
 	height:1px;
 	width:100%;
 	vertical-align:central; 
 }
-.on{ background: url(../img/bg/tab-active.png) no-repeat; background-position:30% -30px;}
 .line-header-tabs{
 	background:url(../img/bg/line-header-tabs.png) no-repeat left;
 	height:2px;
