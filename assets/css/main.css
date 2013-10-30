@@ -204,14 +204,14 @@ li{ list-style: none;}
 @media (max-width: 1200px) {  	
 }
 /*MENU*/
-.mainmenu{ background: url(../img/bg/bg-nav.gif); height: 50px; z-index: 800; position: relative;}
+.mainmenu{ background: url(../img/bg/bg-nav.gif); height: 50px; z-index: 800; position: relative; width: 100%;}
 .nav {width: 980px; margin: 0 auto; z-index: 800;}
 .nav li{ background: url(../img/bg/nav-l.png) 0 center no-repeat; }
 .nav li a{ 
 	line-height: 50px; 
 	display: block; 
 	background: url(../img/bg/nav-r.png) right center no-repeat; 
-	padding: 0 26px 0 20px;
+	padding: 0 26px;
 	font-family: 'Signika', arial;
 	font-size: 14px;
 	font-weight: 400;
@@ -263,6 +263,7 @@ li{ list-style: none;}
 	float: left;
 	left: -681px;
 }
+.botonesMenu{width: 980px; margin: 0 auto;}
 /*Menu Interior Pasos*/
 .choice{position: absolute; top: 107px; width: 227px; left: 40%; text-align: center;}
 .choice h1{color: #fff; font-size: 20px;}
