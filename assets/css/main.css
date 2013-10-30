@@ -232,7 +232,7 @@ li{ list-style: none;}
 .nav li ul li a.lvl2:hover{
 	background: url(../img/bg/lvl2over.png);
 }
-.nav a:hover{ background: #B20000; height: 49px;}
+.nav a:hover{ background: #B20000; }
 .nav li:hover >ul{display: block !important;}
 .nav li ul{
 	display: none; 
