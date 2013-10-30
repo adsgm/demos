@@ -477,16 +477,17 @@ li{ list-style: none;}
 .bottom > div:last-child a img{
 	padding:10px 15px;
 }
-.result > div{ padding:6px 2px; height:15px;}
+.result > div{ padding:6px 0; height:17px;}
+.result > div:last-child{ padding:0 0; height:5px;}
 .hide{ display:none;}
 .general, .result{ width:100%; background-color:#EEEEEE; height:210px;}
-.general h1, .general h2 , .general h3{ padding:6px 3px ; font-family:"Source Sans Pro", sans-serif; font-weight:700;}
+.general h1, .general h2 , .general h3{ padding:10px ; font-family:"Source Sans Pro", sans-serif; font-weight:700;}
 .general p{ padding:10px; margin-top:10px;}
 .general h1{ font-size:16px !important; color:#4D4D4D; font-weight:700; margin-bottom:10px;}
 .general h2{ font-size:22px !important; color:#B00000; margin:5px 0 25px 0; }
 .general p , .result h3{ font-size:14px; font-family:"Signika", sans-serif; color:#868686; font-weight:200;}
 .result h3:before{content:url("../img/bg/tabs-c.png") ;}
-.result h3{text-indent: -18px; padding:5px 27px; height:25px;}
+.result h3{text-indent: -18px; padding:4px 27px; height:20px;}
 .line-tabs-2{
 	background:url(../img/bg/line-2-tabs.png) no-repeat left;
 	height:2px;
