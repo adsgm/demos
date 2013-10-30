@@ -22,6 +22,7 @@
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <title>Banorte - Demos Interactivos</title>
+  <link rel="stylesheet" href="assets/css/dropkick.css" type="text/css">
   <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Signika:300,400,600' rel='stylesheet' type='text/css'>
@@ -292,13 +293,30 @@
  </li>
 </ul>
 </li>
-
 <li><a href="#" id="search" class="buscar"><span></span></a></li>
 </ul>
 </div>
 </div>
+
 <div class="main-content clearfix">
-  <div></div>
+	<div class="select-preferencias">
+  		<h1>Preferencias </h1><h1>Catálogo </h1>
+    </div>
+  <div class="content-select">
+  	
+      	<div class="size-select clear">
+              <form action="#" method="post" accept-charset="utf-8" class="example_form">
+                   <select name="cuentas" class="default">
+                          <option value="">MIS CUENTAS BANORTE</option>
+                          <option value="">MIS CUENTAS TERCEROS</option>
+                          <option value="">MIS RFC´s</option>
+                          <option value="">MIS CRÉDITOS DE CONSUMO</option>
+                          <option value="">MIS TELÉFONOS CELULARES</option>
+                         
+                  </select>
+               </form>
+          </div> 
+  </div>
   <div class="sombra"></div>
   <!--Bloque 1-->
   <div class="bloque tarjeta">
@@ -804,7 +822,14 @@
 <script type="text/javascript" src="assets/js/fancybox.js"></script>
 <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css" media="screen" /> 
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<script type="text/javascript">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/js/jquery.dropkick-min.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $(function () {
+      $('.default').dropkick();
+      $('.dk_container').first().focus();
+    });
+
 $(document).ready(function() {
  $(".various").fancybox({
   maxWidth	: 980,
@@ -846,7 +871,7 @@ $('#questions7').click(function () {
 $('#questions8').click(function () {
   $('#questions8').addClass('active')
   $('#showgeneral8 , #showresult8').slideToggle({direction: "up"}, 300);});
-
+  
 </script>
 
 
