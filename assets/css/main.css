@@ -85,28 +85,10 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .p25b{ padding-bottom:25px; } 
 .p30b{ padding-bottom:30px; }
 
-.width10	{width:10% !important;}
-.width15	{width:15% !important;}
-.width20	{width:20% !important;}
 .width25	{width:25% !important;}
-.width30	{width:30% !important;}
-.width33	{width:33% !important;}
-.width35	{width:35% !important;}
-.width40	{width:40% !important;}
-.width45	{width:45% !important;}
-.width50	{width:50% !important;}
-.width55	{width:55% !important;}
 .width60	{width:60% !important;}
 .width65	{width:65% !important;}
-.width66	{width:66% !important;}
 .width70	{width:70% !important;}
-.width75	{width:75% !important;}
-.width80	{width:80% !important;}
-.width85	{width:85% !important;}
-.width90	{width:90% !important;}
-.width95	{width:95% !important;}
-.width100	{width:100% !important;}
-
 /*			- Main site elements -			*/
 body {
 	font-family: "Source Sans Pro", sans-serif;
@@ -123,10 +105,8 @@ body {
 }
 .floatL, #logo {	float: left; }
 .floatR {	float: right; }
-
 .mainheader, #logo{ background: url(../img/bg/trans-header.jpg) right center no-repeat; }
 #logo{ height: 68px; display: inline-block; }
-
 .section{ height:60px; line-height:60px; padding:0 20px; display:inline-block; }
 .section.small{ height:45px; line-height:45px; }
 .section.small span{ margin-top:20px; }
@@ -135,7 +115,6 @@ body {
 .section.gray6{ background:#666; }
 .section span{ margin:27px 0 0 25px; float:right; }
 .section.gray3 span{ background-position:-16px 0; }
-
 .cont{ padding:90px 0 0 60px; width:1024px; }
 #search-overlay{ background:url(../img/bg/trans.png); width:100%; height:100%; position:absolute; top:0; left:0; z-index:9999; display:none;}
 #horizontal-wrap{  width:1024px; overflow-y:hidden;}
@@ -147,11 +126,9 @@ body {
 #busqueda{ background: url(../img/bg/trans.png); width:100%; height:100%; position:absolute; top:0; left:0; z-index:80; display:none; }
 #busqueda .cont{ top:90px; left:60px; padding:0; }
 #search-overlay #close2{ width:69px; height:69px; background:url(../img/btns/close.gif); display:block; position:fixed; top:90px; right: 20px; }
-
 #results{ padding:20px 60px; width:1024px !important; }
 li{ list-style: none;}
 .intro{ height:93px;}
-
 /*FOOTER*/
 .footer{ background: url(../img/bg/bg-footer.png) center 0 no-repeat; padding: 22px 0 40px; text-align: center; }
 .footer a{ margin: 0 10px; }
@@ -174,7 +151,6 @@ li{ list-style: none;}
 
 #stage{ height: 343px; padding-top: 10px; position: relative; background: url(../img/bg/bg-stage.jpg) center bottom no-repeat; width: 980px; margin: 0 auto;}
 .main-content{ width: 980px; margin: 0 auto; min-height: 200px;}
-
 /*	- Buttons -	*/
 .buscar span{ background: url(../img/icons/lupa.png) center center no-repeat; width: 24px; height: 24px; display: inline-block; padding-top: 13px; padding-bottom: 13px; }
 .finalizar span{ background: url(../img/btns/arrows.png) center center no-repeat; width:19px; height:19px; display: inline-block; padding-top: 13px; padding-bottom: 13px; }
@@ -287,7 +263,6 @@ li{ list-style: none;}
 	float: left;
 	left: -681px;
 }
-
 /*Menu Interior Pasos*/
 .choice{position: absolute; top: 107px; width: 227px; left: 40%; text-align: center;}
 .choice h1{color: #fff; font-size: 20px;}
@@ -308,21 +283,16 @@ li{ list-style: none;}
 	font-family: 'Signika', arial;
 	font-weight: 400;
 }
-
-
-
 .play{background: url(../img/icons/play.jpg); background-repeat: no-repeat; width: 35px; height: 35px; float: right;}
 .sub span{ 
 	background-image:url(../img/bg/play.png); 
 	width: 49px; height: 41px; position:absolute; 
 	margin:0 201px; border-bottom:1px solid #8d867c;
 }
-
 /* ==========================================================================
    CABRAL
    ========================================================================== */
 .row{ width: 100%; clear: both;}
-
 /* STAGES*/
 .img-stage{width: 40%; float: left; height: 342px;}
 .text-stage{width: 55%; float: right;}
@@ -332,7 +302,6 @@ li{ list-style: none;}
 .text-stage h3{font-family: 'Source Sans Pro', arial, sans-serif; font-size: 24px; color: #878787; margin-top: 20px;}
 .text-stage p{font-size: 15px; color: #777; font-family: 'Signika', arial; font-weight: 200; margin: 0;}
 .text-stage .sombra-ch{ margin: 5px 0 10px; border: none; float: left;}
-
 .header{height: 90px; padding: 10px;}
 .header p {font-size: 15px; color: #A5A5A5;}
 .header h1 {font-size: 26px; color: #B00000; padding:13px 0; margin: 0;}
@@ -340,7 +309,6 @@ li{ list-style: none;}
 .buscar-guias{width: 150px; height: 30px; background: url(../../assets/img/btns/buscar-guias.jpg); background-repeat: no-repeat; padding: 10px 0; display: block; float: left;}
 .buscar-guias a, .buscar-guias img{float: left; padding: 0 0 0 10px;}
 .buscar-guias a{ font-size: 15px; text-transform: uppercase; color: #fff;}
-
 /*SECCION PASOS*/
 .block-pasos{width: 670px; height: 40px; margin: 0 auto 5px;}
 .pasos li { width: 70px; height: 35px; font-size:20px; background: url(../img/icons/pasos.png); background-repeat: no-repeat; float: left; position: relative;}
@@ -396,7 +364,6 @@ li{ list-style: none;}
    Slider
    ========================================================================== */
 .home-slider{ position:relative; width:920px; height:435px; margin:0 auto; overflow:hidden;}
-
 /*	- iosSlider -	*/
 .iosSlider {position: relative; left: 0; overflow: hidden; width: 920px; height: 507px;}
 .iosSlider .slider .slide {
@@ -429,8 +396,6 @@ li{ list-style: none;}
 .zoom {height: 25px; margin: 10px 0 0 30px; width: 150px;}
 .zoom h3 a{font-size: 20px; font-weight: 400; margin:  0;}
 .zoom img, .zoom h3{float: left; font-size: 20px; font-weight: 400; margin:  0;}
-
-
 /* Cuadro de Busqueda */
 .bloque{
 	font-family:"Source Sans Pro", sans-serif ;
@@ -444,12 +409,9 @@ li{ list-style: none;}
 .content-result{
 	width:100%;
 	height:210px;
-	background-color:#EEEEEE;
-	
+	background-color:#EEEEEE;	
 }
-.botom{
-	width:100%;
-}
+.botom{width:100%;}
 .bottom > div{
 	float:left;
 	width:85px;
@@ -457,9 +419,10 @@ li{ list-style: none;}
 	background:url(../img/bg/b-tab.png);
 	font-family:"Source Sans Pro", sans-serif ;
 }
-.bottom > div a img{
+.bottom > div  img{
 	padding:10px 30px;
 	float:left;
+	cursor:pointer;
 }
 .bottom > div:last-child{
 	width:120px;
@@ -475,9 +438,7 @@ li{ list-style: none;}
 	position:absolute;
 	margin:15px 45px;;
 }
-.bottom > div:last-child a img{
-	padding:10px 15px;
-}
+.bottom > div:last-child a img{padding:10px 15px;}
 .result > div{ padding:6px 0; height:17px;}
 .result > div:last-child{ padding:0 0; height:5px;}
 .hide{ display:none;}
