@@ -143,8 +143,9 @@
 <div class="zoom"><img src="assets/img/bg/zoom.png"><h3>Zoom <a href="#" onClick="ZoomIn()" id="uno">on</a>/<a href="#" onClick="ZoomOut()" id="dos">off</a></h3></div>
 <div class="sombra"></div>
 <div class="content-guia">
+  <div class="titulo">
   <h2>Guías relacionadas</h2>
-  <div class="width-line-tabs">
+  </div>
   <!--Bloque 1-->
     <div class="bloque">
     	<div class="content-result">
@@ -187,7 +188,7 @@
         </div>
     </div></div>
                     <!--Fin bloque 1-->
-                     <!--Bloque 2-->
+                     <!--Bloque 3-->
     <div class="bloque">
     	<div class="content-result">
         <div class="general" id="showgeneral1">
@@ -228,7 +229,7 @@
             
         </div>
     </div></div>
-                    <!--Fin bloque 2-->
+                    <!--Fin bloque 3-->
                      <!--Bloque 3-->
     <div class="bloque">
     	<div class="content-result">
@@ -272,7 +273,6 @@
     </div></div>
                     <!--Fin bloque 3-->
 </div>
-</div>
 <!--Seccion de menu-->
 
 <script type="text/javascript" src="assets/js/jquery.js"></script>
@@ -314,15 +314,7 @@ $(document).ready(function() {
 <script>
  $("#tfBuscar").focus();
 	 /*Cuadros de busqueda*/
- $('#questions').click(function () {
-$('#questions').addClass('active')
- $('#showgeneral , #showresult').slideToggle({direction: "up"}, 300);});
- $('#questions1').click(function () {
-$('#questions1').addClass('active')
- $('#showgeneral1 , #showresult1').slideToggle({direction: "up"}, 300);});
- $('#questions2').click(function () {
-$('#questions2').addClass('active')
- $('#showgeneral2 , #showresult2').slideToggle({direction: "up"}, 300);});
+ 
 $(function() {
   $( document ).tooltip();
 });
@@ -340,6 +332,15 @@ function  ZoomOut (event) {
 
 
 }
+$('#questions').click(function () {
+$('#questions').addClass('active')
+ $('#showgeneral , #showresult').slideToggle({direction: "up"}, 300);});
+ $('#questions1').click(function () {
+$('#questions1').addClass('active')
+ $('#showgeneral1 , #showresult1').slideToggle({direction: "up"}, 300);});
+ $('#questions2').click(function () {
+$('#questions2').addClass('active')
+ $('#showgeneral2 , #showresult2').slideToggle({direction: "up"}, 300);});
 </script>
 </body>
 </html>
