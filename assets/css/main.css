@@ -456,9 +456,10 @@ li{ list-style: none;}
 	background:url(../img/bg/b-tab.png);
 	font-family:"Source Sans Pro", sans-serif ;
 }
-.bottom > div a img{
+.bottom > div  img{
 	padding:10px 30px;
 	float:left;
+	cursor:pointer;
 }
 .bottom > div:last-child{
 	width:120px;
