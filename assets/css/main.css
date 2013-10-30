@@ -467,7 +467,7 @@ li{ list-style: none;}
 	width:100%;
 }
 .select-preferencias{ font-size:20px; font-family: "Source Sans Pro", sans-serif; font-weight:200; color:#939393; width:350px; }
-.select-preferencias h1{ padding:10px;height:22px; width:125px;float:left; text-align:left;}
-.select-preferencias h1:after{content:url("../img/btns/arrow-preferencias.png"); margin:0 5px 0 0; }
+.select-preferencias div{ padding:35px 10px;height:22px;float:left; text-align:left;}
+.arrow-preferencias{content:url("../img/btns/arrow-preferencias.png"); margin:3px 5px 0 0;}
 .content-select{ width:980px;}
-.size-select{ width:300px;}
+.size-select{ width:300px;  margin:33px  0  0 300px; position:absolute;}

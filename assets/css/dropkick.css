@@ -12,7 +12,8 @@
   background-color: #FFFFFF;
   font-size: 13px;
   font-weight:700;
-  font-family: "Source Sans Pro", sans-serif; }
+  font-family: "Source Sans Pro", sans-serif;
+  }
   .dk_container:focus {
     outline: 0; }
   .dk_container a {
@@ -29,7 +30,7 @@
   .dk_toggle:after {
     position: absolute;
 	top:0;
-	right:0px;
+	right:0;
     content: url(../img/icons/select.png); }
 
 /* Applied when the dropdown is focused */
