@@ -468,6 +468,6 @@ li{ list-style: none;}
 }
 .select-preferencias{ font-size:20px; font-family: "Source Sans Pro", sans-serif; font-weight:200; color:#939393; width:350px; }
 .select-preferencias div{ padding:35px 10px;height:22px;float:left; text-align:left;}
-.arrow-preferencias{content:url("../img/btns/arrow-preferencias.png"); margin:3px 5px 0 0;}
+.arrow-preferencias{ margin:3px 5px 0 0; width: 10px;}
 .content-select{ width:980px;}
 .size-select{ width:300px;  margin:33px  0  0 300px; position:absolute;}
