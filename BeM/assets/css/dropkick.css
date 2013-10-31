@@ -115,8 +115,8 @@
   display: none;
   margin-top: -1px;
   position: absolute;
-  right: 30px;
-  width: 210px; }
+  left:0;
+  width: 243px; }
   .dk_options a, .dk_options a:link, .dk_options a:visited {
     display: block; }
 
