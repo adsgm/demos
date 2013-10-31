@@ -120,7 +120,7 @@
 </div>
 </div>
 </div>
-<div class="zoom"><img src="assets/img/bg/zoom.png"><h3>Zoom <a href="#" onClick="ZoomIn()" id="uno">on</a>/<a href="#" onClick="ZoomOut()" id="dos">off</a></h3></div>
+<div class="zoom"><img src="assets/img/bg/zoom.png"><h3>Zoom <a  onClick="ZoomIn()" id="uno">on</a>/<a onClick="ZoomOut()" id="dos">off</a></h3></div>
 <div class="sombra"></div>
 <div class="content-guia">
   <div class="titulo">
@@ -259,6 +259,7 @@
 
 <script type="text/javascript" src="assets/js/jquery.js"></script>
 <!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="assets/js/engine.js"></script>
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script src="assets/js/iosslider.js"></script> 
@@ -291,39 +292,6 @@ $(document).ready(function() {
   });
 
 });
-</script>
-
-<script>
- $("#tfBuscar").focus();
-	 /*Cuadros de busqueda*/
- 
-$(function() {
-  $( document ).tooltip();
-});
-/*Zoom*/
-function ZoomIn (event) {
-
-  $(".slide img").animate({ 'zoom': 1.2}, 700)
-  $('.zoom #uno').addClass('shuf');
-  $('.zoom #dos').removeClass('shuf');
-}
-function  ZoomOut (event) { 
- $(".slide img").animate({ 'zoom': 1 }, 700)
- $('.zoom #uno').removeClass('shuf');
- $('.zoom #dos').addClass('shuf');
-
-
-}
-$('#questions6').click(function () {
-  $('#questions6').addClass('active')
-  $('#showgeneral6 , #showresult6').slideToggle({direction: "up"}, 300);});
-$('#questions7').click(function () {
-  $('#questions7').addClass('active')
-  $('#showgeneral7 , #showresult7').slideToggle({direction: "up"}, 300);});
-$('#questions8').click(function () {
-  $('#questions8').addClass('active')
-  $('#showgeneral8 , #showresult8').slideToggle({direction: "up"}, 300);});
-  
 </script>
 </body>
 </html>
