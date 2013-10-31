@@ -23,7 +23,7 @@
 .dk_toggle {
   border: 1px solid #535353;
   color: #333;
-  padding: 7px 45px 7px 10px;
+  padding: 7px 45px 6px 10px;
   position: relative; }
   .dk_toggle:hover {
     border-color: #8c8c8c; }
@@ -31,7 +31,8 @@
     position: absolute;
 	top:0;
 	right:0;
-    content: url(../img/icons/select.png); }
+    content: url(../img/icons/select.png);
+  }
 
 /* Applied when the dropdown is focused */
 .dk_focus .dk_toggle {
@@ -49,6 +50,9 @@
     background-color: #ececec;
     border-color: #535353;
     color: #ccc;
+}
+.dk_open .dk_toggle:after{
+  content: url(../img/icons/select2.png);
 }
 
 /* The outer container of the options */
@@ -113,10 +117,10 @@
 
 .dk_options {
   display: none;
-  margin-top: -1px;
+  margin-top: 0px;
   position: absolute;
-  right: 30px;
-  width: 210px; }
+  right: 28px;
+  width: 212px; }
   .dk_options a, .dk_options a:link, .dk_options a:visited {
     display: block; }
 
