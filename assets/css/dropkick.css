@@ -24,7 +24,8 @@
   border: 1px solid #535353;
   color: #333;
   padding: 7px 45px 7px 10px;
-  position: relative; }
+  position: relative;
+ }
   .dk_toggle:hover {
     border-color: #8c8c8c; }
   .dk_toggle:after {
@@ -102,6 +103,7 @@
   display: inline-block;
   *display: inline;
   position: relative;
+  background-position:50% 50%;
   zoom: 1; }
 
 .dk_open {
