@@ -30,10 +30,10 @@
      <div class="intro">
       <a href="index.html"id="logo" ><img src="assets/img/icons/logo2.png" alt="Grupo Financiero Banorte" ></a>
       <div class="p25 floatL">
-        <p class="fs40 grey6 floatL">BxI</p>
+        <p class="fs40 grey6 floatL">BEM</p>
         <div class="floatL m20l">
           <p class="fs20 ss"><strong>Guías Interactivas</strong></p>
-          <p class="fs20 grey6"><em>Banorte por Internet</em></p>
+          <p class="fs20 grey6"><em>Banorte es su Empresa</em></p>
         </div>
       </div>
     </div>
@@ -282,11 +282,12 @@
 </ul>
 </div>
 </div>
+<div class="cont-stage" id="contenedor">
 <div id="stage">
   <div class="img-stage">
     <img src="assets/img/photos/portada.png" alt="Bienvenido a las guías interactivas">
   </div>
-    <div class="text-stage">
+  <div class="text-stage hide" id="stage1">
       <h3>Bienvenido a las</h3>
       <h1>Guías Interactivas<br>de Banorte por Internet</h1>
       <h2>Aquí encontrarás material de apoyo para <br>conocer cómo operar tu banca electrónica.</h2>
@@ -300,6 +301,32 @@
         <a href="#" id="search1">Buscar guÍas</a>
       </div>
     </div>
+    <div class="text-stage" id="stage2">
+    <div class="close-index" id="ocultar"></div>
+      <h3>¿Su primera vez en BEM?</h3>
+      <p>Si es nuevo usuario de Banorte en su Empresa, <br/>
+		 asegúrese de consultar las siguientes tres guías</p>
+         <div class="boton-pasos">
+         <img src="assets/img/btns/play.png">
+        <a href="#">1. Asignación de Usuario</a>
+      </div>
+      <div class="boton-pasos">
+        <img src="assets/img/btns/play.png">
+        <a href="#">2. Dar permisos a usuarios</a>
+      </div>
+      <div class="boton-pasos">
+         <img src="assets/img/btns/play.png">
+        <a href="#">3.  Asignación de Cuentas</a>
+      </div>
+      <div class="check">
+      	<input type="checkbox"><label>No mostrar de nuevo este mensaje.</label>
+      </div>
+      <div class="buscar-guias">
+        <img src="assets/img/icons/lupa.png">
+        <a href="#" id="search1">Buscar guÍas</a>
+      </div>
+    </div>
+</div>
 </div>
 <div id="prefooter">
     <div class="prefl">
@@ -517,15 +544,11 @@
    });	
      $("#tfBuscar").focus();
 	 /*Cuadros de busqueda*/
- $('#questions').click(function () {
-$('#questions').addClass('active')
- $('#showgeneral , #showresult').slideToggle({direction: "up"}, 300);});
- $('#questions1').click(function () {
-$('#questions1').addClass('active')
- $('#showgeneral1 , #showresult1').slideToggle({direction: "up"}, 300);});
- $('#questions2').click(function () {
-$('#questions2').addClass('active')
- $('#showgeneral2 , #showresult2').slideToggle({direction: "up"}, 300);});
+ 		$('#ocultar').click(function(){
+	 $('#stage1').removeClass('hide');
+	 $('#stage2').addClass('hide')
+	 $('#contenedor').removeClass('cont-stage')
+	  });	
    </script>
 </body>
 </html>

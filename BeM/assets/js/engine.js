@@ -99,4 +99,16 @@ $(document).ready(function() {
 						}
 				}
 			}	
+			/* javascript de tabs*/
+			$('.questions').click(function () {
+				$(this).addClass('active')
+				if((this).hasClass('active')){
+					$(this)('.showgeneral').slideToggle({direction: "up"}, 300);
+					}else{
+				
+				$(this)('.showresult').slideToggle({direction: "up"}, 300);
+					}
+				})
+
+  
 			
