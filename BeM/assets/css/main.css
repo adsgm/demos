@@ -121,7 +121,6 @@ body {
 #search-overlay{ color:#FFF; font-weight:500;}
 #search-overlay .cont2{ top:90px; left:60px; padding:0; width: 100%; }
 #close{ width:69px; height:69px; background:url(../img/btns/close.gif) no-repeat; cursor:pointer; display:block; position:absolute; margin-top:-60px; margin-left:900px;}
-.close-index{ width:69px; height:69px; background:url(../img/btns/close-index.png) no-repeat; cursor:pointer; display:block; position:absolute; margin-top:20px; margin-left:330px;}
 #search-overlay input{ height:128px; color:#FFF; background:none; border:none; /*border-left:1px solid #FFF;*/ line-height:128px; font-size:80px; font-style:italic; }
 #search-overlay input:focus{ outline:none; }
 #busqueda{ background: url(../img/bg/trans.png); width:100%; height:100%; position:absolute; top:0; left:0; z-index:80; display:none; }
@@ -130,6 +129,7 @@ body {
 #results{ padding:20px 60px; width:1024px !important; }
 li{ list-style: none;}
 .intro{ height:93px;}
+
 /*FOOTER*/
 .footer{ background: url(../img/bg/bg-footer.png) center 0 no-repeat; padding: 22px 0 40px; text-align: center; }
 .footer a{ margin: 0 10px; }
@@ -149,9 +149,9 @@ li{ list-style: none;}
 
 /*	- Site Layout -	*/
 .content{ width: 980px; margin: 0 auto;}
-.cont-stage{ width:100%; background:url(../img/bg/stage-background.png)}
-#stage{ height: 343px; padding-top: 10px; position: relative; width: 980px;background: url(../img/bg/bg-stage.png) center bottom no-repeat; margin: 0 auto;}
+#stage{ height: 343px; padding-top: 10px; position: relative; background: url(../img/bg/bg-stage.jpg) center bottom no-repeat; width: 980px; margin: 0 auto;}
 .main-content{ width: 980px; margin: 0 auto; min-height: 200px;}
+
 /*	- Buttons -	*/
 .buscar span{ background: url(../img/icons/lupa.png) center center no-repeat; width: 24px; height: 24px; display: inline-block; padding-top: 13px; padding-bottom: 13px; }
 .finalizar span{ background: url(../img/btns/arrows.png) center center no-repeat; width:19px; height:19px; display: inline-block; padding-top: 13px; padding-bottom: 13px; }
@@ -204,6 +204,7 @@ li{ list-style: none;}
 /*			- Media Queries -			*/
 @media (max-width: 1200px) {  	
 }
+
 /*MENU*/
 .mainmenu{ background: url(../img/bg/bg-nav.gif); height: 50px; z-index: 800; position: relative; width: 100%;}
 .nav {width: 980px; margin: 0 auto; z-index: 800;}
@@ -295,6 +296,7 @@ li{ list-style: none;}
    CABRAL
    ========================================================================== */
 .row{ width: 100%; clear: both;}
+
 /* STAGES*/
 .img-stage{width: 40%; float: left; height: 342px;}
 .text-stage{width: 55%; float: right;}
@@ -308,20 +310,16 @@ li{ list-style: none;}
 .header p {font-size: 15px; color: #A5A5A5;}
 .header h1 {font-size: 26px; color: #B00000; padding:13px 0; margin: 0;}
 .sombra{width: 100%; height: 28px; background: url(../../assets/img/bg/sombra.png); background-repeat: no-repeat; background-position: center;}
-.check{font-family: 'Source Sans Pro', arial, sans-serif; font-size: 15px; color:#777777; margin-bottom:2px;}
-/*boton pasos*/
-.boton-pasos{width: 223px; height: 25px; background: url(../../assets/img/btns/buscar-guias.jpg); padding: 7px 0; display: block; margin:10px 0 10px 0;}
-.boton-pasos a, .boton-pasos img{float: left; padding: 3px 0 0 10px;}
-.boton-pasos a{ margin:2px;text-transform: uppercase; color: #fff; font-family: 'Signika-Light', arial; font-size: 12px !important;}
-/*boton guias*/
 .buscar-guias{width: 150px; height: 30px; background: url(../../assets/img/btns/buscar-guias.jpg); background-repeat: no-repeat; padding: 10px 0; display: block; float: left;}
 .buscar-guias a, .buscar-guias img{float: left; padding: 0 0 0 10px;}
 .buscar-guias a{ font-size: 15px; text-transform: uppercase; color: #fff;}
+
 /*SECCION PASOS*/
 .block-pasos{width: 670px; height: 40px; margin: 0 auto 5px;}
 .pasos li { width: 70px; height: 35px; font-size:20px; background: url(../img/icons/pasos.png); background-repeat: no-repeat; float: left; position: relative;}
 .pasos li:last-child{width: 36px;}
 .pasos  a{ position:absolute; color:#878787; top: 6px; left: 13px; font-size: 17px; font-weight: 600;}
+.pasos li:last-child a{ left: 7px;}
 .pasos .on { background-position: 0 -35px !important; color: #B00000;}
 .pasos .on a { color: #B00000;}
 .shuf{color: #B00000; font-weight:bold; font-size:24px !important;}
@@ -331,39 +329,23 @@ li{ list-style: none;}
 .content-categoria a{ font-size:13px; font-weight:bold;color:#B00000; margin:0 15px;}
 .boton-rojo{
 	background:url(../img/btns/cdro-rojo.png) no-repeat left;
-	padding:6px 17px;
+	padding:6px 20px;
 }
 .boton-rojo-big{
 	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-	padding:6px 43px;
+	padding:6px 44px;
 }
-.boton-rojo-big-numero{
+.boton-rojo-big-tarjeta-destino{
 	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-	padding:6px 28px;
+	padding:6px 33px;
 }
-.boton-rojo-big-nombre{
+.boton-rojo-big-tarjeta-pass{
 	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-	padding:6px 25px;
-}
-.boton-rojo-big-correo{
-	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-	padding:6px 18px;
-}
-.boton-rojo-big-identificacion{
-	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-	padding:6px 39px;
-}
-.boton-rojo-big-usuario{
-	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-	padding:6px 8px;
-}
-.boton-rojo-big-permisos{
-	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-	padding:6px 5px;
+	padding:6px 46px;
 }
 .boton-rojo-b{
 	background:url(../img/btns/cuado-mas-grande-rojo.png) no-repeat;
-	padding:6px 100px;
+	padding:6px 15px;
 }
 .content-pasos h3{ font-size:20px;}
 .content-guia{
@@ -418,68 +400,77 @@ li{ list-style: none;}
 .unselectable{visibility: hidden;}
 .zoom {height: 25px; margin: 10px 0 0 30px; width: 150px;}
 .zoom h3 a{font-size: 20px; font-weight: 400; margin:  0;}
-.zoom a{ cursor:pointer;}
 .zoom img, .zoom h3{float: left; font-size: 20px; font-weight: 400; margin:  0;}
-/* Cuadro de Busqueda */
+
+/* CUADRO BUSQUEDA */
 .bloque{
 	font-family:"Source Sans Pro", sans-serif ;
-	width:290px;
+	width:288px;
 	float:left;
 	height:260px;
 	overflow:hidden;
 	margin:15px;
-		background-color:#EEEEEE;
+	background-color:#EEEEEE;
 }
 .content-result{
 	width:100%;
-	height:210px;
+	height:200px;
 	background-color:#EEEEEE;	
 }
-.botom{width:100%;}
+.bottom{width:100%; padding-top: 10px;}
 .bottom > div{
 	float:left;
-	width:85px;
+	width:83px;
 	height:50px;
-	background:url(../img/bg/b-tab.png);
 	font-family:"Source Sans Pro", sans-serif ;
 }
-.bottom > div  img{
-	padding:10px 30px;
-	float:left;
-	cursor:pointer;
-}
-.bottom > div:last-child{
-	width:120px;
-	height:50px;
-	right:20px;
-	background:url(../img/bg/bg-ver.png);
-}
-.bottom > div:last-child a p{
-	color:#FFF;
-	text-decoration:none;
-	font-size:12px;
-	font-weight:400;
-	position:absolute;
-	margin:15px 45px;;
-}
-.bottom > div:last-child a img{padding:10px 15px;}
 .result > div{ padding:6px 0; height:17px;}
 .result > div:last-child{ padding:0 0; height:5px;}
 .hide{ display:none;}
 .general, .result{ width:100%; background-color:#EEEEEE; height:210px;}
 .general h1, .general h2 , .general h3{ padding:10px ; font-family:"Source Sans Pro", sans-serif; font-weight:700;}
 .general p{ padding:10px; margin-top:10px;}
-.general h1{ font-size:16px !important; color:#4D4D4D; font-weight:700; margin-bottom:2px;}
-.general h2{ font-size:22px !important; color:#B00000; margin:5px 0 10px 0; }
+.general h1{ font-size:16px !important; color:#4D4D4D; font-weight:700; margin-bottom:10px;}
+.general h2{ font-size:22px !important; color:#B00000; margin:5px 0 25px 0; }
 .general p , .result h3{ font-size:14px; font-family:"Signika-Light", sans-serif; color:#868686;}
-.result h3:before{content:url("../img/bg/tabs-c.png") ;}
+.result h3:before{content:url("../img/bg/tabs-c.png"); padding: 0 5px 0 0;}
 .result h3{text-indent: -18px; padding:4px 27px; height:20px;}
+.questGuia, .linkGuia{background: url(../img/bg/questions1.png); background-repeat: no-repeat; cursor:pointer;}
+.questGuia:hover, .linkGuia:hover{background: url(../img/bg/questions.png); background-repeat: no-repeat;}
+.linkGuia img{
+	padding:15px 30px 0;
+	float:left;
+	cursor:pointer;
+}
+.questGuia a{
+	background: url(../img/btns/btn-questions.png); 
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	margin: 15px auto 0;
+	display: block;
+}
+.questGuia a.equis{
+	background: url(../img/btns/btn-questions2.png); 
+	background-repeat: no-repeat;
+}
+.verGuia p{
+	float: left;
+	color:#FFF;
+	text-decoration:none;
+	font-size:11px;
+	font-family: 'Source Sans Pro-Bold', arial;
+	padding: 23px 0 0;
+}
+.verGuia{width: 112px !important; background:url(../img/bg/bg-ver.png); padding: 0 5px;}
+.verGuia img{padding:15px 10px; float: left;}
+
 .line-tabs-2{
 	background:url(../img/bg/line-2-tabs.png) no-repeat left;
 	height:2px;
 	width:100%;
 }
-.active{ background:url(../img/bg/back-botton-tab-act.png);}
+.active{ background: url(../img/bg/questions.png); background-repeat: no-repeat;}
 .line-quetions-tabs{
 	background:url(../img/bg/line-question-tabs.png) no-repeat left;
 	height:1px;
@@ -491,8 +482,12 @@ li{ list-style: none;}
 	height:2px;
 	width:100%;
 }
-.select-preferencias{ font-size:20px; font-family: "Source Sans Pro", sans-serif; font-weight:200; color:#939393;  }
+.questGuia:hover{ background: }
+.questGuia .cerrar{}
+
+/* SELECT PREFERENCIAS*/
+.select-preferencias{ font-size:20px; font-family: "Source Sans Pro", sans-serif; font-weight:200; color:#939393; width:350px; }
 .select-preferencias div{ padding:35px 10px;height:22px;float:left; text-align:left;}
 .arrow-preferencias{ margin:3px 5px 0 0; width: 10px;}
 .content-select{ width:980px;}
-.size-select{ width:300px;  margin:33px  0  0 400px; position:absolute;}
+.size-select{ width:300px;  margin:33px  0  0 300px; position:absolute;}

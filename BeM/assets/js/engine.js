@@ -27,6 +27,20 @@ $(document).ready(function() {
 		}
 	});
 
+	// Tabs de Busqueda
+	$('.questions').click(function () {
+		$(this).toggleClass('active');
+		$(this).parent().parent().find('.questGuia a').toggleClass('equis');
+		if($(this).hasClass('active')) {
+		$(this).parent().parent().find('.showresult').show("slide", { direction: "down" }, 300);;
+		$(this).parent().parent().find('.showgeneral').hide();
+	}
+	else{
+		$(this).parent().parent().find('.showresult').hide();
+		$(this).parent().parent().find('.showgeneral').show("slide", { direction: "down" }, 300);;
+	}
+  });
+
 	// Search
 	$(document).bind('keydown', function(e){ fnsearch(e); });
 	$('#search').live('click', function(){ 
@@ -99,16 +113,4 @@ $(document).ready(function() {
 						}
 				}
 			}	
-			/* javascript de tabs*/
-			$('.questions').click(function () {
-				$(this).addClass('active')
-				if((this).hasClass('active')){
-					$(this)('.showgeneral').slideToggle({direction: "up"}, 300);
-					}else{
-				
-				$(this)('.showresult').slideToggle({direction: "up"}, 300);
-					}
-				})
-
-  
 			
