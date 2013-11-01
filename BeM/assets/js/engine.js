@@ -102,7 +102,13 @@ $(document).ready(function() {
 			/* javascript de tabs*/
 			$('.questions').click(function () {
 				$(this).addClass('active')
-				$(this).('.showgeneral , .showresult').slideToggle({direction: "up"}, 300);});
+				if((this).hasClass('active')){
+					$(this)('.showgeneral').slideToggle({direction: "up"}, 300);
+					}else{
+				
+				$(this)('.showresult').slideToggle({direction: "up"}, 300);
+					}
+				})
 
   
 			
