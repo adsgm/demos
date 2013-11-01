@@ -435,12 +435,24 @@ li{ list-style: none;}
 .general p , .result h3{ font-size:14px; font-family:"Signika-Light", sans-serif; color:#868686;}
 .result h3:before{content:url("../img/bg/tabs-c.png"); padding: 0 5px 0 0;}
 .result h3{text-indent: -18px; padding:4px 27px; height:20px;}
-.questGuia, .linkGuia{background: url(../img/bg/questions1.png); background-repeat: no-repeat;}
+.questGuia, .linkGuia{background: url(../img/bg/questions1.png); background-repeat: no-repeat; cursor:pointer;}
 .questGuia:hover, .linkGuia:hover{background: url(../img/bg/questions.png); background-repeat: no-repeat;}
-.questGuia img, .linkGuia img{
+.linkGuia img{
 	padding:15px 30px 0;
 	float:left;
 	cursor:pointer;
+}
+.questGuia a{
+	background: url(../img/btns/btn-questions.png); 
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	margin: 15px auto 0;
+	display: block;
+}
+.questGuia a.equis{
+	background: url(../img/btns/btn-questions2.png); 
+	background-repeat: no-repeat;
 }
 .verGuia p{
 	float: left;

@@ -149,7 +149,7 @@
     <!--Bloque 1-->
     <div class="bloque">
      <div class="content-result">
-      <div class="general" id="showgeneral">
+      <div class="general showgeneral">
        <div>
         <h1>TRANSFERENCIAS</h1>
       </div>
@@ -162,7 +162,7 @@
         <p>En esta sección podrás agregar usuarios de acuerdo a tus necesidades, dar permisos, asignar servicios y cuentas.</p>
       </div>
     </div>
-    <div class="result hide" id="showresult">
+    <div class="result hide showresult">
      <div>
        <h3>¿Cómo utilizar las claves de banca personal?</h3>
      </div>
@@ -182,7 +182,7 @@
   </div>
   <div class="bottom">
    <div class="linkGuia"><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
-   <div class="questGuia back" id="questions"><a><img src="assets/img/btns/btn-questions.png" /></a></div>
+   <div class="questGuia questions"><a></a></div>
    <div class="verGuia"><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
   </div>
   </div></div>
@@ -190,7 +190,7 @@
   <!--Bloque 3-->
   <div class="bloque">
    <div class="content-result">
-    <div class="general" id="showgeneral1">
+    <div class="general showgeneral">
      <div>
       <h1>TRANSFERENCIAS</h1>
     </div>
@@ -203,7 +203,7 @@
       <p>En esta sección podrás agregar usuarios de acuerdo a tus necesidades, dar permisos, asignar servicios y cuentas.</p>
     </div>
   </div>
-  <div class="result hide" id="showresult1">
+  <div class="result hide showresult">
    <div>
      <h3>¿Cómo utilizar las claves de banca personal?</h3>
    </div>
@@ -223,7 +223,7 @@
   </div>
   <div class="bottom">
    <div class="linkGuia"><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
-   <div class="questGuia back" id="questions1"><a><img src="assets/img/btns/btn-questions.png" /></a></div>
+   <div class="questGuia questions"><a></a></div>
    <div class="verGuia"><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
 
   </div>
@@ -232,7 +232,7 @@
   <!--Bloque 3-->
   <div class="bloque">
    <div class="content-result">
-    <div class="general" id="showgeneral2">
+    <div class="general showgeneral">
      <div>
       <h1>TRANSFERENCIAS</h1>
     </div>
@@ -245,7 +245,7 @@
       <p>En esta sección podrás agregar usuarios de acuerdo a tus necesidades, dar permisos, asignar servicios y cuentas.</p>
     </div>
   </div>
-  <div class="result hide" id="showresult2">
+  <div class="result hide showresult">
     <div>
       <h3>¿Cómo utilizar las claves de banca personal?</h3>
     </div>
@@ -265,7 +265,7 @@
   </div>
   <div class="bottom">
    <div class="linkGuia"><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
-   <div class="questGuia back" id="questions2"><a><img src="assets/img/btns/btn-questions.png" /></a></div>
+   <div class="questGuia questions"><a></a></div>
    <div class="verGuia"><a href="#"><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
 
   </div>
@@ -278,7 +278,8 @@
   <!-- Add fancyBox main JS and CSS files -->
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-  <script src="assets/js/iosslider.js"></script> 
+  <script src="assets/js/iosslider.js"></script>
+  <script type="text/javascript" src="assets/js/engine.js"></script>
   <script type="text/javascript">
   $(document).ready(function() {
 
@@ -312,6 +313,7 @@
 
   <script>
   $("#tfBuscar").focus();
+
   /*Cuadros de busqueda*/
 
   $(function() {
@@ -328,18 +330,8 @@
    $(".slide img").animate({ 'zoom': 1 }, 700)
    $('.zoom #uno').removeClass('shuf');
    $('.zoom #dos').addClass('shuf');
-
-
   }
-  $('#questions').click(function () {
-    $('#questions').addClass('active')
-    $('#showgeneral , #showresult').slideToggle({direction: "up"}, 300);});
-  $('#questions1').click(function () {
-    $('#questions1').addClass('active')
-    $('#showgeneral1 , #showresult1').slideToggle({direction: "up"}, 300);});
-  $('#questions2').click(function () {
-    $('#questions2').addClass('active')
-    $('#showgeneral2 , #showresult2').slideToggle({direction: "up"}, 300);});
+
   </script>
   </body>
   </html>
