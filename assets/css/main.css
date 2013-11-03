@@ -150,7 +150,7 @@ li{ list-style: none;}
 /*	- Site Layout -	*/
 .content{ width: 980px; margin: 0 auto;}
 #stage{ height: 343px; padding-top: 10px; position: relative; background: url(../img/bg/bg-stage.jpg) center bottom no-repeat; width: 980px; margin: 0 auto;}
-.main-content{ width: 980px; margin: 0 auto; min-height: 200px;}
+.main-content{ width: 980px; margin: 0 auto 10px; min-height: 200px;}
 
 /*	- Buttons -	*/
 .buscar span{ background: url(../img/icons/lupa.png) center center no-repeat; width: 24px; height: 24px; display: inline-block; padding-top: 13px; padding-bottom: 13px; }

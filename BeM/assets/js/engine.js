@@ -27,6 +27,20 @@ $(document).ready(function() {
 		}
 	});
 
+	// Tabs de Busqueda
+	$('.questions').click(function () {
+		$(this).toggleClass('active');
+		$(this).parent().parent().find('.questGuia a').toggleClass('equis');
+		if($(this).hasClass('active')) {
+		$(this).parent().parent().find('.showresult').show("slide", { direction: "down" }, 300);;
+		$(this).parent().parent().find('.showgeneral').hide();
+	}
+	else{
+		$(this).parent().parent().find('.showresult').hide();
+		$(this).parent().parent().find('.showgeneral').show("slide", { direction: "down" }, 300);;
+	}
+  });
+
 	// Search
 	$(document).bind('keydown', function(e){ fnsearch(e); });
 	$('#search').live('click', function(){ 
@@ -34,7 +48,7 @@ $(document).ready(function() {
 		var w = $(document).width(); var h = $(document).height(); //var h2 = $('#footer').height(); h = h - h2 - 25;
 		$('#search-overlay').width(w).height(h);
 		$('#search-overlay').show(300);
-		$('#autocomplete').focus();
+		$('#tfBuscar').focus();
 		$('#close2').click(function(){ $('#search-overlay').hide(300); $('#search').removeClass('on'); });
 	});
 	$('#search.on').live('click', function(){ 
@@ -47,7 +61,7 @@ $(document).ready(function() {
 		var w = $(document).width(); var h = $(document).height(); //var h2 = $('#footer').height(); h = h - h2 - 25;
 		$('#search-overlay').width(w).height(h);
 		$('#search-overlay').show(300);
-		$('#autocomplete').focus();
+		$('#tfBuscar').focus();
 		$('#close2').click(function(){ $('#search-overlay').hide(300); $('#search1').removeClass('on'); });
 	});
 	$('#search.on').live('click', function(){ 
@@ -99,16 +113,15 @@ $(document).ready(function() {
 						}
 				}
 			}	
-			/* javascript de tabs*/
-			$('.questions').click(function () {
-				$(this).addClass('active')
-				if((this).hasClass('active')){
-					$(this)('.showgeneral').slideToggle({direction: "up"}, 300);
-					}else{
-				
-				$(this)('.showresult').slideToggle({direction: "up"}, 300);
-					}
-				})
-
-  
-			
+	function fnsearch(e){ 
+	if (e.keyCode == 27){ 
+		$('#search-overlay').hide(300); $('#search1').removeClass('on');
+	} 
+	if (e.keyCode >= 65 && e.keyCode <= 90){
+		$('#search1').addClass('on');
+		var w = $(document).width(); var h = $(document).height(); var h2 = $('#footer').height(); h = h - h2 - 25;
+		$('#search-overlay').width(w).height(h).show(300);
+		$('#tfBuscar').focus();
+	}
+	$('#close2').click(function(){ $('#search-overlay').hide(300); $('#search').removeClass('on'); });
+}

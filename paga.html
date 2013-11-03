@@ -279,7 +279,6 @@
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script src="assets/js/iosslider.js"></script>
-  <script type="text/javascript" src="assets/js/engine.js"></script>
   <script type="text/javascript">
   $(document).ready(function() {
 
@@ -309,9 +308,24 @@
     });
 
   });
+
+  // Tabs de Busqueda
+  $('.questions').click(function () {
+    $(this).toggleClass('active');
+    $(this).parent().parent().find('.questGuia a').toggleClass('equis');
+    if($(this).hasClass('active')) {
+    $(this).parent().parent().find('.showresult').show("slide", { direction: "down" }, 300);;
+    $(this).parent().parent().find('.showgeneral').hide();
+  }
+  else{
+    $(this).parent().parent().find('.showresult').hide();
+    $(this).parent().parent().find('.showgeneral').show("slide", { direction: "down" }, 300);;
+  }
+  });
   </script>
 
   <script>
+
   $("#tfBuscar").focus();
 
   /*Cuadros de busqueda*/
