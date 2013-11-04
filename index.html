@@ -22,6 +22,7 @@
   <meta name="keywords" content="" />
   <title>Banorte - Demos Interactivos</title>
   <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css" media="screen" /> 
   <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
 
   </head>
@@ -374,12 +375,12 @@
             </div>	
         
         </div>
-        <div class="bottom">
-        	<div><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
-        	<div id="questions"class="back"><a><img src="assets/img/btns/btn-questions.png" /></a></div>
-        	<div><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
-            
-        </div>
+         <div class="bottom">
+                       <div class="linkGuia tip" title="Demos relacionados"><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
+                       <div class="questGuia questions tip" title="Preguntas frecuentes"><a></a></div>
+                       <div class="verGuia tip" title="Mostrar demo"><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
+                    
+                      </div>
     </div>
                     <!--Fin bloque 1-->
                     <!--Inicio de bloque 2-->
@@ -417,12 +418,12 @@
             </div>	
         
         </div>
-        <div class="bottom">
-        	<div><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
-        	<div id="questions1"class="back"><a><img src="assets/img/btns/btn-questions.png" /></a></div>
-        	<div><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
-            
-        </div>
+         <div class="bottom">
+                       <div class="linkGuia tip" title="Demos relacionados"><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
+                       <div class="questGuia questions tip" title="Preguntas frecuentes"><a></a></div>
+                       <div class="verGuia tip" title="Mostrar demo"><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
+                    
+                      </div>
     </div>
                     <!--Fin bloque 2-->
                     <!--Inicio de bloque 3-->
@@ -460,12 +461,12 @@
             </div>	
         
         </div>
-        <div class="bottom">
-        	<div><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
-        	<div id="questions2"class="back"><a ><img src="assets/img/btns/btn-questions.png" /></a></div>
-        	<div><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
-            
-        </div>
+         <div class="bottom">
+                       <div class="linkGuia tip" title="Demos relacionados"><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
+                       <div class="questGuia questions tip" title="Preguntas frecuentes"><a></a></div>
+                       <div class="verGuia tip" title="Mostrar demo"><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
+                    
+                      </div>
     </div>
                     <!--Fin bloque 3-->
                     </div>
@@ -494,16 +495,18 @@
 			</div>
             <div class="cont clearfix"></div></div>
     </div></div></div> 
-     <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
     <!-- Add fancyBox main JS and CSS files -->
-    <script type="text/javascript" src="assets/js/functions.js"></script>
-    <script type="text/javascript" src="assets/js/engine.js"></script>
-    <script type="text/javascript" src="assets/js/fancybox.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css" media="screen" /> 
+  <script type="text/javascript" src="assets/js/functions.js"></script>
+  <script type="text/javascript" src="assets/js/engine.js"></script>
+  <script type="text/javascript" src="assets/js/fancybox.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.tiptip.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
-     $(".various").fancybox({
+    $(".tip").tipTip();
+    
+    $(".various").fancybox({
       maxWidth	: 1154,
       maxHeight	: 1280, 
       fitToView	: false,
