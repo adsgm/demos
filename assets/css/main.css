@@ -8,6 +8,11 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .block {	display: block;	}
 .relative, section{ position:relative; }
 
+/*CRAK IE9 INPUT*/
+.someinput::-ms-clear {
+    display: none;
+}
+
 /*			- Paddings/Margins/Widths/Borders -			*/
 .hide{ display:none;}
 .m0, .mainheader p { margin:0; }
