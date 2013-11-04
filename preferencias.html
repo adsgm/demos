@@ -24,6 +24,7 @@
   <title>Banorte - Demos Interactivos</title>
   <link rel="stylesheet" href="assets/css/dropkick.css" type="text/css">
   <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css" media="screen" /> 
   
     <!--[if IE]>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400' rel='stylesheet' type='text/css'>
@@ -356,9 +357,9 @@
                       </div>	
                       </div>
                       <div class="bottom">
-                       <div class="linkGuia"><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
-                       <div class="questGuia questions"><a></a></div>
-                       <div class="verGuia"><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
+                       <div class="linkGuia tip" title="Demos relacionados"><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
+                       <div class="questGuia questions tip" title="Preguntas frecuentes"><a></a></div>
+                       <div class="verGuia tip" title="Mostrar demo"><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
                     
                       </div>
                       </div>
@@ -896,27 +897,29 @@
 <script type="text/javascript" src="assets/js/functions.js"></script>
 <script type="text/javascript" src="assets/js/engine.js"></script>
 <script type="text/javascript" src="assets/js/fancybox.js"></script>
-<link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css" media="screen" /> 
+<script type="text/javascript" src="assets/js/jquery.tiptip.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-  <script src="assets/js/jquery.dropkick-min.js"></script>
-  <script type="text/javascript" charset="utf-8">
+<script src="assets/js/jquery.dropkick-min.js"></script>
+<script type="text/javascript" charset="utf-8">
     $(function () {
       $('.default').dropkick();
       $('.dk_container').first().focus();
     });
 
 $(document).ready(function() {
- $(".various").fancybox({
-  maxWidth	: 1154,
-  maxHeight	: 1280, 
-  fitToView	: false,
-  width		: '98%;',
-  height	: '100%',
-  autoSize	: false,
-  closeClick	: false,
-  openEffect	: 'none',
-  closeEffect	: 'none'
-});
+  $(".tip").tipTip();
+
+  $(".various").fancybox({
+    maxWidth	: 1154,
+    maxHeight	: 1280, 
+    fitToView	: false,
+    width		: '98%;',
+    height	: '100%',
+    autoSize	: false,
+    closeClick	: false,
+    openEffect	: 'none',
+    closeEffect	: 'none'
+  });
 });	
 $("#tfBuscar").focus();
   
