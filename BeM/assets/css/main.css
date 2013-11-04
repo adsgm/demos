@@ -8,6 +8,11 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .block {	display: block;	}
 .relative, section{ position:relative; }
 
+/*CRAK IE9 INPUT*/
+.someinput::-ms-clear {
+    display: none;
+}
+
 /*			- Paddings/Margins/Widths/Borders -			*/
 .hide{ display:none;}
 .m0, .mainheader p { margin:0; }
@@ -131,7 +136,7 @@ li{ list-style: none;}
 .intro{ height:93px;}
 
 /*FOOTER*/
-.footer{ background: url(../img/bg/bg-footer.png) center 0 no-repeat; padding: 22px 0 40px; text-align: center; }
+.footer{ background: url(../img/bg/bg-footer.png) center 0 no-repeat; padding: 22px 0 0px; text-align: center; }
 .footer a{ margin: 0 10px; }
 #prefooter{ height: 108px; width: 980px; margin: 0 auto; position: relative;}
 #prefooter > img{ position: absolute; top: -36px; left: 50%; margin-left: -57px; }
@@ -149,15 +154,9 @@ li{ list-style: none;}
 
 /*	- Site Layout -	*/
 .content{ width: 980px; margin: 0 auto;}
-<<<<<<< HEAD
-.cont-stage{ width:100%; background:url(../img/bg/stage-background.png)}
-#stage{ height: 343px; padding-top: 10px; position: relative; width: 980px;background: url(../img/bg/bg-stage.png) center bottom no-repeat; margin: 0 auto;}
-.main-content{ width: 980px; margin: 0 auto 10px; min-height: 200px;}
-=======
 #stage{ height: 343px; padding-top: 10px; position: relative; background: url(../img/bg/bg-stage.jpg) center bottom no-repeat; width: 980px; margin: 0 auto;}
-.main-content{ width: 980px; margin: 0 auto; min-height: 200px;}
+.main-content{ width: 980px; margin: 0 auto 10px; min-height: 200px;}
 
->>>>>>> 11b3df4b8847fa9647bfbbaf04804624f524da66
 /*	- Buttons -	*/
 .buscar span{ background: url(../img/icons/lupa.png) center center no-repeat; width: 24px; height: 24px; display: inline-block; padding-top: 13px; padding-bottom: 13px; }
 .finalizar span{ background: url(../img/btns/arrows.png) center center no-repeat; width:19px; height:19px; display: inline-block; padding-top: 13px; padding-bottom: 13px; }
@@ -215,7 +214,10 @@ li{ list-style: none;}
 .mainmenu{ background: url(../img/bg/bg-nav.gif); height: 50px; z-index: 800; position: relative; width: 100%;}
 .nav {width: 980px; margin: 0 auto; z-index: 800;}
 .nav li{ background: url(../img/bg/nav-l.png) 0 center no-repeat; }
-.active-menu{ background:url(../img/bg/active-menu.png) !important; height:49px !important;}
+.active-menu{ 
+	background: #B20000 !important;
+	height:49px !important;
+}
 .nav li a{ 
 	line-height: 50px; 
 	display: block; 
@@ -339,19 +341,7 @@ li{ list-style: none;}
 }
 .boton-rojo-big{
 	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-<<<<<<< HEAD
-	padding:6px 43px;
-}
-.boton-rojo-big-numero{
-	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-	padding:6px 28px;
-}
-.boton-rojo-big-nombre{
-	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-	padding:6px 26px;
-=======
-	padding:6px 44px;
->>>>>>> 11b3df4b8847fa9647bfbbaf04804624f524da66
+	padding:6px 20px;
 }
 .boton-rojo-big-tarjeta-destino{
 	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;

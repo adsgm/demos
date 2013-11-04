@@ -196,7 +196,7 @@ li{ list-style: none;}
 	text-decoration:none;
 }
 .align-block{
-	width:1024px;
+	width:1024px !important;
 	margin:0 auto;
 }
 .second-line{
