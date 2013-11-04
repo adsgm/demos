@@ -449,11 +449,7 @@ li{ list-style: none;}
 .general h1, .general h2 , .general h3{ padding:10px ; font-family:"Source Sans Pro", sans-serif; font-weight:700;}
 .general p{ padding:10px; margin-top:10px;}
 .general h1{ font-size:16px !important; color:#4D4D4D; font-weight:700; margin-bottom:10px;}
-<<<<<<< HEAD
-.general h2{ font-size:22px !important; color:#B00000; margin:5px 0 0 0; }
-=======
 .general h2{ font-size:22px !important; color:#B00000; margin:5px 0 25px 0; }
->>>>>>> 11b3df4b8847fa9647bfbbaf04804624f524da66
 .general p , .result h3{ font-size:14px; font-family:"Signika-Light", sans-serif; color:#868686;}
 .result h3:before{content:url("../img/bg/tabs-c.png"); padding: 0 5px 0 0;}
 .result h3{text-indent: -18px; padding:4px 27px; height:20px;}

@@ -181,9 +181,9 @@
   </div>	
   </div>
   <div class="bottom">
-   <div class="linkGuia"><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
-   <div class="questGuia questions"><a></a></div>
-   <div class="verGuia"><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
+  <div class="linkGuia tip" title="Demos relacionados"><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
+                       <div class="questGuia questions tip" title="Preguntas frecuentes"><a></a></div>
+                       <div class="verGuia tip" title="Mostrar demo"><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
   </div>
   </div></div>
   <!--Fin bloque 1-->
@@ -222,9 +222,9 @@
   </div>	
   </div>
   <div class="bottom">
-   <div class="linkGuia"><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
-   <div class="questGuia questions"><a></a></div>
-   <div class="verGuia"><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
+   <div class="linkGuia tip" title="Demos relacionados"><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
+                       <div class="questGuia questions tip" title="Preguntas frecuentes"><a></a></div>
+                       <div class="verGuia tip" title="Mostrar demo"><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
 
   </div>
   </div></div>
@@ -264,9 +264,9 @@
   </div>	
   </div>
   <div class="bottom">
-   <div class="linkGuia"><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
-   <div class="questGuia questions"><a></a></div>
-   <div class="verGuia"><a href="#"><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
+   <div class="linkGuia tip" title="Demos relacionados"><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
+                       <div class="questGuia questions tip" title="Preguntas frecuentes"><a></a></div>
+                       <div class="verGuia tip" title="Mostrar demo"><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
 
   </div>
   </div></div>
@@ -276,12 +276,13 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"></script>
   <!-- Add fancyBox main JS and CSS files -->
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+      <script src="assets/js/engine.js"></script>
+      <script type="text/javascript" src="assets/js/jquery.tiptip.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script src="assets/js/iosslider.js"></script>
   <script type="text/javascript">
   $(document).ready(function() {
-
+	   $(".tip").tipTip();
     $('#Slider').iosSlider({
       desktopClickDrag: true,
       autoSlide: false,
@@ -309,30 +310,6 @@
 
   });
 
-  // Tabs de Busqueda
-  $('.questions').click(function () {
-    $(this).toggleClass('active');
-    $(this).parent().parent().find('.questGuia a').toggleClass('equis');
-    if($(this).hasClass('active')) {
-    $(this).parent().parent().find('.showresult').show("slide", { direction: "down" }, 300);;
-    $(this).parent().parent().find('.showgeneral').hide();
-  }
-  else{
-    $(this).parent().parent().find('.showresult').hide();
-    $(this).parent().parent().find('.showgeneral').show("slide", { direction: "down" }, 300);;
-  }
-  });
-  </script>
-
-  <script>
-
-  $("#tfBuscar").focus();
-
-  /*Cuadros de busqueda*/
-
-  $(function() {
-    $( document ).tooltip();
-  });
   /*Zoom*/
   function ZoomIn (event) {
 
