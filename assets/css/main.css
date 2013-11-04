@@ -131,7 +131,7 @@ li{ list-style: none;}
 .intro{ height:93px;}
 
 /*FOOTER*/
-.footer{ background: url(../img/bg/bg-footer.png) center 0 no-repeat; padding: 22px 0 40px; text-align: center; }
+.footer{ background: url(../img/bg/bg-footer.png) center 0 no-repeat; padding: 22px 0 0px; text-align: center; }
 .footer a{ margin: 0 10px; }
 #prefooter{ height: 108px; width: 980px; margin: 0 auto; position: relative;}
 #prefooter > img{ position: absolute; top: -36px; left: 50%; margin-left: -57px; }
@@ -209,7 +209,10 @@ li{ list-style: none;}
 .mainmenu{ background: url(../img/bg/bg-nav.gif); height: 50px; z-index: 800; position: relative; width: 100%;}
 .nav {width: 980px; margin: 0 auto; z-index: 800;}
 .nav li{ background: url(../img/bg/nav-l.png) 0 center no-repeat; }
-.active-menu{ background:url(../img/bg/active-menu.png) !important; height:49px !important;}
+.active-menu{ 
+	background: #B20000 !important;
+	height:49px !important;
+}
 .nav li a{ 
 	line-height: 50px; 
 	display: block; 
