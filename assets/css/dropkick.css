@@ -23,14 +23,11 @@
 .dk_toggle {
   border: 1px solid #535353;
   color: #333;
-<<<<<<< HEAD
+
   padding: 7px 45px 6px 10px;
   position: relative; }
-=======
-  padding: 7px 45px 7px 10px;
-  position: relative;
- }
->>>>>>> 36ceb26002085b4ed0c01d54dd4fe830862110b6
+
+
   .dk_toggle:hover {
     border-color: #8c8c8c; }
   .dk_toggle:after {
@@ -78,7 +75,6 @@
     color: #535353;
     text-decoration: none;
     }
-
   .dk_options li:last-child a {
     border-bottom: none; }
   .dk_options .disabled {
