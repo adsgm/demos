@@ -113,6 +113,7 @@ $(document).ready(function() {
 						}
 				}
 			}	
+<<<<<<< HEAD
 	function fnsearch(e){ 
 	if (e.keyCode == 27){ 
 		$('#search-overlay').hide(300); $('#search1').removeClass('on');
@@ -125,3 +126,6 @@ $(document).ready(function() {
 	}
 	$('#close2').click(function(){ $('#search-overlay').hide(300); $('#search').removeClass('on'); });
 }
+=======
+			
+>>>>>>> 11b3df4b8847fa9647bfbbaf04804624f524da66
