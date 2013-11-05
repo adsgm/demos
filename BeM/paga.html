@@ -23,6 +23,7 @@
   <meta name="keywords" content="" />
   <title>Banorte - Demos Interactivos</title>
   <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/tiptip.css" rel="stylesheet" type="text/css" />
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Signika:600' rel='stylesheet' type='text/css'>
     <!--[if IE]>
@@ -162,9 +163,13 @@
 
 </div>
 <div class="bottom">
- <div class="linkGuia"><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
- <div class="questGuia questions"><a></a></div>
- <div class="verGuia"><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
+  <div class="linkGuia tip" title="Demos relacionados">
+                <a href="#"><img src="assets/img/btns/btn-firt.png" /></a>
+              </div>
+              <div class="questGuia questions tip" title="Preguntas frecuentes"><a></a></div>
+              <div class="verGuia tip" title="Mostrar demo">
+                <a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a>
+              </div>
 
 </div>
 </div>
@@ -205,10 +210,13 @@
 
 </div>
 <div class="bottom">
- <div class="linkGuia"><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
- <div class="questGuia questions"><a></a></div>
- <div class="verGuia"><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
-
+  <div class="linkGuia tip" title="Demos relacionados">
+                <a href="#"><img src="assets/img/btns/btn-firt.png" /></a>
+              </div>
+              <div class="questGuia questions tip" title="Preguntas frecuentes"><a></a></div>
+              <div class="verGuia tip" title="Mostrar demo">
+                <a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a>
+              </div>
 </div>
 </div>
 <!--Fin bloque 8-->
@@ -248,9 +256,13 @@
 </div>
 
 <div class="bottom">
- <div class="linkGuia"><a href="#"><img src="assets/img/btns/btn-firt.png" /></a></div>
- <div class="questGuia questions"><a></a></div>
- <div class="verGuia"><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
+ <div class="linkGuia tip" title="Demos relacionados">
+                <a href="#"><img src="assets/img/btns/btn-firt.png" /></a>
+              </div>
+              <div class="questGuia questions tip" title="Preguntas frecuentes"><a></a></div>
+              <div class="verGuia tip" title="Mostrar demo">
+                <a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a>
+              </div>
 
 </div>
 </div></div>
@@ -263,12 +275,10 @@
 <script type="text/javascript" src="assets/js/engine.js"></script>
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<script type="text/javascript" src="assets/js/jquery.tiptip.js"></script> 
 <script src="assets/js/iosslider.js"></script> 
+<script type="text/javascript" src="assets/js/jquery.tiptip.js"></script> 
 <script type="text/javascript">
 $(document).ready(function() {
-  $('.default').dropkick();
-
   $('#Slider').iosSlider({
     desktopClickDrag: true,
     autoSlide: false,
@@ -295,6 +305,7 @@ $(document).ready(function() {
   });
 
 });
+  $(".tip").tipTip();
 </script>
 </body>
 </html>

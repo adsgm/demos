@@ -124,7 +124,7 @@ body {
 #search-overlay{ background:url(../img/bg/trans.png); width:100%; height:100%; position:absolute; top:0; left:0; z-index:9999; display:none;}
 #horizontal-wrap{  width:1024px; overflow-y:hidden;}
 #search-overlay{ color:#FFF; font-weight:500;}
-#search-overlay .cont2{ top:90px; left:60px; padding:0; width: 100%; }
+#search-overlay .cont2{ top:90px; left:60px; padding:0; width: 100%; padding:30px;}
 #close{ width:69px; height:69px; background:url(../img/btns/close.gif) no-repeat; cursor:pointer; display:block; position:absolute; margin-top:-60px; margin-left:900px;}
 .close-index{ width:69px; height:69px; background:url(../img/btns/close-index.png) no-repeat; cursor:pointer; display:block; position:absolute; margin-top:20px; margin-left:330px;}
 #search-overlay input{ height:128px; color:#FFF; background:none; border:none; /*border-left:1px solid #FFF;*/ line-height:128px; font-size:80px; font-style:italic; }
@@ -136,11 +136,9 @@ body {
 li{ list-style: none;}
 .intro{ height:93px;}
 /*FOOTER*/
-<<<<<<< HEAD
+
 .footer{ background: url(../img/bg/bg-footer.png) center 0 no-repeat; padding: 22px 0 0px; text-align: center; }
-=======
-.footer{ background: url(../img/bg/bg-footer.png) center 0 no-repeat; padding: 22px 0 0; text-align: center; }
->>>>>>> ea2c5fdac41e8493a76fec6895c24e266dd96589
+
 .footer a{ margin: 0 10px; }
 #prefooter{ height: 108px; width: 980px; margin: 0 auto; position: relative;}
 #prefooter > img{ position: absolute; top: -36px; left: 50%; margin-left: -57px; }
@@ -158,15 +156,11 @@ li{ list-style: none;}
 
 /*	- Site Layout -	*/
 .content{ width: 980px; margin: 0 auto;}
-<<<<<<< HEAD
-#stage{ height: 343px; padding-top: 10px; position: relative; background: url(../img/bg/bg-stage.jpg) center bottom no-repeat; width: 980px; margin: 0 auto;}
+
+#stage{ height: 343px; padding-top: 10px; position: relative; background: url(../img/bg/bg-stage.png) center bottom no-repeat; width: 980px; margin: 0 auto;}
 .main-content{ width: 980px; margin: 0 auto 10px; min-height: 200px;}
 
-=======
-.cont-stage{ width:100%; background:url(../img/bg/stage-background.png)}
-#stage{ height: 343px; padding-top: 10px; position: relative; width: 980px;background: url(../img/bg/bg-stage.png) center bottom no-repeat; margin: 0 auto;}
-.main-content{ width: 980px; margin: 0 auto 10px; min-height: 200px;}
->>>>>>> ea2c5fdac41e8493a76fec6895c24e266dd96589
+
 /*	- Buttons -	*/
 .buscar span{ background: url(../img/icons/lupa.png) center center no-repeat; width: 24px; height: 24px; display: inline-block; padding-top: 13px; padding-bottom: 13px; }
 .finalizar span{ background: url(../img/btns/arrows.png) center center no-repeat; width:19px; height:19px; display: inline-block; padding-top: 13px; padding-bottom: 13px; }
@@ -207,14 +201,20 @@ li{ list-style: none;}
 }
 .align-block{
 	width:1024px;
+	margin:0 450px;
 }
 .second-line{
 	margin-left:100px;
 }
 .width-line-tabs{
 	width:980px;
-}+
-
+}
+.busqueda1{
+	width:1024px;
+	margin:0 450px;
+}
+.content{ width: 980px; margin: 0 auto;}
+.cont-stage{ width:100%; background:url(../img/bg/stage-background.png)}
 /*			- JQuery Plugins -			*/
 /*			- Media Queries -			*/
 @media (max-width: 1200px) {  	
@@ -353,9 +353,7 @@ li{ list-style: none;}
 }
 .boton-rojo-big{
 	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-<<<<<<< HEAD
-	padding:6px 20px;
-=======
+
 	padding:6px 43px;
 }
 .boton-rojo-big-numero{
@@ -365,7 +363,6 @@ li{ list-style: none;}
 .boton-rojo-big-nombre{
 	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
 	padding:6px 26px;
->>>>>>> ea2c5fdac41e8493a76fec6895c24e266dd96589
 }
 .boton-rojo-big-correo{
 	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
@@ -472,11 +469,7 @@ li{ list-style: none;}
 .general h1, .general h2 , .general h3{ padding:10px ; font-family:"Source Sans Pro", sans-serif; font-weight:700;}
 .general p{ padding:10px; margin-top:10px;}
 .general h1{ font-size:16px !important; color:#4D4D4D; font-weight:700; margin-bottom:10px;}
-<<<<<<< HEAD
-.general h2{ font-size:22px !important; color:#B00000; margin:5px 0 0 0; }
-=======
 .general h2{ font-size:22px !important; color:#B00000; margin:5px 0 25px 0; }
->>>>>>> c328fb2e7d6eb4c8349df1f23a248195a34ad889
 .general p , .result h3{ font-size:14px; font-family:"Signika-Light", sans-serif; color:#868686;}
 .result h3:before{content:url("../img/bg/tabs-c.png"); padding: 0 5px 0 0;}
 .result h3{text-indent: -18px; padding:4px 27px; height:20px;}
