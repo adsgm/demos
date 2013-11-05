@@ -341,46 +341,19 @@ li{ list-style: none;}
 .pasos .on a { color: #B00000;}
 .shuf{color: #B00000; font-weight:bold; font-size:24px !important;}
 .content-pasos{width: 980px; margin: 25px auto;}
-.content-categoria{margin:5px auto; text-align:center; color:#B00000;font-size:18px; height:30px;}
+.content-categoria{margin: 5px auto; text-align:center; color:#B00000;font-size:18px; height:35px;}
 .content-categoria h3{font-size: 18px; }
 .content-categoria a{ font-size:13px; font-weight:bold;color:#B00000; margin:0 15px;}
-.boton-rojo{
-	background:url(../img/btns/cdro-rojo.png) no-repeat left;
-	padding:6px 17px;
-}
-.boton-rojo-big{
-	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
 
-	padding:6px 43px;
+.boton-rojo{
+	border:1px solid #B00;
+	-moz-border-radius: 6px; /* Firefox */
+	-webkit-border-radius: 6px; /* Safari and Chrome */
+	border-radius: 6px; /* Opera 10.5+, future browsers, and now also Internet Explorer 6+ using IE-CSS6*/
+	padding:6px;
+
 }
-.boton-rojo-big-numero{
-	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-	padding:6px 28px;
-}
-.boton-rojo-big-nombre{
-	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-	padding:6px 26px;
-}
-.boton-rojo-big-correo{
-	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-	padding:6px 18px;
-}
-.boton-rojo-big-identificacion{
-	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-	padding:6px 39px;
-}
-.boton-rojo-big-usuario{
-	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-	padding:6px 8px;
-}
-.boton-rojo-big-permisos{
-	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-	padding:6px 5px;
-}
-.boton-rojo-b{
-	background:url(../img/btns/cuado-mas-grande-rojo.png) no-repeat;
-	padding:6px 100px;
-}
+
 .content-pasos h3{ font-size:20px;}
 .content-guia{
 	width:980px;

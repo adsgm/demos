@@ -342,24 +342,11 @@ li{ list-style: none;}
 .content-categoria h3{font-size: 18px; }
 .content-categoria a{ font-size:13px; font-weight:bold;color:#B00000; margin:0 15px;}
 .boton-rojo{
-	background:url(../img/btns/cdro-rojo.png) no-repeat left;
-	padding:6px 20px;
-}
-.boton-rojo-big{
-	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-	padding:6px 20px;
-}
-.boton-rojo-big-tarjeta-destino{
-	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-	padding:6px 33px;
-}
-.boton-rojo-big-tarjeta-pass{
-	background:url(../img/btns/cuadro-grande-rojo.png) no-repeat ;
-	padding:6px 46px;
-}
-.boton-rojo-b{
-	background:url(../img/btns/cuado-mas-grande-rojo.png) no-repeat;
-	padding:6px 15px;
+	border:1px solid #B00;
+	-moz-border-radius: 6px; /* Firefox */
+	-webkit-border-radius: 6px; /* Safari and Chrome */
+	border-radius: 6px; /* Opera 10.5+, future browsers, and now also Internet Explorer 6+ using IE-CSS6*/
+	padding:6px;
 }
 .content-pasos h3{ font-size:20px;}
 .content-guia{
