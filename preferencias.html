@@ -321,6 +321,7 @@
                  </form>
             </div> 
     </div>
+<<<<<<< HEAD
     <div class="sombra clear"></div>
     					<!--Bloque 3-->
                         <div class="bloque tarjeta">
@@ -343,6 +344,28 @@
                            <h3>¿Cómo utilizar las claves de banca personal?</h3>
                          </div>
                          <div class="line-quetions-tabs"></div>
+=======
+  <div class="content-select">
+  	
+      	<div class="size-select clear" >
+              <form action="preferencias.html" name="formu" method="post" accept-charset="utf-8" >
+                   <select name="cuentas" class="default dk" onChange="submit()">
+                          <option value="MIS CUENTAS BANORTE">MIS CUENTAS BANORTE</option>
+                          <option value="MIS CUENTAS TERCEROS">MIS CUENTAS TERCEROS</option>
+                          <option value="MIS RFC´s">MIS RFC´s</option>
+                          <option value="MIS CRÉDITOS DE CONSUMO">MIS CRÉDITOS DE CONSUMO</option>
+                          <option value="MIS TELÉFONOS CELULARES">MIS TELÉFONOS CELULARES</option>
+                         
+                  </select>
+               </form>
+          </div> 
+  </div>
+  <div class="sombra clear"></div>
+  					<!--Bloque 3-->
+                      <div class="bloque tarjeta">
+                       <div class="content-result">
+                        <div class="general showgeneral">
+>>>>>>> d2c3946ab7faae4dd4656942cb34c0c1d4a2983a
                          <div>
                           <h3>¿Qué pasos seguir para sincronizar tu token?</h3>
                         </div>
@@ -918,6 +941,7 @@
   $(document).ready(function() {
     $(".tip").tipTip();
 
+<<<<<<< HEAD
     $(".various").fancybox({
       maxWidth	: 1154,
       maxHeight	: 1280, 
@@ -939,6 +963,27 @@
       });
     
   </script>
+=======
+  $(".various").fancybox({
+    maxWidth	: 1154,
+    maxHeight	: 1280, 
+    fitToView	: false,
+    width		: '98%;',
+    height	: '100%',
+    autoSize	: false,
+    closeClick	: false,
+    openEffect	: 'none',
+    closeEffect	: 'none'
+  });
+});	
+$('.dk').dropkick({
+    change: function (value, label) {               
+        alert("BUSQUEDA DE :"+value);
+    }
+});
+  
+</script>
+>>>>>>> d2c3946ab7faae4dd4656942cb34c0c1d4a2983a
 
 
   </body>
