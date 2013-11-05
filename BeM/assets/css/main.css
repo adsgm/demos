@@ -201,7 +201,8 @@ li{ list-style: none;}
 	text-decoration:none;
 }
 .align-block{
-	width:980px;
+	width:900px;
+	margin:0 auto;
 }
 .second-line{
 	margin-left:100px;

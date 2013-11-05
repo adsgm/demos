@@ -309,13 +309,13 @@
   <div class="content-select">
   	
       	<div class="size-select clear" >
-              <form action="#" method="post" accept-charset="utf-8" class="example_form">
-                   <select name="cuentas" class="default">
-                          <option value="">MIS CUENTAS BANORTE</option>
-                          <option value="">MIS CUENTAS TERCEROS</option>
-                          <option value="">MIS RFC´s</option>
-                          <option value="">MIS CRÉDITOS DE CONSUMO</option>
-                          <option value="">MIS TELÉFONOS CELULARES</option>
+              <form action="preferencias.html" name="formu" method="post" accept-charset="utf-8" id="ID_OF_SELECT_TAG">
+                   <select name="cuentas" class="default" onChange="submit()">
+                          <option value="MIS CUENTAS BANORTE">MIS CUENTAS BANORTE</option>
+                          <option value="MIS CUENTAS TERCEROS">MIS CUENTAS TERCEROS</option>
+                          <option value="MIS RFC´s">MIS RFC´s</option>
+                          <option value="MIS CRÉDITOS DE CONSUMO">MIS CRÉDITOS DE CONSUMO</option>
+                          <option value="MIS TELÉFONOS CELULARES">MIS TELÉFONOS CELULARES</option>
                          
                   </select>
                </form>
@@ -930,7 +930,13 @@ $(document).ready(function() {
     closeEffect	: 'none'
   });
 });	
-$("#tfBuscar").focus();
+$("#ID_OF_SELECT_TAG").dropkick({
+        change: function () {
+               //Logic that you want to apply onchange event.
+			var cuenta = document.formu.cuentas.value;
+			alert("Estas Buscando "+cuenta);
+        }
+    });
   
 </script>
 
