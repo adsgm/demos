@@ -423,7 +423,7 @@ li{ list-style: none;}
 	float:left;
 	height:260px;
 	overflow:hidden;
-	margin:15px;
+	margin:0 15px 15px;
 	background-color:#EEEEEE;
 }
 .content-result{
@@ -444,8 +444,8 @@ li{ list-style: none;}
 .general, .result{ width:100%; background-color:#EEEEEE; height:210px;}
 .general h1, .general h2 , .general h3{ padding:10px ; font-family:"Source Sans Pro", sans-serif; font-weight:700;}
 .general p{ padding:10px; margin-top:10px;}
-.general h1{ font-size:16px !important; color:#4D4D4D; font-weight:700; margin-bottom:10px;}
-.general h2{ font-size:22px !important; color:#B00000; margin:5px 0 25px 0; }
+.general h1{ font-size:16px !important; color:#4D4D4D; font-weight:700; margin:0;}
+.general h2{ font-size:22px !important; color:#B00000; margin:0; }
 .general p , .result h3{ font-size:14px; font-family:"Signika-Light", sans-serif; color:#868686;}
 .result h3:before{content:url("../img/bg/tabs-c.png"); padding: 0 5px 0 0;}
 .result h3{text-indent: -18px; padding:4px 27px; height:20px;}
@@ -501,7 +501,7 @@ li{ list-style: none;}
 
 /* SELECT PREFERENCIAS*/
 .select-preferencias{ font-size:20px; font-family: "Source Sans Pro", sans-serif; font-weight:200; color:#939393; width:350px; }
-.select-preferencias div{ padding:35px 10px;height:22px;float:left; text-align:left;}
+.select-preferencias div{ padding:15px 10px;height:22px;float:left; text-align:left;}
 .arrow-preferencias{ margin:3px 5px 0 0; width: 10px;}
 .content-select{ width:980px;}
-.size-select{ width:300px;  margin:33px  0  0 300px; position:absolute;}
+.size-select{ width:300px;  margin:13px  0  0 300px; position:absolute;}
