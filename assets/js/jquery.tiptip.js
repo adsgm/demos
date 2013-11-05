@@ -25,7 +25,7 @@
 			activation: "hover",
 			keepAlive: false,
 			maxWidth: "200px",
-			edgeOffset: 3,
+			edgeOffset: 1,
 			defaultPosition: "left",
 			delay: 400,
 			fadeIn: 200,
