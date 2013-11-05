@@ -309,8 +309,8 @@
   <div class="content-select">
   	
       	<div class="size-select clear" >
-              <form action="preferencias.html" name="formu" method="post" accept-charset="utf-8" id="ID_OF_SELECT_TAG">
-                   <select name="cuentas" class="default" onChange="submit()">
+              <form action="preferencias.html" name="formu" method="post" accept-charset="utf-8" >
+                   <select name="cuentas" class="default dk" onChange="submit()">
                           <option value="MIS CUENTAS BANORTE">MIS CUENTAS BANORTE</option>
                           <option value="MIS CUENTAS TERCEROS">MIS CUENTAS TERCEROS</option>
                           <option value="MIS RFC´s">MIS RFC´s</option>
@@ -930,13 +930,11 @@ $(document).ready(function() {
     closeEffect	: 'none'
   });
 });	
-$("#ID_OF_SELECT_TAG").dropkick({
-        change: function () {
-               //Logic that you want to apply onchange event.
-			var cuenta = document.formu.cuentas.value;
-			alert("Estas Buscando "+cuenta);
-        }
-    });
+$('.dk').dropkick({
+    change: function (value, label) {               
+        alert("BUSQUEDA DE :"+value);
+    }
+});
   
 </script>
 
