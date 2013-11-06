@@ -340,7 +340,7 @@ li{ list-style: none;}
 .content-pasos{width: 980px; margin: 25px auto;}
 .content-categoria{margin:5px auto; text-align:center; color:#B00000;font-size:18px; height:30px;}
 .content-categoria h3{font-size: 18px; }
-.content-categoria a{ font-size:13px; font-weight:bold;color:#B00000; margin:0 15px;}
+.content-categoria a{ font-size:13px; font-weight:bold;color:#B00000; margin:0 5px;}
 .boton-rojo{
 	background:url(../img/btns/cdro-rojo.png) no-repeat left;
 	padding:6px 20px;
@@ -421,7 +421,7 @@ li{ list-style: none;}
 	font-family:"Source Sans Pro", sans-serif ;
 	width:288px;
 	float:left;
-	height:260px;
+	height:250px;
 	overflow:hidden;
 	margin:0 15px 15px;
 	background-color:#EEEEEE;
@@ -507,3 +507,8 @@ li{ list-style: none;}
 .content-select{ width:980px;}
 .size-select{ width:300px;  margin:13px  0  0 300px; position:absolute;}
 .namebox{height: 65px;}
+.helpDemo{width: 81%; float: left;}
+.notaDemo{width: 99.8%; position: absolute; bottom: 0; background: rgba(0, 0 , 0, 0.7); height: 108px;}
+.notaDemo p, .notaDemo h1{font-size: 22px; color: #fff; margin: 0 10px; padding: 0;}
+.notaDemo h1{margin: 10px 10px 0;}
+.cierreNota{width: 40px; height: 40px; position: absolute; top: 10px; right: 15px;}
