@@ -8,7 +8,7 @@
  *
  */
 .dk_container {
-	width:240px;
+	width:180px;
   background-color: #FFFFFF;
   font-size: 13px;
   font-weight:700;
@@ -124,7 +124,7 @@
   margin-top: 0px;
   position: absolute;
   right: 28px;
-  width: 212px; }
+  width: 152px; }
   .dk_options a, .dk_options a:link, .dk_options a:visited {
     display: block; }
 
