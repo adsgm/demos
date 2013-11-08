@@ -125,3 +125,9 @@ $(document).ready(function() {
 	}
 	$('#close2').click(function(){ $('#search-overlay').hide(300); $('#search').removeClass('on'); });
 }
+// Inicio
+	// Search
+	$(document).bind('keydown', function(e){ fnsearch(e); });
+	$('#close3').live('click', function(){ 
+	$('#search-overlay1').hide();
+	});
