@@ -158,7 +158,8 @@ li{ list-style: none;}
 
 /*	- Site Layout -	*/
 .content{ width: 980px; margin: 0 auto;}
-#stage{ height: 343px; padding-top: 10px; position: relative; background: url(../img/bg/bg-stage.jpg) center bottom no-repeat; width: 980px; margin: 0 auto;}
+#stage, #stage-new{ height: 343px; padding-top: 10px; position: relative; background: url(../img/bg/bg-stage.jpg) center bottom no-repeat; width: 980px; margin: 0 auto;}
+#stage-new{height: 214px;}
 .main-content{ width: 980px; margin: 0 auto 10px; min-height: 200px;}
 
 /*	- Buttons -	*/
@@ -313,13 +314,19 @@ li{ list-style: none;}
 
 /* STAGES*/
 .img-stage{width: 40%; float: left; height: 342px;}
+.img-stage-new{width: 38%; float: left; height: 210px; text-align: right; padding: 4px 0 0;}
 .text-stage{width: 55%; float: right;}
-.text-stage h1, .text-stage h2, .text-stage h3{ line-height: 1; margin: 0 0 5px;}
-.text-stage h1{font-family: 'Source Sans Pro', arial, sans-serif; font-size: 38px; color: #2f2f2f; margin: 5px 0 20px;}
+.text-stage-new{width: 59%; float: right;}
+.text-stage h1, .text-stage h2, .text-stage h3, .text-stage-new h1, .text-stage-new h2, .text-stage-new h3{ line-height: 1; margin: 0 0 5px;}
+.text-stage h1, .text-stage-new h1{font-family: 'Source Sans Pro', arial, sans-serif; font-size: 38px; color: #2f2f2f; margin: 5px 0 20px;}
+.text-stage-new h1{margin: 5px 0 0;}
 .text-stage h2{font-family: 'Signika-Light', arial; font-size: 18px !important; color: #CA2106; margin: 0 0 20px;}
-.text-stage h3{font-family: 'Source Sans Pro', arial, sans-serif; font-size: 24px; color: #878787; margin-top: 20px;}
-.text-stage p{font-size: 15px; color: #777; font-family: 'Signika-Light', arial; margin: 0;}
-.text-stage .sombra-ch{ margin: 5px 0 10px; border: none; float: left;}
+.text-stage h3, .text-stage-new h3{font-family: 'Source Sans Pro', arial, sans-serif; font-size: 24px; color: #878787; margin-top: 20px;}
+.text-stage-new h3{margin: 10px 0 0;}
+.text-stage p, .text-stage-new p{font-size: 15px; color: #777; font-family: 'Signika-Light', arial; margin: 0;}
+.text-stage .sombra-ch , .text-stage-new .sombra-ch{ margin: 5px 0 10px; border: none; float: left;}
+.parStage{width: 70%; float: right;}
+
 .header{height: 90px; padding: 10px;}
 .header p {font-size: 15px; color: #A5A5A5;}
 .header h1 {font-size: 26px; color: #B00000; padding:13px 0; margin: 0;}
