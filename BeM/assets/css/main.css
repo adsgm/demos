@@ -509,20 +509,22 @@ li{ list-style: none;}
 	position:relative;
 	margin:10px auto;
 }
-#search-overlay1{background:url(../img/bg/trans.png);width:100%; height:170%; position:absolute; top:0; left:0; z-index:9999;}
-#horizontal-wrap1{  width:980px; margin:0 auto}
+
+#search-overlay1{ background:url(../img/bg/trans.png); width:100%; height:100%; position:absolute; top:0; left:0; z-index:9999; }
+#horizontal-wrap1{  width:980px; margin:0 auto; }
 #search-overlay1{ color:#FFF; font-weight:500;}
+#search-overlay1{  width:100%px; margin:0 0;} 
 #close3{ width:45px; height:58px; background:url(../img/btns/boton-cerrar-con-letra.png); position:fixed; top:10px; margin-left:920px; cursor:pointer; }
 
 /*capa guias*/
-.capa-transparente{ background-color:rgb(255,255,255); opacity:.7; width:100%; margin:0 0; position:absolute; top:0; left:0; z-index:1;}
+.capa-transparente{ background-color:rgb(255,255,255);filter:alpha(opacity=70); opacity:.7;width:100%; height:100%;margin:0 0; position:absolute; top:0; left:0; z-index:9999;}
 .capa-guias{  width:980px; z-index:0;}
 .capa-transparente{ color:#FFF; font-weight:500;}
 .row-guias{
 	width:100%;
 	height:270px;
 }
-.botones{ width:100%;  z-index:9998; top:0; position:absolute; top:190px;}
+.botones{ width:100%;  top:0; position:absolute; top:190px;}
 .botones >div{
 	float:left;
 	margin:5px;
