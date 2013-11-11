@@ -28,14 +28,8 @@
 
     </head>
     <body>
-    	<!-- v Search -->
-    <div id="search-overlay1">
-     <div id="horizontal-wrap1" >
-       		 <a id="close3"></a>
-        </div> 
-    </div>
-      <!--fin overlay guia-->
-      <div class="mainheader">
+    	
+    <div class="mainheader">
        <div class="intro">
         <a href="index.html"id="logo" ><img src="assets/img/icons/logo2.png" alt="Grupo Financiero Banorte" ></a>
         <div class="p25 floatL">
@@ -342,35 +336,40 @@
   </ul>
   </div>
   </div>
-  <div class="cont-stage" id="contenedor">
+  <div class="cont-stage" id="contenedor"> 
   <div id="stage">
     <div class="img-stage">
-      <img src="assets/img/photos/portada.png" alt="Bienvenido a las guías interactivas">
+      <img src="assets/img/photos/portada.png" alt="Bienvenido a las guías interactivas" width="300">
     </div>
     <div class="text-stage hide" id="stage1">
         <h3>Bienvenido a las</h3>
         <h1>Guías Interactivas<br>de Banorte en su Empresa</h1>
-        <h2>Aquí encontrará material de apoyo para <br>conocer cómo operar su banca electrónica.</h2>
-        <p>Para consultar el  material revise las secciones del <br>
-          menú principal o haga clic en el botón Buscar guías.</p>
         <div class="sombra-ch">
           <img src="assets/img/bg/div.gif" alt="">
         </div>
-        <div class="buscar-guias">
+        <div class="text-buscar">
+         <div class="buscar-guias">
           <img src="assets/img/icons/lupa.png">
           <a href="#" id="search1">Buscar guÍas</a>
         </div>
+        <div>
+        <p>Para conocer cómo operar tu banca electrónica,<br/> consulta las secciones del menú principal <br/>
+o da clic en el botón Buscar guías.</p>
+          </div>
+       
+        </div>
       </div>
-      <div class="text-stage" id="stage2">
-      <div class="close-index" id="ocultar"></div>
+     <div class="cont-stage2" id="stage2"> 
+     	 <div class="text-stage" >
+     		 <div class="close-index" id="ocultar"></div>
         <h3>¿Su primera vez en BEM?</h3>
         <p>Si es nuevo usuario de Banorte en su Empresa, <br/>
-  		 asegúrese de consultar las siguientes tres guías</p>
-        
-        <div class="check">
+  		 asegúrese de consultar las siguientes tres guías</p> 
+         <div class="check">
         	<input type="checkbox"><label>No mostrar de nuevo este mensaje.</label>
         </div>
-         <div>
+         </div>       
+        <div class="botones">
            <div class="boton-pasos">
            <img src="assets/img/btns/play.png">
           <a href="#">1. Asignación de Usuario</a>
@@ -383,17 +382,15 @@
            <img src="assets/img/btns/play.png">
           <a href="#">3.  Asignación de Cuentas</a>
         </div>
-        </div>
-        <div class="buscar-guias">
-          <img src="assets/img/icons/lupa.png">
-          <a href="#" id="search1">Buscar guÍas</a>
-        </div>
-        
-      </div>
+      </div> 
+      </div> 
+         
+  		 </div>
+         
+    </div>
   </div>
-   
-  </div>
- <!--Content Guias-->
+  
+<!--Content Guias-->
     <div class="wrap altoCapas">
   <div class="cont-guias clear"> 
   <div class="capa-transparente altoCapas"></div>
@@ -994,8 +991,26 @@
               <div class="cont clearfix"></div></div>
       </div></div></div> 
       <!--overlay guia-->
-	
-       <script type="text/javascript" src="assets/js/jquery.js"></script>
+	<!--Inicio de ayuda-->
+    <div id="search-overlay1">
+     <div id="horizontal-wrap1">
+       		 <a id="close3"></a>
+             <img src="assets/img/btns/llave-menu.png" class="p20t">
+             <img src="assets/img/btns/llave-pasos.png" class="p160t">
+             <img src="assets/img/btns/llave-guias.png" class="p25t">
+             <div class="stage-images">
+             
+                 	<img src="assets/img/btns/guias-relacionadas.png" >
+             
+                	 <img src="assets/img/btns/preguntas-frecuentes.png"class="m213l">
+              
+                	 <img src="assets/img/btns/ver-como.png" class="m300l">
+            
+             </div>
+      </div> 
+    </div>
+      <!--fin de ayuda-->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
       <!-- Add fancyBox main JS and CSS files -->
       <script type="text/javascript" src="assets/js/functions.js"></script>
       <script type="text/javascript" src="assets/js/engine.js"></script>
@@ -1004,7 +1019,6 @@
   	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
       <script type="text/javascript">
       $(document).ready(function() {
-
         $(".tip").tipTip();
        $(".various").fancybox({
         maxWidth	: 1154,
