@@ -26,7 +26,7 @@
 			keepAlive: false,
 			maxWidth: "200px",
 			edgeOffset: 3,
-			defaultPosition: "left",
+			defaultPosition: "bottom",
 			delay: 400,
 			fadeIn: 200,
 			fadeOut: 200,
