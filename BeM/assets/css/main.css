@@ -35,7 +35,8 @@ table{ border-spacing:0;  border-collapse:collapse; }
 .m30l{ margin-left:30px; }	
 .m40l{ margin-left:40px; }
 .m213l{ margin-left:213px; }
-.m300l{ margin-left:413px; margin-top:-10px !important; position:absolute; }
+.m300l{ margin-left:335px; margin-top:-10px !important; position:absolute; }
+.m700l{ margin-left:293px;}
 
 .m1t{ margin-top:1px;}	
 .m5t{ margin-top:5px;}	
@@ -328,10 +329,9 @@ li{ list-style: none;}
 .sombra{width: 100%; height: 28px; background: url(../../assets/img/bg/sombra.png); background-repeat: no-repeat; background-position: center;}
 .check{font-family: 'Source Sans Pro', arial, sans-serif; font-size: 15px; color:#777777; margin-bottom:2px; margin:10px  0 0 50px; }
 /*boton pasos*/
-.boton-pasos{width: 255px; height: 30px; background: url(../../assets/img/btns/buscar-guias.jpg); padding: 7px 0; display: block; margin:10px 0 10px 0;}
-.boton-pasos a{float: left; padding: 7px 0 0 30px;}
-.boton-pasos img{ padding:5px 0 0 30px;}
-.boton-pasos a{ margin:2px;text-transform: uppercase; color: #fff; font-family: 'Signika-Light', arial; font-size: 12px !important;}
+.boton-pasos{width: 220px; height: 30px; background:url(../img/bg/boton-pasos.png) no-repeat; padding: 7px 0; display: block; margin:10px 0 10px 0;}
+.boton-pasos{ padding: 15px 0 0 30px;}
+.boton-pasos { margin:2px;text-transform: uppercase; color: #fff; font-family: 'Signika-Light', arial; font-size: 12px !important;}
 /*boton guias*/
 .buscar-guias{width: 150px; height: 30px; background: url(../../assets/img/btns/buscar-guias.jpg); background-repeat: no-repeat; padding: 10px 0; display: block; float: left;}
 .buscar-guias a, .buscar-guias img{float: left; padding: 0 0 0 10px;}
@@ -537,9 +537,17 @@ li{ list-style: none;}
 }
 .stage-images{
 	width:100%;
-	margin:93px 30px;
+	margin:100px 30px;
 }
 .satage-images > img{
 	float:left;
 	position:absolute;
+}
+.guia-format{
+	top:0;
+	text-align:center;
+	width:100%;
+}
+.guia-format p{
+	font-size:20px;
 }
