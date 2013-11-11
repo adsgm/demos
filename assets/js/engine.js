@@ -125,3 +125,6 @@ $(document).ready(function() {
 	}
 	$('#close2').click(function(){ $('#search-overlay').hide(300); $('#search').removeClass('on'); });
 }
+$('#close3').live('click', function(){ 
+	$('#search-overlay1').hide();
+	});
