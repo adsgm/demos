@@ -517,7 +517,7 @@ li{ list-style: none;}
 #close3{ width:45px; height:58px; background:url(../img/btns/boton-cerrar-con-letra.png); position:fixed; top:10px; margin-left:920px; cursor:pointer; }
 
 /*capa guias*/
-.capa-transparente{ background-color:rgb(255,255,255);filter:alpha(opacity=70); opacity:.7;width:100%; height:100%;margin:0 0; position:absolute; top:0; left:0; z-index:9999;}
+.capa-transparente{ background-color:rgb(255,255,255);filter:alpha(opacity=70); opacity:.7;width:100%; height:100%;margin:0 0; position:absolute; top:0; left:0; z-index:2;}
 .capa-guias{  width:980px; z-index:0;}
 .capa-transparente{ color:#FFF; font-weight:500;}
 .row-guias{
@@ -553,3 +553,7 @@ li{ list-style: none;}
 .guia-format p{
 	font-size:20px;
 }
+/*Guias relacionadas*/
+.guias-relacionadas{ padding:20px 20px; font-size:20px; font-family: "Source Sans Pro", sans-serif; font-weight:200; width:100%; }
+.guias-relacionadas strong{ color:#000; font-weight:bold;}
+
