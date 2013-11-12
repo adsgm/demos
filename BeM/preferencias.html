@@ -354,19 +354,17 @@
    <div class="content-select">
      
      <div class="size-select clear" >
-       <form action="preferencias.html" name="formu" method="post" accept-charset="utf-8" >
-         <select name="cuentas" class="default dk" onFocus="submit()">
-          <option value="DAR PERMISOS A USUARIOS">DAR PERMISOS A USUARIOS</option>
-          <option value="CONSULTA PERMISOS ASIGNADOS">CONSULTA PERMISOS ASIGNADOS</option>
-          <option value="CONFIGURACIONES DE SEGURIDAD">CONFIGURACIONES DE SEGURIDAD</option>
-          <option value="MIS CRÉDITOS DE CONSUMO">MIS CRÉDITOS DE CONSUMO</option>
-          <option value="RENOVACIÓN DE TOKEN">RENOVACIÓN DE TOKEN</option>
-          
+       <form action="preferencias.html"  method="post" >
+         <select name="cuentas" class="default dk" onChange="this.form.submit()">
+          <option value="usuarios">USUARIOS</option>
+          <option value="catalogos">CÁTALOGOS</option>
+          <option value="preferencias">PREFERENCIAS</option>
+          <option value="todos">TODOS</option>
         </select>
       </form>
     </div> 
   </div>
-  <div class="sombra clear"></div>
+  <div class="sombra clear usuarios"></div>
   <!--Bloque 3-->
   <div class="bloque tarjeta">
    <div class="content-result">
@@ -376,7 +374,7 @@
      </div>
      <div  class="line-header-tabs"></div>
      <div class="namebox">
-      <h2>Alta de nuevos usuarioss</h2>
+      <h2>Dar Permisos de Usuarios</h2>
     </div>
     <div class="line-tabs-2"></div>
     <div>
@@ -411,7 +409,7 @@
   </div>
   <!--Fin bloque 3-->
   <!--Bloque 3-->
-  <div class="bloque tarjeta">
+  <div class="bloque tarjeta usuarios">
    <div class="content-result">
     <div class="general showgeneral">
      <div>
@@ -419,7 +417,7 @@
      </div>
      <div  class="line-header-tabs"></div>
      <div class="namebox">
-      <h2>Mis cuentas a terceros</h2>
+      <h2>Consulta Permisos Asignados</h2>
     </div>
     <div class="line-tabs-2"></div>
     <div>
@@ -453,7 +451,7 @@
   </div>
   <!--Fin bloque 3-->
   <!--Bloque 3-->
-  <div class="bloque tarjeta">
+  <div class="bloque tarjeta usuarios">
    <div class="content-result">
     <div class="general showgeneral">
      <div>
@@ -461,7 +459,7 @@
      </div>
      <div  class="line-header-tabs"></div>
      <div class="namebox">
-      <h2>Asignación de servicios</h2>
+      <h2>Agrupar mis Cuentas Propias</h2>
     </div>
     <div class="line-tabs-2"></div>
     <div>
@@ -495,15 +493,15 @@
   </div>
   <!--Fin bloque 3-->
   <!--Bloque 3-->
-  <div class="bloque tarjeta">
+  <div class="bloque tarjeta catalogos">
    <div class="content-result">
     <div class="general showgeneral">
      <div>
-       <h1>USUARIO ADMINISTRADOR</h1>
+       <h1>CÁTALOGOS</h1>
      </div>
      <div  class="line-header-tabs"></div>
      <div class="namebox">
-      <h2>Dar permiso a usuarios</h2>
+      <h2>Mis Cuentas Banorte</h2>
     </div>
     <div class="line-tabs-2"></div>
     <div>
@@ -537,15 +535,15 @@
   </div>
   <!--Fin bloque 3-->
   <!--Bloque 3-->
-  <div class="bloque tarjeta">
+  <div class="bloque tarjeta catalogos">
    <div class="content-result">
     <div class="general showgeneral">
      <div>
-       <h1>USUARIO ADMINISTRADOR</h1>
+       <h1>CÁTALOGOS</h1>
      </div>
      <div  class="line-header-tabs"></div>
      <div class="namebox">
-      <h2>Asignación de cuentas</h2>
+      <h2>Mis Cuentas Terceros</h2>
     </div>
     <div class="line-tabs-2"></div>
     <div>
@@ -579,7 +577,7 @@
   </div>
   <!--Fin bloque 3-->
   <!--Bloque 3-->
-  <div class="bloque tarjeta">
+  <div class="bloque tarjeta preferencias">
    <div class="content-result">
     <div class="general showgeneral">
      <div>
@@ -587,7 +585,7 @@
      </div>
      <div  class="line-header-tabs"></div>
      <div class="namebox">
-      <h2>Transferencia a cuentas</h2>
+      <h2>Camnio de Contraseña</h2>
     </div>
     <div class="line-tabs-2"></div>
     <div>
@@ -621,15 +619,15 @@
   </div>
   <!--Fin bloque 3-->
   <!--Bloque 3-->
-  <div class="bloque tarjeta">
+  <div class="bloque tarjeta preferencias">
    <div class="content-result">
     <div class="general showgeneral">
      <div>
-       <h1>USUARIO ADMINISTRADOR</h1>
+       <h1>HORARIOS Y TARIFAS</h1>
      </div>
      <div  class="line-header-tabs"></div>
      <div class="namebox">
-      <h2>Asignación de servicios: límite simple</h2>
+      <h2>Horarios y Terifas</h2>
     </div>
     <div class="line-tabs-2"></div>
     <div>
@@ -663,15 +661,15 @@
   </div>
   <!--Fin bloque 3-->
   <!--Bloque 3-->
-  <div class="bloque tarjeta">
+  <div class="bloque tarjeta preferencias">
    <div class="content-result">
     <div class="general showgeneral">
      <div>
-       <h1>USUARIO ADMINISTRADOR</h1>
+       <h1>COMPROBANTES DE CONEXIÓN< BANORTE/h1>
      </div>
      <div  class="line-header-tabs"></div>
      <div class="namebox">
-      <h2>Asignación de servicios: límite por nivel</h2>
+      <h2>Comprobantes de conexión Banorte</h2>
     </div>
     <div class="line-tabs-2"></div>
     <div>
@@ -705,15 +703,99 @@
   </div>
   <!--Fin bloque 3-->
   <!--Bloque 3-->
-  <div class="bloque tarjeta">
+  <div class="bloque tarjeta varios">
    <div class="content-result">
     <div class="general showgeneral">
      <div>
-       <h1>USUARIO ADMINISTRADOR</h1>
+       <h1>VARIOS</h1>
      </div>
      <div  class="line-header-tabs"></div>
      <div class="namebox">
-      <h2>Asignación de servicios: sin límite</h2>
+      <h2>Consulta de Auditoria</h2>
+    </div>
+    <div class="line-tabs-2"></div>
+    <div>
+      <p>En esta sección podrás agregar usuarios de acuerdo a tus necesidades, dar permisos, asignar servicios y cuentas.</p>
+    </div>
+  </div>
+  <div class="result hide showresult">
+   <div>
+     <h3>¿Cómo utilizar las claves de banca personal?</h3>
+   </div>
+   <div class="line-quetions-tabs"></div>
+   <div>
+    <h3>¿Qué pasos seguir para sincronizar tu token?</h3>
+  </div>
+  <div class="line-quetions-tabs"></div>
+  <div>
+    <h3>¿Cómo realizar una transferencia en el mismo día?</h3>
+  </div>
+  <div class="line-quetions-tabs"></div>
+  <div>
+    <h3>¿Cómo agregar a un nuevo beneficiario?</h3>
+  </div>  
+  </div>	
+  </div>
+  <div class="bottom">
+   <div class="linkGuia tip" title="Demos relacionados"><a href="guias-relacionadas.html"><img src="assets/img/btns/btn-firt.png" /></a></div>
+   <div class="questGuia questions tip" title="Preguntas frecuentes"><a></a></div>
+   <div class="verGuia tip" title="Mostrar demo"><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
+   
+  </div>
+  </div>
+  <!--Fin bloque 3-->
+   <!--Bloque 3-->
+  <div class="bloque tarjeta varios">
+   <div class="content-result">
+    <div class="general showgeneral">
+     <div>
+       <h1>VARIOS</h1>
+     </div>
+     <div  class="line-header-tabs"></div>
+     <div class="namebox">
+      <h2>Escribenos</h2>
+    </div>
+    <div class="line-tabs-2"></div>
+    <div>
+      <p>En esta sección podrás agregar usuarios de acuerdo a tus necesidades, dar permisos, asignar servicios y cuentas.</p>
+    </div>
+  </div>
+  <div class="result hide showresult">
+   <div>
+     <h3>¿Cómo utilizar las claves de banca personal?</h3>
+   </div>
+   <div class="line-quetions-tabs"></div>
+   <div>
+    <h3>¿Qué pasos seguir para sincronizar tu token?</h3>
+  </div>
+  <div class="line-quetions-tabs"></div>
+  <div>
+    <h3>¿Cómo realizar una transferencia en el mismo día?</h3>
+  </div>
+  <div class="line-quetions-tabs"></div>
+  <div>
+    <h3>¿Cómo agregar a un nuevo beneficiario?</h3>
+  </div>  
+  </div>	
+  </div>
+  <div class="bottom">
+   <div class="linkGuia tip" title="Demos relacionados"><a href="guias-relacionadas.html"><img src="assets/img/btns/btn-firt.png" /></a></div>
+   <div class="questGuia questions tip" title="Preguntas frecuentes"><a></a></div>
+   <div class="verGuia tip" title="Mostrar demo"><a href="#" ><img src="assets/img/bg/play.png" /><p>VER CÓMO</p></a></div>
+   
+  </div>
+  </div>
+  <!--Fin bloque 3-->
+   <!--Bloque 3-->
+  <div class="bloque tarjeta varios">
+   <div class="content-result">
+    <div class="general showgeneral">
+     <div>
+       <h1>VARIOS</h1>
+     </div>
+     <div  class="line-header-tabs"></div>
+     <div class="namebox">
+      <h2>Servidor en Atención</h2>
     </div>
     <div class="line-tabs-2"></div>
     <div>
@@ -989,11 +1071,33 @@
     });
   });	
   $("#tfBuscar").focus();
-  $('.dk').dropkick({
-    change: function (value, label) {               
-      alert("BUSQUEDA DE :"+value);
-    }
-  });
+$('.dk').dropkick({ 
+	change: function (value) {  
+		if(value == 'usuarios'){
+			$('.usuarios').show();
+			$('.catalogos').hide();
+			$('.varios').hide();
+			$('.preferencias').hide();
+		}
+	if(value == 'catalogos'){
+		$('.usuarios').hide();
+			$('.horario').hide();
+			$('.catalogos').show();
+			$('.preferencias').hide();
+		}
+		if(value == 'preferencias'){
+			$('.usuarios').hide();
+			$('.horario').hide();
+			$('.catalogos').hide();
+			$('.preferencias').show();
+		}
+		if(value == 'Todos'){
+			$('.usuarios').show();
+			$('.catalogos').show();
+			$('.varios').show();
+			$('.preferencias').show();
+		}
+	}});
 
   </script>
 

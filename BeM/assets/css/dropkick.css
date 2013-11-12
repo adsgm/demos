@@ -8,7 +8,7 @@
  *
  */
 .dk_container {
-	width:240px;
+	width:167px;
   background-color: #FFFFFF;
   font-size: 13px;
   font-weight:700;
@@ -19,15 +19,11 @@
   .dk_container a {
     cursor: pointer;
     text-decoration: none; }
-
 .dk_toggle {
   border: 1px solid #535353;
   color: #333;
-
   padding: 11px 45px 6px 10px;
-  position: relative; }
-
-
+  position: relative;}
   .dk_toggle:hover {
     border-color: #8c8c8c; }
   .dk_toggle:after {
@@ -36,12 +32,10 @@
 	right:0;
     content: url(../img/icons/select.png);
   }
-
 /* Applied when the dropdown is focused */
 .dk_focus .dk_toggle {
   border-color: #535353;
  }
-
 /* Applied whenever the dropdown is open */
 .dk_open {
   /**
@@ -57,7 +51,6 @@
 .dk_open .dk_toggle:after{
   content: url(../img/icons/select2.png);
 }
-
 /* The outer container of the options */
 .dk_options {
   background: #fefefe;
@@ -86,7 +79,6 @@
       background-color: #fff;
       border-bottom-color: #535353;
       text-shadow: none; }
-
 /* Inner container for options, this is what makes the scrollbar possible. */
 .dk_options_inner {
   max-height: 250px;
@@ -95,7 +87,6 @@
   color: #333;
   text-shadow: #fff 0 1px 0;
  }
-
 /******  End Theme ******/
 /***** Critical to the continued enjoyment of working dropdowns ******/
 .dk_container {
@@ -103,7 +94,6 @@
    }
   .dk_container a {
     outline: 0; }
-
 .dk_toggle {
   display: -moz-inline-stack;
   display: inline-block;
@@ -111,29 +101,25 @@
   position: relative;
   background-position:50% 50%;
   zoom: 1; }
-
 .dk_open {
   position: relative; }
   .dk_open .dk_options {
     display: block; }
   .dk_open .dk_label {
     color: inherit; }
-
 .dk_options {
   display: none;
   margin-top: 0px;
   position: absolute;
   right: 0;
   left: 0;
-  width: 243px; }
+  width: 165px; }
   .dk_options a, .dk_options a:link, .dk_options a:visited {
     display: block; }
-
 .dk_options_inner {
   overflow: auto;
   position: relative;
   -webkit-overflow-scrolling: touch; }
-
 /* Hides only dropkick <select> instances */
 .dk_container select {
   position: absolute;
