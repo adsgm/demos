@@ -522,9 +522,9 @@ li{ list-style: none;}
 #close3{ width:45px; height:58px; background:url(../img/btns/boton-cerrar-con-letra.png); position:fixed; top:10px; margin-left:920px; cursor:pointer; }
 .iniciabusq{position: absolute; right: 31px; top: 145px;}
 .guiasfrec{position: absolute; right: 30px; top: 345px;}
-.guiasrel{position: absolute; left: 32px; top: 497px;}
-.pregfrec{position: absolute; right: 482px; top: 497px;}
-.verdemo{position: absolute; right: 54px; top: 490px;}
+.guiasrel{position: absolute; left: 32px; top: 508px;}
+.pregfrec{position: absolute; right: 482px; top: 508px;}
+.verdemo{position: absolute; right: 54px; top: 499px;}
 /*capa guias*/
 .capa-transparente{ background-color:rgb(255,255,255); opacity:.7; width:100%; margin:0 0; position:absolute; top:0; left:0; z-index:1;}
 .capa-guias{  width:980px; z-index:0;}
