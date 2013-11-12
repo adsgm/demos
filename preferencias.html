@@ -308,7 +308,7 @@
                 <form action="preferencias.html"  method="post" >
                      <select name="cuentas" class="default dk" onChange="submit.this.form()">
                             <option value="Todos">Todos</option>
-                            <option value="catalogos">Catálogos</option>
+                            <option value="Catálogos">Catálogos</option>
                             <option value="Horarios y Tarifas">Horarios y Tarifas</option>    
                     </select>
                  </form>
@@ -1054,10 +1054,11 @@ $(document).ready(function() {
 });	
 $('.dk').dropkick({ 
 	change: function (value) {  
-		if(value == 'catalogos'){
+		if(value == 'Catálogos'){
 			$('.catalogo').show();
 			$('.preferencias').hide();
 			$('.horario').hide();
+		
 		}
 		if(value == 'Horarios y Tarifas'){
 			$('.horario').show();
@@ -1068,7 +1069,9 @@ $('.dk').dropkick({
 			$('.horario').show();
 			$('.catalogo').show();
 			$('.preferencias').show();
-		}
+			
+		} 
+		alert("Usted a seleccionado: "+value);
 	}});
 
 </script>

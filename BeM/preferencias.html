@@ -36,14 +36,15 @@
     <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
   <body>
-    <div class="mainheader">
-     <div class="intro">
-      <a href="index.html"id="logo" ><img src="assets/img/icons/logo2.png" alt="Grupo Financiero Banorte" ></a>
-      <div class="p25 floatL">
-        <p class="fs40 grey6 floatL">BEM</p>
-        <div class="floatL m20l">
-          <p class="fs20 ss"><strong>Guías Interactivas</strong></p>
-          <p class="fs20 grey6"><em>Banorte en su Empresa</em></p>
+      <div class="mainheader">
+       <div class="intro">
+        <a href="index.html"id="logo" ><img src="assets/img/icons/logo2.png" alt="Grupo Financiero Banorte" ></a>
+        <div class="p25 floatL">
+          <p class="fs40 grey6 floatL">BEM</p>
+          <div class="floatL m20l">
+            <p class="fs20 ss"><strong>Guías Interactivas</strong></p>
+            <p class="fs20 grey6"><em>Banorte en su Empresa</em></p>
+          </div>
         </div>
       </div>
     </div>
@@ -305,7 +306,7 @@
   </ul>
   </li>
   <li>
-    <a href="#" class="lvl2">PREFERENCIAS</a>
+    <a href="preferencias.html" class="lvl2 active-menu">PREFERENCIAS</a>
     <ul class="aright">
      <li><a href="#" class="lvl2">Usuario Administrador</a>
        <ul class="aright">
@@ -355,18 +356,18 @@
      
      <div class="size-select clear" >
        <form action="preferencias.html"  method="post" >
-         <select name="cuentas" class="default dk" onChange="this.form.submit()">
-          <option value="usuarios">USUARIOS</option>
-          <option value="catalogos">CÁTALOGOS</option>
-          <option value="preferencias">PREFERENCIAS</option>
-          <option value="todos">TODOS</option>
+         <select name="cuentas" class="default dk" onChange="submit.this.form()">
+          <option value="Usuarios">USUARIOS</option>
+          <option value="Catálogos">CÁTALOGOS</option>
+          <option value="Preferencias">PREFERENCIAS</option>
+          <option value="Todos">TODOS</option>
         </select>
       </form>
     </div> 
   </div>
-  <div class="sombra clear usuarios"></div>
+  <div class="sombra clear "></div>
   <!--Bloque 3-->
-  <div class="bloque tarjeta">
+  <div class="bloque tarjeta usuarios">
    <div class="content-result">
     <div class="general showgeneral">
      <div>
@@ -666,7 +667,7 @@
    <div class="content-result">
     <div class="general showgeneral">
      <div>
-       <h1>COMPROBANTES DE CONEXIÓN< BANORTE/h1>
+       <h1>COMPROBANTES DE CONEXIÓNBANORTE</h1>
      </div>
      <div  class="line-header-tabs"></div>
      <div class="namebox">
@@ -1074,21 +1075,21 @@
   $("#tfBuscar").focus();
 $('.dk').dropkick({ 
 	change: function (value) {  
-		if(value == 'usuarios'){
+		if(value == 'Usuarios'){
 			$('.usuarios').show();
 			$('.catalogos').hide();
 			$('.varios').hide();
 			$('.preferencias').hide();
 		}
-	if(value == 'catalogos'){
+	if(value == 'Catálogos'){
 		$('.usuarios').hide();
-			$('.horario').hide();
+			$('.varios').hide();
 			$('.catalogos').show();
 			$('.preferencias').hide();
 		}
-		if(value == 'preferencias'){
+		if(value == 'Preferencias'){
 			$('.usuarios').hide();
-			$('.horario').hide();
+			$('.varios').hide();
 			$('.catalogos').hide();
 			$('.preferencias').show();
 		}
@@ -1098,6 +1099,7 @@ $('.dk').dropkick({
 			$('.varios').show();
 			$('.preferencias').show();
 		}
+		alert("Usted a seleccionado: "+value);
 	}});
 
   </script>
