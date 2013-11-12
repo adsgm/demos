@@ -509,6 +509,7 @@ li{ list-style: none;}
 .cierreNota{width: 40px; height: 40px; position: absolute; top: 10px; right: 15px;}
 
 
+<<<<<<< HEAD
 /*content guias*/
 .cont-guias{
 	width:980px;
@@ -526,8 +527,12 @@ li{ list-style: none;}
 .pregfrec{position: absolute; right: 482px; top: 497px;}
 .verdemo{position: absolute; right: 54px; top: 490px;}
 
+=======
+>>>>>>> 92c42c63e0669e29604aec59a99dd70fff5e1599
 /*capa guias*/
+.capa-transparente{ background-color:rgb(255,255,255); opacity:.7; width:100%; margin:0 0; position:absolute; top:0; left:0; z-index:1;}
 .capa-guias{  width:980px; z-index:0;}
+.capa-transparente{ color:#FFF; font-weight:500;}
 .row-guias{
 	width:100%;
 	height:270px;
@@ -547,12 +552,13 @@ li{ list-style: none;}
 }
 .stage-images{
 	width:100%;
-	margin:110px 30px;
+	margin:93px 30px;
 }
 .satage-images > img{
 	float:left;
 	position:absolute;
 }
+<<<<<<< HEAD
 .guia-format{
 	top:0;
 	text-align:center;
@@ -562,3 +568,9 @@ li{ list-style: none;}
 .guia-format p{
 	font-size:20px;
 }
+=======
+/*Guias relacionadas*/
+.guias-relacionadas{ padding:20px 20px; font-size:20px; font-family: "Source Sans Pro", sans-serif; font-weight:200; width:100%; }
+.guias-relacionadas strong{ color:#000; font-weight:bold;}
+
+>>>>>>> 92c42c63e0669e29604aec59a99dd70fff5e1599
