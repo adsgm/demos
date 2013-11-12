@@ -128,7 +128,7 @@ $(document).ready(function() {
 // Inicio
 	// Search
 	$(document).ready(function() {
-		var w = $(document).width(); var h = $(document).height(); 
+		var w = $('body').width(); var h = $('body').height(); 
 		$('#search-overlay1').width(w).height(h);
 	$('#close3').live('click', function(){ 
 	$('#search-overlay1').hide();
