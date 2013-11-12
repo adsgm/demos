@@ -125,6 +125,10 @@ $(document).ready(function() {
 	}
 	$('#close2').click(function(){ $('#search-overlay').hide(300); $('#search').removeClass('on'); });
 }
-$('#close3').live('click', function(){ 
+$(document).ready(function() {
+		var w = $(document).width(); var h = $(document).height(); 
+		$('#search-overlay1').width(w).height(h);
+	$('#close3').live('click', function(){ 
 	$('#search-overlay1').hide();
 	});
+});
